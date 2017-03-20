@@ -38,6 +38,34 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xhC-ZX-ybY">
                                 <rect key="frame" x="20" y="100" width="960" height="800"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="gugudan_tableview_cell" id="e56-6t-XLD">
+                                        <rect key="frame" x="0.0" y="28" width="960" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e56-6t-XLD" id="jMd-b6-B5W">
+                                            <rect key="frame" x="0.0" y="0.0" width="960" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55o-iQ-JPc">
+                                                    <rect key="frame" x="0.0" y="-0.5" width="960" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="55o-iQ-JPc" firstAttribute="centerX" secondItem="jMd-b6-B5W" secondAttribute="centerX" id="3RT-3S-VHA"/>
+                                                <constraint firstItem="55o-iQ-JPc" firstAttribute="height" secondItem="jMd-b6-B5W" secondAttribute="height" id="9hw-12-LhA"/>
+                                                <constraint firstItem="55o-iQ-JPc" firstAttribute="centerY" secondItem="jMd-b6-B5W" secondAttribute="centerY" id="9p1-tZ-ezD"/>
+                                                <constraint firstItem="55o-iQ-JPc" firstAttribute="width" secondItem="jMd-b6-B5W" secondAttribute="width" id="DeF-sX-mrP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="PEa-JH-arr" id="mSd-AA-X0Q"/>
+                                    <outlet property="delegate" destination="PEa-JH-arr" id="PLS-Ls-E9s"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJI-PH-xul">
                                 <rect key="frame" x="20" y="49" width="960" height="51"/>
@@ -86,6 +114,9 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1000" height="1000"/>
+                    <connections>
+                        <outlet property="gugudanTableView" destination="xhC-ZX-ybY" id="ytq-YC-jqT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tg3-23-s4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

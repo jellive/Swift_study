@@ -8,11 +8,12 @@
 
 import UIKit
 
-class GugudanViewController: UIViewController, UITextFieldDelegate {
+class GugudanViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
     
     var gugudanString : String = "http://www.jell.kr/json/gugudan/"
     var gugudanRequest : URLRequest?
     var gugudanArray : NSMutableArray! = NSMutableArray()
+    @IBOutlet weak var gugudanTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,8 +48,30 @@ class GugudanViewController: UIViewController, UITextFieldDelegate {
         session.dataTask(with: gugudanRequest as URLRequest!) {
             data, response, error in
             
+            guard let data = data, error == nil else {return}
+            
             if let response = response {
                 print(response)
+                do
+                {
+                    let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any]
+                    self.gugudanArray = NSMutableArray()
+                    for eachGugu in json!
+                    {
+                        print(eachGugu.key)
+                        print(eachGugu.value)
+                        let gugudanString = eachGugu.key.appending(String.init(format: " = %@", eachGugu.value as! CVarArg))
+                        self.gugudanArray.add(gugudanString)
+                    }
+                    DispatchQueue.main.async {
+                        self.gugudanTableView.reloadData()
+                    }
+                    
+                }
+                catch
+                {
+                    print("Error desializing JSON: \(error)")
+                }
             }
             if let error = error {
                 print(error)
@@ -57,6 +80,22 @@ class GugudanViewController: UIViewController, UITextFieldDelegate {
         
             return true;
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return gugudanArray.count;
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell : UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: "gugudan_tableview_cell")
+        let cellLabel : UILabel! = cell.viewWithTag(1) as! UILabel
+        cellLabel.text = gugudanArray.object(at: indexPath.row) as? String
+        
+        
+        return cell
+    }
+    
+    
+    
     
     /*
      // MARK: - Navigation
