@@ -90,12 +90,8 @@ class GugudanViewController: UIViewController, UITextFieldDelegate, UITableViewD
         let cellLabel : UILabel! = cell.viewWithTag(1) as! UILabel
         cellLabel.text = gugudanArray.object(at: indexPath.row) as? String
         
-        
         return cell
     }
-    
-    
-    
     
     /*
      // MARK: - Navigation

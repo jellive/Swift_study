@@ -19,7 +19,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Do any additional setup after loading the view, typically from a nib.
         print("hihihi");
         
-        menuArray = NSArray.init(object: "구구단")
+        menuArray = NSArray.init(objects: "구구단", "realm")
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +28,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1;
+        return menuArray.count;
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -37,7 +37,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let label : UILabel = mainCollectionViewCell.viewWithTag(2) as! UILabel;
         label.text = (menuArray.object(at: indexPath.row) as! String);
 
-        
         return mainCollectionViewCell;
     }
     
@@ -45,6 +44,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         switch indexPath.row {
         case 0:
             let vc : GugudanViewController = self.storyboard?.instantiateViewController(withIdentifier: "gugudan") as! GugudanViewController;
+            self.present(vc, animated: true, completion: nil);
+            break;
+        case 1:
+            let vc : RealmViewController = self.storyboard?.instantiateViewController(withIdentifier: "realm") as! RealmViewController;
             self.present(vc, animated: true, completion: nil);
         default:
             return;
