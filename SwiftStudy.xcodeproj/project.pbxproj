@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		559D35BB67E2AD7148D3EC4E /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9B8145D701B517DA8A7295 /* Pods_SwiftStudy.framework */; };
 		BB5A800D1E96065100000670 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A800C1E96065100000670 /* RealmViewController.swift */; };
+		BBD637F01EB0AB60002CF131 /* IBDesignableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */; };
+		BBD637F21EB0ACA4002CF131 /* CustomRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */; };
 		D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6663DBB1E7EB74900531889 /* GugudanViewController.swift */; };
 		D6C62F4F1E797D5E007D497A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C62F4E1E797D5E007D497A /* AppDelegate.swift */; };
 		D6C62F511E797D5E007D497A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C62F501E797D5E007D497A /* ViewController.swift */; };
@@ -41,6 +43,8 @@
 		6D3CA166306BD1A5D6E38A11 /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		8A9B8145D701B517DA8A7295 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5A800C1E96065100000670 /* RealmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmViewController.swift; path = Realm/RealmViewController.swift; sourceTree = "<group>"; };
+		BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IBDesignableViewController.swift; path = IBDesignable/IBDesignableViewController.swift; sourceTree = "<group>"; };
+		BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRectView.swift; sourceTree = "<group>"; };
 		D6663DBB1E7EB74900531889 /* GugudanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GugudanViewController.swift; path = Gugudan/GugudanViewController.swift; sourceTree = "<group>"; };
 		D6C62F4B1E797D5E007D497A /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C62F4E1E797D5E007D497A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,15 @@
 			name = Realm;
 			sourceTree = "<group>";
 		};
+		BBD637EE1EB0AB39002CF131 /* IBDesignable */ = {
+			isa = PBXGroup;
+			children = (
+				BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */,
+				BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */,
+			);
+			name = IBDesignable;
+			sourceTree = "<group>";
+		};
 		D6663DBA1E7EB73300531889 /* Gugudan */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +146,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				BBD637EE1EB0AB39002CF131 /* IBDesignable */,
 				BB5A800E1E96065600000670 /* Realm */,
 				D6663DBA1E7EB73300531889 /* Gugudan */,
 				D6C62F4E1E797D5E007D497A /* AppDelegate.swift */,
@@ -360,9 +374,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB5A800D1E96065100000670 /* RealmViewController.swift in Sources */,
+				BBD637F01EB0AB60002CF131 /* IBDesignableViewController.swift in Sources */,
 				D6C62F511E797D5E007D497A /* ViewController.swift in Sources */,
 				D6C62F4F1E797D5E007D497A /* AppDelegate.swift in Sources */,
 				D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */,
+				BBD637F21EB0ACA4002CF131 /* CustomRectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
