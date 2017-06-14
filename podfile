@@ -3,5 +3,5 @@ use_frameworks!
 platform :ios, '8.3'
 
 target 'SwiftStudy' do
-    pod 'RealmSwift', '~>2.5'
+    pod 'RealmSwift'
 end
