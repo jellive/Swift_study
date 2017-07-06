@@ -19,7 +19,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Do any additional setup after loading the view, typically from a nib.
         print("hihihi");
         
-        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable")
+        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing")
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,6 +51,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             self.present(vc, animated: true, completion: nil);
         case 2:
             let vc : IBDesignableViewController = self.storyboard?.instantiateViewController(withIdentifier: "ib_designable") as! IBDesignableViewController
+            self.present(vc, animated: true, completion: nil)
+        case 3:
+            let vc : DrawingViewController = self.storyboard?.instantiateViewController(withIdentifier: "drawing") as! DrawingViewController
             self.present(vc, animated: true, completion: nil)
         default:
             return;

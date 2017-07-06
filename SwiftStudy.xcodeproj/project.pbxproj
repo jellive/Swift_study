@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		559D35BB67E2AD7148D3EC4E /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9B8145D701B517DA8A7295 /* Pods_SwiftStudy.framework */; };
+		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
 		BB5A800D1E96065100000670 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A800C1E96065100000670 /* RealmViewController.swift */; };
 		BBD637F01EB0AB60002CF131 /* IBDesignableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */; };
 		BBD637F21EB0ACA4002CF131 /* CustomRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */; };
@@ -42,9 +43,11 @@
 		3A21B69A0F2C9C51D8863637 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		6D3CA166306BD1A5D6E38A11 /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		8A9B8145D701B517DA8A7295 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = Drawing/DrawingViewController.swift; sourceTree = "<group>"; };
 		BB5A800C1E96065100000670 /* RealmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmViewController.swift; path = Realm/RealmViewController.swift; sourceTree = "<group>"; };
 		BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IBDesignableViewController.swift; path = IBDesignable/IBDesignableViewController.swift; sourceTree = "<group>"; };
 		BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRectView.swift; sourceTree = "<group>"; };
+		BBEAA0C71EFCAFEB00D3E06F /* SwiftStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftStudy-Bridging-Header.h"; sourceTree = "<group>"; };
 		D6663DBB1E7EB74900531889 /* GugudanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GugudanViewController.swift; path = Gugudan/GugudanViewController.swift; sourceTree = "<group>"; };
 		D6C62F4B1E797D5E007D497A /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C62F4E1E797D5E007D497A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +97,14 @@
 				6D3CA166306BD1A5D6E38A11 /* Pods-SwiftStudy.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB3CB1FE1F0B9AB70072178C /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */,
+			);
+			name = Drawing;
 			sourceTree = "<group>";
 		};
 		BB5A800E1E96065600000670 /* Realm */ = {
@@ -146,6 +157,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				BB3CB1FE1F0B9AB70072178C /* Drawing */,
 				BBD637EE1EB0AB39002CF131 /* IBDesignable */,
 				BB5A800E1E96065600000670 /* Realm */,
 				D6663DBA1E7EB73300531889 /* Gugudan */,
@@ -155,6 +167,7 @@
 				D6C62F551E797D5E007D497A /* Assets.xcassets */,
 				D6C62F571E797D5E007D497A /* LaunchScreen.storyboard */,
 				D6C62F5A1E797D5E007D497A /* Info.plist */,
+				BBEAA0C71EFCAFEB00D3E06F /* SwiftStudy-Bridging-Header.h */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
@@ -257,6 +270,7 @@
 					D6C62F4A1E797D5E007D497A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7R3TQXEXN8;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					D6C62F5E1E797D5E007D497A = {
@@ -376,6 +390,7 @@
 				BB5A800D1E96065100000670 /* RealmViewController.swift in Sources */,
 				BBD637F01EB0AB60002CF131 /* IBDesignableViewController.swift in Sources */,
 				D6C62F511E797D5E007D497A /* ViewController.swift in Sources */,
+				BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */,
 				D6C62F4F1E797D5E007D497A /* AppDelegate.swift in Sources */,
 				D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */,
 				BBD637F21EB0ACA4002CF131 /* CustomRectView.swift in Sources */,
@@ -530,8 +545,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A21B69A0F2C9C51D8863637 /* Pods-SwiftStudy.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 7R3TQXEXN8;
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
@@ -539,6 +555,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.jell.swiftstudy.SwiftStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftStudy/SwiftStudy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -547,8 +565,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D3CA166306BD1A5D6E38A11 /* Pods-SwiftStudy.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 7R3TQXEXN8;
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
@@ -556,6 +575,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.jell.swiftstudy.SwiftStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftStudy/SwiftStudy-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
