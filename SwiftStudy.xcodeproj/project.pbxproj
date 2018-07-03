@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		559D35BB67E2AD7148D3EC4E /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9B8145D701B517DA8A7295 /* Pods_SwiftStudy.framework */; };
+		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
 		BB5A800D1E96065100000670 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A800C1E96065100000670 /* RealmViewController.swift */; };
+		BB9F4CE91F0DDCC400650829 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F4CE81F0DDCC400650829 /* CategoryViewController.swift */; };
+		BB9F4CEB1F0DDD4200650829 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F4CEA1F0DDD4200650829 /* UIView.swift */; };
 		BBD637F01EB0AB60002CF131 /* IBDesignableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */; };
 		BBD637F21EB0ACA4002CF131 /* CustomRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */; };
 		D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6663DBB1E7EB74900531889 /* GugudanViewController.swift */; };
@@ -43,8 +46,11 @@
 		3A21B69A0F2C9C51D8863637 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		6D3CA166306BD1A5D6E38A11 /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		8A9B8145D701B517DA8A7295 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmNumber.swift; path = Realm/RealmNumber.swift; sourceTree = "<group>"; };
 		BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = Drawing/DrawingViewController.swift; sourceTree = "<group>"; };
 		BB5A800C1E96065100000670 /* RealmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmViewController.swift; path = Realm/RealmViewController.swift; sourceTree = "<group>"; };
+		BB9F4CE81F0DDCC400650829 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryViewController.swift; path = Category/CategoryViewController.swift; sourceTree = "<group>"; };
+		BB9F4CEA1F0DDD4200650829 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Category/UIView.swift; sourceTree = "<group>"; };
 		BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IBDesignableViewController.swift; path = IBDesignable/IBDesignableViewController.swift; sourceTree = "<group>"; };
 		BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRectView.swift; sourceTree = "<group>"; };
 		BBEAA0C71EFCAFEB00D3E06F /* SwiftStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftStudy-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -111,8 +117,18 @@
 			isa = PBXGroup;
 			children = (
 				BB5A800C1E96065100000670 /* RealmViewController.swift */,
+				BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */,
 			);
 			name = Realm;
+			sourceTree = "<group>";
+		};
+		BB9F4CE71F0DDCA100650829 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BB9F4CE81F0DDCC400650829 /* CategoryViewController.swift */,
+				BB9F4CEA1F0DDD4200650829 /* UIView.swift */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 		BBD637EE1EB0AB39002CF131 /* IBDesignable */ = {
@@ -157,6 +173,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				BB9F4CE71F0DDCA100650829 /* Category */,
 				BB3CB1FE1F0B9AB70072178C /* Drawing */,
 				BBD637EE1EB0AB39002CF131 /* IBDesignable */,
 				BB5A800E1E96065600000670 /* Realm */,
@@ -391,8 +408,11 @@
 				BBD637F01EB0AB60002CF131 /* IBDesignableViewController.swift in Sources */,
 				D6C62F511E797D5E007D497A /* ViewController.swift in Sources */,
 				BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */,
+				BB9F4CE91F0DDCC400650829 /* CategoryViewController.swift in Sources */,
 				D6C62F4F1E797D5E007D497A /* AppDelegate.swift in Sources */,
 				D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */,
+				BB9F4CEB1F0DDD4200650829 /* UIView.swift in Sources */,
+				BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */,
 				BBD637F21EB0ACA4002CF131 /* CustomRectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

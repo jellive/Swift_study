@@ -51,7 +51,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPS-5F-TjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="164" y="-1861"/>
+            <point key="canvasLocation" x="138" y="-1863"/>
+        </scene>
+        <!--Category View Controller-->
+        <scene sceneID="fIs-hy-9dF">
+            <objects>
+                <viewController storyboardIdentifier="category" id="7Ui-6K-7Ap" customClass="CategoryViewController" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m7e-9J-nxG"/>
+                        <viewControllerLayoutGuide type="bottom" id="NC7-yZ-lge"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Ay-RY-qko">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNu-TC-fOP">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backBtnClicked:" destination="7Ui-6K-7Ap" eventType="touchUpInside" id="bfc-TX-avY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1000" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6V-xE-zCH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1869" y="-1864"/>
         </scene>
         <!--Gugudan View Controller-->
         <scene sceneID="eeF-iV-xzw">
@@ -307,19 +337,44 @@
                                     <action selector="backBtnClicked:" destination="GFj-hs-9eW" eventType="touchUpInside" id="icR-x0-CyM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="숫자를 입력해주세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgn-O4-xQG">
+                                <rect key="frame" x="20" y="58" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYG-51-T94">
+                                <rect key="frame" x="20" y="87" width="227" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="227" id="nW5-j8-gs3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="GFj-hs-9eW" id="Lry-KV-ko6"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xgn-O4-xQG" firstAttribute="top" secondItem="ZUn-PS-A9u" secondAttribute="bottom" constant="8" id="17j-Sy-0vf"/>
+                            <constraint firstItem="xgn-O4-xQG" firstAttribute="leading" secondItem="ZUn-PS-A9u" secondAttribute="leading" id="Ehm-jl-amq"/>
+                            <constraint firstItem="eYG-51-T94" firstAttribute="top" secondItem="xgn-O4-xQG" secondAttribute="bottom" constant="8" id="gUu-eg-MMV"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ZUn-PS-A9u" secondAttribute="leading" id="l2R-aQ-oX2"/>
+                            <constraint firstItem="eYG-51-T94" firstAttribute="leading" secondItem="ZUn-PS-A9u" secondAttribute="leading" id="xKy-q8-miQ"/>
                             <constraint firstItem="ZUn-PS-A9u" firstAttribute="top" secondItem="Eio-VT-5OD" secondAttribute="bottom" id="yDy-oR-CzN"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1000" height="1000"/>
+                    <connections>
+                        <outlet property="numberTextField" destination="eYG-51-T94" id="YhQ-zo-R5R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eys-kl-k2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1869" y="139"/>
+            <point key="canvasLocation" x="1868.8" y="138.53073463268368"/>
         </scene>
     </scenes>
 </document>

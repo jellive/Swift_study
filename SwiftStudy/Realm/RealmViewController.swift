@@ -7,12 +7,30 @@
 //
 
 import UIKit
+import RealmSwift
 
-class RealmViewController: UIViewController {
+class RealmViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var numberTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        numberTextField.delegate = self
+        
+        let realm = try! Realm()
+        var realmNumber = realm.objects(RealmNumber.self).filter("numberIndex < 2").first
+        if(realmNumber == nil) { // 왜 nil로 안들어가지?
+            realmNumber = RealmNumber()
+            realmNumber?.number = 0
+            realmNumber?.numberIndex = 1
+            realmNumber?.date = NSDate()
+            try! realm.write {
+                realm.add(realmNumber!)
+            }
+        }
+        print(realmNumber?.number as Any)
+        numberTextField.text = String.init(format: "%d", (realmNumber?.number)!)
+        
         // Do any additional setup after loading the view.
     }
 
@@ -35,4 +53,17 @@ class RealmViewController: UIViewController {
         self.dismiss(animated: true, completion: nil);
     }
 
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        let realm = try! Realm()
+        let realmNumber = realm.objects(RealmNumber.self).filter("numberIndex < 2").first
+        
+        realmNumber?.number = Int(textField.text!)!
+        
+        try! realm.write {
+            realm.add(realmNumber!, update: true)
+        }
+        
+    }
 }
