@@ -62,7 +62,7 @@ class RealmViewController: UIViewController, UITextFieldDelegate {
         realmNumber?.number = Int(textField.text!)!
         
         try! realm.write {
-            realm.add(realmNumber!, update: true)
+            realm.add(realmNumber!, update: .all)
         }
         
     }

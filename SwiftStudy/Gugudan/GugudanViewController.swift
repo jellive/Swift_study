@@ -45,7 +45,7 @@ class GugudanViewController: UIViewController, UITextFieldDelegate, UITableViewD
         let config : URLSessionConfiguration! = URLSessionConfiguration.default;
         let session : URLSession = URLSession.init(configuration: config);
         
-        session.dataTask(with: gugudanRequest as URLRequest!) {
+        session.dataTask(with: (gugudanRequest as URLRequest?)!) {
             data, response, error in
             
             guard let data = data, error == nil else {return}

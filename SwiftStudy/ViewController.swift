@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
 
@@ -14,12 +15,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     var menuArray : NSArray = []
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("hihihi");
         
-        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category")
+        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI")
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,6 +59,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             self.present(vc, animated: true, completion: nil)
         case 4:
             let vc : CategoryViewController = self.storyboard?.instantiateViewController(withIdentifier: "category") as! CategoryViewController
+            self.present(vc, animated: true, completion: nil)
+        case 5:
+            let vc = UIHostingController(rootView: SwiftUIView())
             self.present(vc, animated: true, completion: nil)
         default:
             return;
