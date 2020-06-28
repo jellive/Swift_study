@@ -17,6 +17,7 @@
 		BB9F4CEB1F0DDD4200650829 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F4CEA1F0DDD4200650829 /* UIView.swift */; };
 		BBD637F01EB0AB60002CF131 /* IBDesignableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */; };
 		BBD637F21EB0ACA4002CF131 /* CustomRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */; };
+		D604CCE324A89EDE006927DE /* SwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */; };
 		D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6663DBB1E7EB74900531889 /* GugudanViewController.swift */; };
 		D6C62F4F1E797D5E007D497A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C62F4E1E797D5E007D497A /* AppDelegate.swift */; };
 		D6C62F511E797D5E007D497A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C62F501E797D5E007D497A /* ViewController.swift */; };
@@ -58,6 +59,7 @@
 		BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IBDesignableViewController.swift; path = IBDesignable/IBDesignableViewController.swift; sourceTree = "<group>"; };
 		BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRectView.swift; sourceTree = "<group>"; };
 		BBEAA0C71EFCAFEB00D3E06F /* SwiftStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftStudy-Bridging-Header.h"; sourceTree = "<group>"; };
+		D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewModel.swift; sourceTree = "<group>"; };
 		D6663DBB1E7EB74900531889 /* GugudanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GugudanViewController.swift; path = Gugudan/GugudanViewController.swift; sourceTree = "<group>"; };
 		D6C62F4B1E797D5E007D497A /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C62F4E1E797D5E007D497A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				021E561A249B3A2100AB89F3 /* SwiftUIView.swift */,
 				021E5620249B584500AB89F3 /* SecondSwiftUIView.swift */,
+				D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -153,6 +156,13 @@
 			name = IBDesignable;
 			sourceTree = "<group>";
 		};
+		D604CCE124A86D82006927DE /* SwiftUI-link */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "SwiftUI-link";
+			sourceTree = "<group>";
+		};
 		D6663DBA1E7EB73300531889 /* Gugudan */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +196,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				D604CCE124A86D82006927DE /* SwiftUI-link */,
 				021E5619249B3A0800AB89F3 /* SwiftUI */,
 				BB9F4CE71F0DDCA100650829 /* Category */,
 				BB3CB1FE1F0B9AB70072178C /* Drawing */,
@@ -421,6 +432,7 @@
 				D6C62F4F1E797D5E007D497A /* AppDelegate.swift in Sources */,
 				D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */,
 				BB9F4CEB1F0DDD4200650829 /* UIView.swift in Sources */,
+				D604CCE324A89EDE006927DE /* SwiftUIViewModel.swift in Sources */,
 				BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */,
 				BBD637F21EB0ACA4002CF131 /* CustomRectView.swift in Sources */,
 			);
@@ -619,7 +631,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.jell.swiftstudy.SwiftStudyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftStudy.app/SwiftStudy";
 			};
 			name = Debug;
@@ -634,7 +646,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.jell.swiftstudy.SwiftStudyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftStudy.app/SwiftStudy";
 			};
 			name = Release;
@@ -648,7 +660,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.jell.swiftstudy.SwiftStudyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = SwiftStudy;
 			};
 			name = Debug;
@@ -662,7 +674,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.jell.swiftstudy.SwiftStudyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = SwiftStudy;
 			};
 			name = Release;

@@ -61,7 +61,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let vc : CategoryViewController = self.storyboard?.instantiateViewController(withIdentifier: "category") as! CategoryViewController
             self.present(vc, animated: true, completion: nil)
         case 5:
-            let vc = UIHostingController(rootView: SwiftUIView())
+            let vc = UIHostingController(rootView: SwiftUIView(viewModel: SwiftUIViewModel()))
             self.present(vc, animated: true, completion: nil)
         default:
             return;
