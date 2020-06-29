@@ -381,3 +381,56 @@ teacher = School.teachers(mystralTeacher)
 //
 //JellColor().printColor()
 //NoColor().printColor()
+
+// MARK: - Struct
+
+/**
+ Struct를 쓰는 case.
+ ------------------------------------------------------------------------
+ 관계된 간단한 값을 캡슐화 하기 위한 것일 때
+ 인스터스가 참조되기 보다 복사되기를 바랄 때
+ 프로퍼티가 참조되기 보다 복사되기를 바랄 때
+ 프로퍼티나 메소드 등을 상속할 필요가 없을 때
+ ------------------------------------------------------------------------------------------------------------
+ */
+struct UserData {
+    var name: String
+    var age: Int
+    mutating func updateUser(_ name: String, _ age: Int) { /// struct는 value type이기 때문에 method안에서 property변경이 불가능. 따라서 mutatng을 붙여줘야 변경이 가능함.
+        self.name = name
+        self.age = age
+        
+        print("name: \(name), age: \(age)")
+    }
+}
+
+var jellUserData = UserData(name: "Jell", age: 20)
+print("name: \(jellUserData.name), age: \(jellUserData.age)")
+var mystralUserData = jellUserData
+mystralUserData.name = "Mystral" /// <- 이 때 복사가 일어남. 이유는 값 복사이면서 copy-on-write이기 때문.
+mystralUserData.age = 32
+
+jellUserData.updateUser("우왕", 33)
+
+// MARK: - Class
+class Phone {
+    var name: String
+    var color: String
+    
+    init(name: String, color: String) {
+        self.name = name
+        self.color = color
+    }
+    
+    func updatePhone(name: String, color: String) {
+        self.name = name
+        self.color = color
+        
+        print("Phone: \(name), color: \(color)")
+    }
+}
+
+let iPhone8 = Phone(name: "iPhone8", color: "red")
+print("Phone: \(iPhone8.name), color: \(iPhone8.color)")
+
+iPhone8.updatePhone(name: "iPphoe8Plus", color: "gold")
