@@ -255,3 +255,129 @@ enum Animal: String {
 
 let animal = Animal.koala
 Animal.etc.printAnimal()
+
+enum Animal2 {
+    case dog
+    case cat
+    case rabbit
+    case etc(String)
+}
+
+let animal2 = Animal2.etc("호랑이")
+switch animal2 {
+
+    case .dog:
+
+        print("개 입니다.")
+
+    case .cat:
+
+        print("고양이 입니다.")
+
+    case .rabbit:
+
+        print("토끼 입니다.")
+
+    case .etc(let etcs):
+
+        print("\(etcs) 입니다.")
+}
+
+// MARK: - Struct
+struct Student {
+    let name: String?
+    let birth: String?
+    let grade: String?
+    let gender: String?
+}
+
+struct Teacher {
+    let name: String?
+    let job: String?
+}
+
+// MARK: - Enum
+enum School {
+    case students(Student)
+    case teachers(Teacher)
+}
+
+// MARK: - Public
+func printStudent(_ student: Student) {
+    guard let name = student.name,
+        let birth = student.birth,
+        let grade = student.grade,
+        let gender = student.gender
+        else {return}
+    
+    print("이름: \(name), 생년월일: \(birth), 학년: \(grade), 성별: \(gender)")
+}
+
+func printTeacher(_ teacher: Teacher) {
+    guard let name = teacher.name,
+        let job = teacher.job
+        else {return}
+    
+    print("선생님 성함: \(name), 선생님 과목: \(job)")
+}
+
+// MARK: - Property
+// student 초기값 설정
+let jellStudent = Student(name: "Jell", birth: "1995.02.27", grade: "3", gender: "남")
+// teacher 초기값 설정
+let mystralTeacher = Teacher(name: "Mystral", job: "개발")
+var student: School? {
+    didSet {
+        // student 연관값 수신
+        guard case .students(let student)? = student
+            else {return}
+        printStudent(student)
+    }
+}
+
+var teacher: School? {
+    didSet {
+        // teacher 연관값 수신
+        guard case .teachers(let teacher)? = teacher
+            else {return}
+        printTeacher(teacher)
+    }
+}
+
+student = School.students(jellStudent)
+teacher = School.teachers(mystralTeacher)
+
+//enum Result {
+//    case success(T)
+//    case failure
+//}
+//
+//protocol ColorProtocol {
+//    func getColor() -> Result<String>
+//}
+//
+//extension ColorProtocol {
+//    func printColor() {
+//        switch getColor() {
+//        case .success(let color):
+//            print("색: \(color)")
+//        case .failure:
+//            print("색이 아님 ㅋㅋㅋㅋ")
+//        }
+//    }
+//}
+//
+//class JellColor: ColorProtocol {
+//    func getColor() -> Result<String> {
+//        return .success("빨강")
+//    }
+//}
+//
+//class NoColor: ColorProtocol {
+//    func getColor() -> Result<String> {
+//        return .failure
+//    }
+//}
+//
+//JellColor().printColor()
+//NoColor().printColor()
