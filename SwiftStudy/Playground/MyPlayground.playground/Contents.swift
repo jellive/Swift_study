@@ -434,3 +434,15 @@ let iPhone8 = Phone(name: "iPhone8", color: "red")
 print("Phone: \(iPhone8.name), color: \(iPhone8.color)")
 
 iPhone8.updatePhone(name: "iPphoe8Plus", color: "gold")
+
+// MARK: - Generic
+
+struct Stack<T> {
+    var items = [T]()
+    mutating func push(item: T) {
+        items.append(item)
+    }
+    mutating func pop() -> T {
+        return items.removeLast()
+    }
+}
