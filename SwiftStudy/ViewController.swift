@@ -21,7 +21,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Do any additional setup after loading the view, typically from a nib.
         print("hihihi");
         
-        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "SwiftUI-Combine")
+        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "SwiftUI-Combine", "Landmark list")
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,6 +65,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             self.present(vc, animated: true, completion: nil)
         case 6:
             let vc = UIHostingController(rootView: SwiftUICombineView(viewModel: SwiftUICombineViewModel()))
+            self.present(vc, animated: true, completion: nil)
+        case 7:
+            let vc = UIHostingController(rootView: LandmarkList().environmentObject(UserData()))
             self.present(vc, animated: true, completion: nil)
         default:
             return;

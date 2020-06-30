@@ -32,6 +32,7 @@
 		028AFB6C24AB0E9600661743 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB6B24AB0E9500661743 /* Data.swift */; };
 		028AFB6E24AB123500661743 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB6D24AB123500661743 /* LandmarkRow.swift */; };
 		028AFB7024AB14E000661743 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB6F24AB14E000661743 /* LandmarkList.swift */; };
+		028AFB7224AB363700661743 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB7124AB363700661743 /* UserData.swift */; };
 		559D35BB67E2AD7148D3EC4E /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9B8145D701B517DA8A7295 /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
@@ -95,6 +96,7 @@
 		028AFB6B24AB0E9500661743 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		028AFB6D24AB123500661743 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		028AFB6F24AB14E000661743 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		028AFB7124AB363700661743 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		3A21B69A0F2C9C51D8863637 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		6D3CA166306BD1A5D6E38A11 /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		8A9B8145D701B517DA8A7295 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +172,7 @@
 				028AFB6924AB0DF200661743 /* LandmarkDetail.swift */,
 				028AFB6D24AB123500661743 /* LandmarkRow.swift */,
 				028AFB6F24AB14E000661743 /* LandmarkList.swift */,
+				028AFB7124AB363700661743 /* UserData.swift */,
 			);
 			path = "SwiftUI-tutorial";
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				028AFB3B24AAC5B300661743 /* SwiftUICombineView.swift in Sources */,
 				D604CCE324A89EDE006927DE /* SwiftUIViewModel.swift in Sources */,
 				BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */,
+				028AFB7224AB363700661743 /* UserData.swift in Sources */,
 				028AFB3D24AACC3900661743 /* SwiftUICombineViewModel.swift in Sources */,
 				028AFB4924AAF8D700661743 /* CircleImage.swift in Sources */,
 				028AFB7024AB14E000661743 /* LandmarkList.swift in Sources */,
