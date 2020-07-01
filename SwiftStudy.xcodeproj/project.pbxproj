@@ -38,6 +38,8 @@
 		028AFB8824AC658300661743 /* umbagog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 028AFB7C24AC658200661743 /* umbagog.jpg */; };
 		028AFB8B24AC658300661743 /* turtlerock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 028AFB7F24AC658200661743 /* turtlerock.jpg */; };
 		028AFB8F24AC658300661743 /* rainbowlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 028AFB8324AC658200661743 /* rainbowlake.jpg */; };
+		028AFB9224AC682600661743 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB9124AC682600661743 /* Badge.swift */; };
+		028AFB9424AC68D100661743 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB9324AC68D100661743 /* HexagonParameters.swift */; };
 		559D35BB67E2AD7148D3EC4E /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9B8145D701B517DA8A7295 /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
@@ -102,6 +104,8 @@
 		028AFB7C24AC658200661743 /* umbagog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = umbagog.jpg; path = ../../../../../../Users/yoohg/Downloads/HandlingUserInput/Complete/Landmarks/Landmarks/Resources/umbagog.jpg; sourceTree = "<group>"; };
 		028AFB7F24AC658200661743 /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = turtlerock.jpg; path = ../../../../../../Users/yoohg/Downloads/HandlingUserInput/Complete/Landmarks/Landmarks/Resources/turtlerock.jpg; sourceTree = "<group>"; };
 		028AFB8324AC658200661743 /* rainbowlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rainbowlake.jpg; path = ../../../../../../Users/yoohg/Downloads/HandlingUserInput/Complete/Landmarks/Landmarks/Resources/rainbowlake.jpg; sourceTree = "<group>"; };
+		028AFB9124AC682600661743 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		028AFB9324AC68D100661743 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 		3A21B69A0F2C9C51D8863637 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		6D3CA166306BD1A5D6E38A11 /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		8A9B8145D701B517DA8A7295 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +207,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		028AFB9024AC680500661743 /* SwiftUI-shape */ = {
+			isa = PBXGroup;
+			children = (
+				028AFB9124AC682600661743 /* Badge.swift */,
+				028AFB9324AC68D100661743 /* HexagonParameters.swift */,
+			);
+			path = "SwiftUI-shape";
+			sourceTree = "<group>";
+		};
 		B3BE3F1F3DD3F96DABE4596F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +302,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				028AFB9024AC680500661743 /* SwiftUI-shape */,
 				028AFB4524AAF8AD00661743 /* Resources */,
 				028AFB4224AAE6A800661743 /* SwiftUI-tutorial */,
 				D604CCE124A86D82006927DE /* SwiftUI-combine */,
@@ -554,6 +568,8 @@
 				028AFB7224AB363700661743 /* UserData.swift in Sources */,
 				028AFB3D24AACC3900661743 /* SwiftUICombineViewModel.swift in Sources */,
 				028AFB4924AAF8D700661743 /* CircleImage.swift in Sources */,
+				028AFB9224AC682600661743 /* Badge.swift in Sources */,
+				028AFB9424AC68D100661743 /* HexagonParameters.swift in Sources */,
 				028AFB7024AB14E000661743 /* LandmarkList.swift in Sources */,
 				028AFB4424AAE6B600661743 /* SwiftUITutorialView.swift in Sources */,
 				BBD637F21EB0ACA4002CF131 /* CustomRectView.swift in Sources */,
