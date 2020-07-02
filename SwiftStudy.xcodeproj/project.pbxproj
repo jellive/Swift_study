@@ -40,6 +40,9 @@
 		028AFB8F24AC658300661743 /* rainbowlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 028AFB8324AC658200661743 /* rainbowlake.jpg */; };
 		028AFB9224AC682600661743 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB9124AC682600661743 /* Badge.swift */; };
 		028AFB9424AC68D100661743 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB9324AC68D100661743 /* HexagonParameters.swift */; };
+		028AFB9624AD675200661743 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB9524AD675200661743 /* BadgeBackground.swift */; };
+		028AFB9824AD67B000661743 /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB9724AD67B000661743 /* BadgeSymbol.swift */; };
+		028AFB9A24AD85B000661743 /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB9924AD85B000661743 /* RotatedBadgeSymbol.swift */; };
 		559D35BB67E2AD7148D3EC4E /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9B8145D701B517DA8A7295 /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
@@ -106,6 +109,9 @@
 		028AFB8324AC658200661743 /* rainbowlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rainbowlake.jpg; path = ../../../../../../Users/yoohg/Downloads/HandlingUserInput/Complete/Landmarks/Landmarks/Resources/rainbowlake.jpg; sourceTree = "<group>"; };
 		028AFB9124AC682600661743 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		028AFB9324AC68D100661743 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
+		028AFB9524AD675200661743 /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
+		028AFB9724AD67B000661743 /* BadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
+		028AFB9924AD85B000661743 /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
 		3A21B69A0F2C9C51D8863637 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		6D3CA166306BD1A5D6E38A11 /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		8A9B8145D701B517DA8A7295 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +218,9 @@
 			children = (
 				028AFB9124AC682600661743 /* Badge.swift */,
 				028AFB9324AC68D100661743 /* HexagonParameters.swift */,
+				028AFB9524AD675200661743 /* BadgeBackground.swift */,
+				028AFB9724AD67B000661743 /* BadgeSymbol.swift */,
+				028AFB9924AD85B000661743 /* RotatedBadgeSymbol.swift */,
 			);
 			path = "SwiftUI-shape";
 			sourceTree = "<group>";
@@ -547,6 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				028AFB9A24AD85B000661743 /* RotatedBadgeSymbol.swift in Sources */,
 				021E5621249B584500AB89F3 /* SecondSwiftUIView.swift in Sources */,
 				BB5A800D1E96065100000670 /* RealmViewController.swift in Sources */,
 				021E561B249B3A2100AB89F3 /* SwiftUIView.swift in Sources */,
@@ -568,7 +578,9 @@
 				028AFB7224AB363700661743 /* UserData.swift in Sources */,
 				028AFB3D24AACC3900661743 /* SwiftUICombineViewModel.swift in Sources */,
 				028AFB4924AAF8D700661743 /* CircleImage.swift in Sources */,
+				028AFB9824AD67B000661743 /* BadgeSymbol.swift in Sources */,
 				028AFB9224AC682600661743 /* Badge.swift in Sources */,
+				028AFB9624AD675200661743 /* BadgeBackground.swift in Sources */,
 				028AFB9424AC68D100661743 /* HexagonParameters.swift in Sources */,
 				028AFB7024AB14E000661743 /* LandmarkList.swift in Sources */,
 				028AFB4424AAE6B600661743 /* SwiftUITutorialView.swift in Sources */,

@@ -9,36 +9,29 @@
 import SwiftUI
 
 struct Badge: View {
-    var body: some View {
-        GeometryReader { geometry in
-            Path { path in
-                var width: CGFloat = min(geometry.size.width, geometry.size.height)
-                let height = width
-                path.move(to: CGPoint(x: width * 0.95, y: height * (0.20 + HexagonParameters.adjustment)))
-                
-                HexagonParameters.points.forEach {
-                    path.addLine(to:
-                        .init(
-                            x: width * $0.useWidth.0 * $0.xFactors.0,
-                            y: height * $0.useHeight.0 * $0.yFactors.0
-                        )
-                    )
-                    
-                    path.addQuadCurve(
-                        to: .init(
-                            x: width * $0.useWidth.1 * $0.xFactors.1,
-                            y: height * $0.useHeight.1 * $0.yFactors.1
-                        ),
-                        control: .init(
-                            x: width * $0.useWidth.2 * $0.xFactors.2,
-                            y: height * $0.useHeight.2 * $0.yFactors.2
-                        ))
-                }
-            }
-            .fill(Color.black)
+    static let rotationCount = 8
+    
+    var badgeSymbols: some View {
+        ForEach(0..<Badge.rotationCount) {i in
+            RotatedBadgeSymbol(angle: .degrees(Double(i) / Double(Badge.rotationCount)) * 360.0)
+            .opacity(0.5)
             
         }
     }
+    
+    var body: some View {
+        ZStack {
+            BadgeBackground()
+            
+            GeometryReader { geometry in
+                self.badgeSymbols
+                    .scaleEffect(1.0 / 4.0, anchor: .top)
+                    .position(x: geometry.size.width / 2.0, y: (3.0 / 4.0) * geometry.size.height)
+            }
+        }
+    .scaledToFit()
+    }
+    
 }
 
 struct Badge_Previews: PreviewProvider {
