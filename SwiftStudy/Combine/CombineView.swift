@@ -10,6 +10,8 @@ import SwiftUI
 
 
 struct CombineView: View {
+//    @EnvironmentObject var controller: CombineController
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -17,6 +19,8 @@ struct CombineView: View {
 
 struct CombineView_Previews: PreviewProvider {
     static var previews: some View {
-        CombineView()
+        CombineView(
+//            controller: CombineController()
+        )
     }
 }
