@@ -55,7 +55,7 @@
 		028AFBB724ADCEBA00661743 /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBB624ADCEBA00661743 /* HikeBadge.swift */; };
 		028AFBB924ADD19A00661743 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBB824ADD19A00661743 /* ProfileEditor.swift */; };
 		028AFBC424AEBA2700661743 /* CombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBC224AEBA2700661743 /* CombineView.swift */; };
-		028AFBC624AEBBF000661743 /* CombineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBC524AEBBF000661743 /* CombineController.swift */; };
+		028AFBC624AEBBF000661743 /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBC524AEBBF000661743 /* CombineViewController.swift */; };
 		028AFBC924AEBE2700661743 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBC824AEBE2700661743 /* PageViewController.swift */; };
 		028AFBCB24AEBF2D00661743 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBCA24AEBF2D00661743 /* PageView.swift */; };
 		028AFBCD24AEC43D00661743 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBCC24AEC43D00661743 /* FeatureCard.swift */; };
@@ -63,6 +63,10 @@
 		028AFBD224AEC50A00661743 /* turtlerock_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 028AFBCF24AEC50A00661743 /* turtlerock_feature.jpg */; };
 		028AFBD324AEC50A00661743 /* charleyrivers_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 028AFBD024AEC50A00661743 /* charleyrivers_feature.jpg */; };
 		028AFBD524AED51900661743 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBD424AED51900661743 /* PageControl.swift */; };
+		028AFBD724AF0B9B00661743 /* CombineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBD624AF0B9B00661743 /* CombineTextView.swift */; };
+		028AFBDD24AF1B0300661743 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBDC24AF1B0300661743 /* Repository.swift */; };
+		028AFBDF24AF1B3200661743 /* RxGithubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBDE24AF1B3200661743 /* RxGithubViewModel.swift */; };
+		028AFBE124AF1BA400661743 /* RxGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBE024AF1BA400661743 /* RxGithubViewController.swift */; };
 		559D35BB67E2AD7148D3EC4E /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9B8145D701B517DA8A7295 /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
@@ -146,7 +150,7 @@
 		028AFBB624ADCEBA00661743 /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadge.swift; sourceTree = "<group>"; };
 		028AFBB824ADD19A00661743 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		028AFBC224AEBA2700661743 /* CombineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineView.swift; sourceTree = "<group>"; };
-		028AFBC524AEBBF000661743 /* CombineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineController.swift; sourceTree = "<group>"; };
+		028AFBC524AEBBF000661743 /* CombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
 		028AFBC824AEBE2700661743 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		028AFBCA24AEBF2D00661743 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		028AFBCC24AEC43D00661743 /* FeatureCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
@@ -154,6 +158,10 @@
 		028AFBCF24AEC50A00661743 /* turtlerock_feature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtlerock_feature.jpg; sourceTree = "<group>"; };
 		028AFBD024AEC50A00661743 /* charleyrivers_feature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers_feature.jpg; sourceTree = "<group>"; };
 		028AFBD424AED51900661743 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		028AFBD624AF0B9B00661743 /* CombineTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTextView.swift; sourceTree = "<group>"; };
+		028AFBDC24AF1B0300661743 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		028AFBDE24AF1B3200661743 /* RxGithubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxGithubViewModel.swift; sourceTree = "<group>"; };
+		028AFBE024AF1BA400661743 /* RxGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxGithubViewController.swift; sourceTree = "<group>"; };
 		3A21B69A0F2C9C51D8863637 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		6D3CA166306BD1A5D6E38A11 /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		8A9B8145D701B517DA8A7295 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -308,7 +316,8 @@
 			isa = PBXGroup;
 			children = (
 				028AFBC224AEBA2700661743 /* CombineView.swift */,
-				028AFBC524AEBBF000661743 /* CombineController.swift */,
+				028AFBC524AEBBF000661743 /* CombineViewController.swift */,
+				028AFBD624AF0B9B00661743 /* CombineTextView.swift */,
 			);
 			path = Combine;
 			sourceTree = "<group>";
@@ -322,6 +331,16 @@
 				028AFBD424AED51900661743 /* PageControl.swift */,
 			);
 			path = "SwiftUI-UIKit";
+			sourceTree = "<group>";
+		};
+		028AFBDB24AF1AF300661743 /* RxSwift-github */ = {
+			isa = PBXGroup;
+			children = (
+				028AFBDC24AF1B0300661743 /* Repository.swift */,
+				028AFBDE24AF1B3200661743 /* RxGithubViewModel.swift */,
+				028AFBE024AF1BA400661743 /* RxGithubViewController.swift */,
+			);
+			path = "RxSwift-github";
 			sourceTree = "<group>";
 		};
 		B3BE3F1F3DD3F96DABE4596F /* Pods */ = {
@@ -410,6 +429,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				028AFBDB24AF1AF300661743 /* RxSwift-github */,
 				028AFBC724AEBDDA00661743 /* SwiftUI-UIKit */,
 				028AFBC024AEBA2700661743 /* Combine */,
 				028AFBAF24ADCBBD00661743 /* SwiftUI-UIControl */,
@@ -646,11 +666,17 @@
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -668,6 +694,7 @@
 				028AFBB924ADD19A00661743 /* ProfileEditor.swift in Sources */,
 				028AFBCD24AEC43D00661743 /* FeatureCard.swift in Sources */,
 				028AFB9D24ADA3E700661743 /* Data.swift in Sources */,
+				028AFBE124AF1BA400661743 /* RxGithubViewController.swift in Sources */,
 				021E5621249B584500AB89F3 /* SecondSwiftUIView.swift in Sources */,
 				BB5A800D1E96065100000670 /* RealmViewController.swift in Sources */,
 				021E561B249B3A2100AB89F3 /* SwiftUIView.swift in Sources */,
@@ -675,9 +702,10 @@
 				028AFBA524ADA54100661743 /* Hike.swift in Sources */,
 				BBD637F01EB0AB60002CF131 /* IBDesignableViewController.swift in Sources */,
 				D6C62F511E797D5E007D497A /* ViewController.swift in Sources */,
-				028AFBC624AEBBF000661743 /* CombineController.swift in Sources */,
+				028AFBC624AEBBF000661743 /* CombineViewController.swift in Sources */,
 				BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */,
 				028AFB6E24AB123500661743 /* LandmarkRow.swift in Sources */,
+				028AFBDD24AF1B0300661743 /* Repository.swift in Sources */,
 				BB9F4CE91F0DDCC400650829 /* CategoryViewController.swift in Sources */,
 				028AFB6A24AB0DF200661743 /* LandmarkDetail.swift in Sources */,
 				028AFB4B24AB070200661743 /* MapView.swift in Sources */,
@@ -686,6 +714,7 @@
 				BB9F4CEB1F0DDD4200650829 /* UIView.swift in Sources */,
 				028AFBA124ADA42300661743 /* HikeView.swift in Sources */,
 				028AFB3B24AAC5B300661743 /* SwiftUICombineView.swift in Sources */,
+				028AFBDF24AF1B3200661743 /* RxGithubViewModel.swift in Sources */,
 				D604CCE324A89EDE006927DE /* SwiftUIViewModel.swift in Sources */,
 				028AFBA924ADA62900661743 /* GraphCapsule.swift in Sources */,
 				BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */,
@@ -693,6 +722,7 @@
 				028AFBCB24AEBF2D00661743 /* PageView.swift in Sources */,
 				028AFBC424AEBA2700661743 /* CombineView.swift in Sources */,
 				028AFB3D24AACC3900661743 /* SwiftUICombineViewModel.swift in Sources */,
+				028AFBD724AF0B9B00661743 /* CombineTextView.swift in Sources */,
 				028AFBD524AED51900661743 /* PageControl.swift in Sources */,
 				028AFB4924AAF8D700661743 /* CircleImage.swift in Sources */,
 				028AFB9824AD67B000661743 /* BadgeSymbol.swift in Sources */,

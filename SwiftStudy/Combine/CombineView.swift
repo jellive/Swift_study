@@ -9,18 +9,22 @@
 import SwiftUI
 
 
-struct CombineView: View {
-//    @EnvironmentObject var controller: CombineController
+struct CombineView<Page: View>: View {
+    var viewController: UIHostingController<Page>
+    @State var hello: String = "hello"
+    
+    init (view: Page) {
+        self.viewController =
+            UIHostingController(rootView: view )
+    }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        CombineViewController(text: $hello)
     }
 }
 
 struct CombineView_Previews: PreviewProvider {
     static var previews: some View {
-        CombineView(
-//            controller: CombineController()
-        )
+        CombineView(view: CombineTextView(hello: "hello"))
     }
 }

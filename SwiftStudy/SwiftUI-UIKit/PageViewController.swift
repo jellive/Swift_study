@@ -51,7 +51,6 @@ struct PageViewController: UIViewControllerRepresentable {
             if index + 1 == parent.controllers.count {
                 return parent.controllers.first
             }
-            
             return parent.controllers[index + 1]
         }
         
