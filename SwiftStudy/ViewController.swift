@@ -21,7 +21,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Do any additional setup after loading the view, typically from a nib.
         print("hihihi");
         
-        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "SwiftUI-Combine", "Landmark list", "Rx-Github")
+        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Rx-Github", "Local Push")
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,14 +64,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let vc = UIHostingController(rootView: SwiftUIView(viewModel: SwiftUIViewModel()))
             self.present(vc, animated: true, completion: nil)
         case 6:
-            let vc = UIHostingController(rootView: SwiftUICombineView(viewModel: SwiftUICombineViewModel()))
-            self.present(vc, animated: true, completion: nil)
-        case 7:
             let vc = UIHostingController(rootView: LandmarkList().environmentObject(UserData()))
             self.present(vc, animated: true, completion: nil)
-        case 8:
+        case 7:
             let vc = self.storyboard?
                 .instantiateViewController(withIdentifier: "rxgithub") as! RxGithubViewController
+            self.present(vc, animated: true, completion: nil)
+        case 8:
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "localpush") as! LocalPushViewController
             self.present(vc, animated: true, completion: nil)
         default:
             return;
