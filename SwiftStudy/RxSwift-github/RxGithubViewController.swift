@@ -17,7 +17,8 @@ class RxGithubViewController: UIViewController {
     
     let searchController = UISearchController(searchResultsController: nil)
     var searchBar: UISearchBar {
-        return searchController.searchBar
+        return searchController.searchBar // 기본으로 검색 창이 제공되어 있음. 그걸 쓰면 됨.
+        // 근데 왜 주입으로는 안되지? getter로만 되는건가? -> 객체끼리는 초기화 전에 직접 참조가 안되므로 우회하는 방법!
     }
     
     var viewModel = RxGithubViewModel()
@@ -26,7 +27,7 @@ class RxGithubViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureSearchController()
+        configureSearchController() // UISearchController를 설정함.
         
         viewModel.data.drive(tableView.rx.items(cellIdentifier: "Cell")) {_, repository, cell in
             cell.textLabel?.text = repository.repoName
@@ -45,9 +46,9 @@ class RxGithubViewController: UIViewController {
     }
     
     func configureSearchController() {
-        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.obscuresBackgroundDuringPresentation = false // UISearchController가 뷰를 흐리게 하는 걸 막는다.
         searchBar.showsCancelButton = true
-        searchBar.text = "Jell"
+        searchBar.text = "jellive"
         searchBar.placeholder = "Enter GitHub ID, e.g., \"jellive\""
         tableView.tableHeaderView = searchController.searchBar
         definesPresentationContext = true

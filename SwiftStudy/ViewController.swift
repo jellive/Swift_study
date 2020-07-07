@@ -8,9 +8,11 @@
 
 import UIKit
 import SwiftUI
+//import RxSwift
+//import Foundation
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
-
+    
     @IBOutlet weak var mainCollectionView: UICollectionView!
     
     var menuArray : NSArray = []
@@ -21,9 +23,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Do any additional setup after loading the view, typically from a nib.
         print("hihihi");
         
-        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "SwiftUI-Combine", "Landmark list", "Rx-Github")
+//        UIDevice.rx.orientation
+//            .subscribe(onNext: { current in
+//                switch current {
+//                case .landscape:
+//                    print("landscape")
+//                case .portrait:
+//                    print("portrait")
+//                }
+//            })
+        
+        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "SwiftUI-Combine", "Landmark list", "Rx-Github", "Rx-City")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -38,7 +50,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let mainCollectionViewCell : UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "main_collection_view_cell", for: indexPath)
         let label : UILabel = mainCollectionViewCell.viewWithTag(2) as! UILabel;
         label.text = (menuArray.object(at: indexPath.row) as! String);
-
+        
         return mainCollectionViewCell;
     }
     
@@ -73,11 +85,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let vc = self.storyboard?
                 .instantiateViewController(withIdentifier: "rxgithub") as! RxGithubViewController
             self.present(vc, animated: true, completion: nil)
+        case 9:
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxcity") as! RxCityViewController
+            self.present(vc, animated: true, completion: nil)
         default:
             return;
         }
     }
-
-
+    
+    
 }
 
