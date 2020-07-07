@@ -23,17 +23,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Do any additional setup after loading the view, typically from a nib.
         print("hihihi");
         
-//        UIDevice.rx.orientation
-//            .subscribe(onNext: { current in
-//                switch current {
-//                case .landscape:
-//                    print("landscape")
-//                case .portrait:
-//                    print("portrait")
-//                }
-//            })
+        //        UIDevice.rx.orientation
+        //            .subscribe(onNext: { current in
+        //                switch current {
+        //                case .landscape:
+        //                    print("landscape")
+        //                case .portrait:
+        //                    print("portrait")
+        //                }
+        //            })
         
-        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "SwiftUI-Combine", "Landmark list", "Rx-Github", "Rx-City")
+        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push", "Rx-Github", "Rx-City")
     }
     
     override func didReceiveMemoryWarning() {
@@ -76,10 +76,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let vc = UIHostingController(rootView: SwiftUIView(viewModel: SwiftUIViewModel()))
             self.present(vc, animated: true, completion: nil)
         case 6:
-            let vc = UIHostingController(rootView: SwiftUICombineView(viewModel: SwiftUICombineViewModel()))
+            let vc = UIHostingController(rootView: LandmarkList().environmentObject(UserData()))
             self.present(vc, animated: true, completion: nil)
         case 7:
-            let vc = UIHostingController(rootView: LandmarkList().environmentObject(UserData()))
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "localpush") as! LocalPushViewController
             self.present(vc, animated: true, completion: nil)
         case 8:
             let vc = self.storyboard?
