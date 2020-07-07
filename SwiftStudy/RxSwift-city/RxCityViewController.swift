@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RxCityViewController: UIViewController {
+class RxCityViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tableView: UITableView!
     
@@ -22,7 +22,23 @@ class RxCityViewController: UIViewController {
     let allCities = ["New York", "London", "Oslo", "Warsaw", "Berlin", "Praga"]
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        searchController.obscuresBackgroundDuringPresentation = false // UISearchController가 뷰를 흐리게 하는 걸 막는다.
+        searchBar.showsCancelButton = true
+        definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
+        tableView.dataSource = self
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return allCities.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cityPrototypeCell", for: indexPath)
+        cell.textLabel?.text = allCities[indexPath.row]
+        return cell
     }
 }
 
