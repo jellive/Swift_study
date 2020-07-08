@@ -47,6 +47,7 @@
 		028AFBE124AF1BA400661743 /* RxGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBE024AF1BA400661743 /* RxGithubViewController.swift */; };
 		02A31E5324B4649C00D32B41 /* RxCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E5224B4649C00D32B41 /* RxCityViewController.swift */; };
 		02A31E5624B573BB00D32B41 /* RxChameleonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E5524B573BB00D32B41 /* RxChameleonViewController.swift */; };
+		02A31E5824B59F4300D32B41 /* CircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E5724B59F4300D32B41 /* CircleViewModel.swift */; };
 		92F444E4429DEB1B063986B7 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
@@ -144,6 +145,7 @@
 		028AFBE024AF1BA400661743 /* RxGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxGithubViewController.swift; sourceTree = "<group>"; };
 		02A31E5224B4649C00D32B41 /* RxCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCityViewController.swift; sourceTree = "<group>"; };
 		02A31E5524B573BB00D32B41 /* RxChameleonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxChameleonViewController.swift; sourceTree = "<group>"; };
+		02A31E5724B59F4300D32B41 /* CircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewModel.swift; sourceTree = "<group>"; };
 		701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmNumber.swift; path = Realm/RealmNumber.swift; sourceTree = "<group>"; };
 		BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = Drawing/DrawingViewController.swift; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				02A31E5524B573BB00D32B41 /* RxChameleonViewController.swift */,
+				02A31E5724B59F4300D32B41 /* CircleViewModel.swift */,
 			);
 			path = "RxSwift-Chameleon";
 			sourceTree = "<group>";
@@ -724,6 +727,7 @@
 				028AFBCD24AEC43D00661743 /* FeatureCard.swift in Sources */,
 				028AFB9D24ADA3E700661743 /* Data.swift in Sources */,
 				028AFBE124AF1BA400661743 /* RxGithubViewController.swift in Sources */,
+				02A31E5824B59F4300D32B41 /* CircleViewModel.swift in Sources */,
 				021E5621249B584500AB89F3 /* SecondSwiftUIView.swift in Sources */,
 				BB5A800D1E96065100000670 /* RealmViewController.swift in Sources */,
 				021E561B249B3A2100AB89F3 /* SwiftUIView.swift in Sources */,
