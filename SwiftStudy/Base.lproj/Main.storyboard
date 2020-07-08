@@ -367,6 +367,36 @@
             </objects>
             <point key="canvasLocation" x="3056" y="38"/>
         </scene>
+        <!--Issue List View Controller-->
+        <scene sceneID="2FW-he-hr5">
+            <objects>
+                <viewController storyboardIdentifier="rxissue" id="zpS-3F-RFt" customClass="IssueListViewController" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YAt-PE-RiU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JYS-eQ-qLB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JYS-eQ-qLB" firstAttribute="centerY" secondItem="cun-Hi-eOV" secondAttribute="centerY" id="3cw-TX-Qjc"/>
+                            <constraint firstItem="JYS-eQ-qLB" firstAttribute="height" secondItem="YAt-PE-RiU" secondAttribute="height" id="Q62-0c-2HC"/>
+                            <constraint firstItem="JYS-eQ-qLB" firstAttribute="centerX" secondItem="cun-Hi-eOV" secondAttribute="centerX" id="Rpt-VA-YrL"/>
+                            <constraint firstItem="JYS-eQ-qLB" firstAttribute="width" secondItem="YAt-PE-RiU" secondAttribute="width" id="l8e-pP-Z9q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cun-Hi-eOV"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="JYS-eQ-qLB" id="LDO-si-1gG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wb8-Ou-gz5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3049" y="735"/>
+        </scene>
         <!--0 Repositories-->
         <scene sceneID="fHg-ek-lz9">
             <objects>
