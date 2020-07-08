@@ -35,7 +35,10 @@ class RxCityViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         searchBar
             .rx.text // RxCocoa의 Observable 속성
-        .orEmpty // 옵셔널 해제
+            .orEmpty // 옵셔널 해제
+            .debounce(DispatchTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
+            .distinctUntilChanged() // 새로운 값이 이전과 같으면 무시.
+            .filter{$0.isEmpty} // 새로운 값이 빈 값인지 확인.
             .subscribe(onNext: { [unowned self] query in // 새로운 값에 대한 알림을 받음. unowned는...?
                 print("query: \(query)")
                 self.shownCities = self.allCities.filter { $0.hasPrefix(query) } // 일치하는 친구만 찾아서 shownCities에 쑉
