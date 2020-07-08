@@ -1,4 +1,7 @@
 PODS:
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
   - Realm (5.1.0):
     - Realm/Headers (= 5.1.0)
   - Realm/Headers (5.1.0)
@@ -12,12 +15,14 @@ PODS:
   - RxSwift (5.1.1)
 
 DEPENDENCIES:
+  - ChameleonFramework
   - RealmSwift (~> 5.1.0)
   - RxCocoa
   - RxSwift (~> 5.1.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - ChameleonFramework
     - Realm
     - RealmSwift
     - RxCocoa
@@ -25,12 +30,13 @@ SPEC REPOS:
     - RxSwift
 
 SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Realm: bdea546851e37b4cf0a2400cef115c7c26fda488
   RealmSwift: 70945aa168db93b215c460e9c8ef680261aa28af
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
-PODFILE CHECKSUM: 0d89fc67ab2d94496f11405ec45cc88355253080
+PODFILE CHECKSUM: 7a8fe6c6062231ce0922fae44ca15632881cbf33
 
 COCOAPODS: 1.9.1

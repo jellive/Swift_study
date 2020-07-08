@@ -46,6 +46,7 @@
 		028AFBDF24AF1B3200661743 /* RxGithubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBDE24AF1B3200661743 /* RxGithubViewModel.swift */; };
 		028AFBE124AF1BA400661743 /* RxGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBE024AF1BA400661743 /* RxGithubViewController.swift */; };
 		02A31E5324B4649C00D32B41 /* RxCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E5224B4649C00D32B41 /* RxCityViewController.swift */; };
+		02A31E5624B573BB00D32B41 /* RxChameleonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E5524B573BB00D32B41 /* RxChameleonViewController.swift */; };
 		92F444E4429DEB1B063986B7 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
@@ -142,6 +143,7 @@
 		028AFBDE24AF1B3200661743 /* RxGithubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxGithubViewModel.swift; sourceTree = "<group>"; };
 		028AFBE024AF1BA400661743 /* RxGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxGithubViewController.swift; sourceTree = "<group>"; };
 		02A31E5224B4649C00D32B41 /* RxCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCityViewController.swift; sourceTree = "<group>"; };
+		02A31E5524B573BB00D32B41 /* RxChameleonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxChameleonViewController.swift; sourceTree = "<group>"; };
 		701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmNumber.swift; path = Realm/RealmNumber.swift; sourceTree = "<group>"; };
 		BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = Drawing/DrawingViewController.swift; sourceTree = "<group>"; };
@@ -348,6 +350,14 @@
 			path = "RxSwift-city";
 			sourceTree = "<group>";
 		};
+		02A31E5424B573A700D32B41 /* RxSwift-Chameleon */ = {
+			isa = PBXGroup;
+			children = (
+				02A31E5524B573BB00D32B41 /* RxChameleonViewController.swift */,
+			);
+			path = "RxSwift-Chameleon";
+			sourceTree = "<group>";
+		};
 		8D1FF8B14FBE33B357CB5F00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +460,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				02A31E5424B573A700D32B41 /* RxSwift-Chameleon */,
 				02A31E5124B4648400D32B41 /* RxSwift-city */,
 				D616938824B1D652009F2EB1 /* Local-push */,
 				028AFBDB24AF1AF300661743 /* RxSwift-github */,
@@ -658,6 +669,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -666,6 +678,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -733,6 +746,7 @@
 				D604CCE324A89EDE006927DE /* SwiftUIViewModel.swift in Sources */,
 				028AFBA924ADA62900661743 /* GraphCapsule.swift in Sources */,
 				BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */,
+				02A31E5624B573BB00D32B41 /* RxChameleonViewController.swift in Sources */,
 				028AFB7224AB363700661743 /* UserData.swift in Sources */,
 				028AFBCB24AEBF2D00661743 /* PageView.swift in Sources */,
 				028AFBC424AEBA2700661743 /* CombineView.swift in Sources */,

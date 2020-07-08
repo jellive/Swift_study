@@ -33,7 +33,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         //                }
         //            })
         
-        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push", "Rx-Github", "Rx-City")
+        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push", "Rx-Github", "Rx-City", "Rx-chameleon")
     }
     
     override func didReceiveMemoryWarning() {
@@ -87,6 +87,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             self.present(vc, animated: true, completion: nil)
         case 9:
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxcity") as! RxCityViewController
+            self.present(vc, animated: true, completion: nil)
+        case 10:
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxchameleon") as! RXChameleonViewController
             self.present(vc, animated: true, completion: nil)
         default:
             return;

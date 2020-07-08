@@ -6,4 +6,5 @@ target 'SwiftStudy' do
     pod 'RealmSwift', '~> 5.1.0'
     pod 'RxSwift', '~> 5.1.0'
     pod 'RxCocoa'
+    pod 'ChameleonFramework'
 end
