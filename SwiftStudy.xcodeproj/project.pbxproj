@@ -50,6 +50,9 @@
 		02A31E5824B59F4300D32B41 /* CircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E5724B59F4300D32B41 /* CircleViewModel.swift */; };
 		02A31E5B24B5AC6000D32B41 /* IssueListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E5A24B5AC6000D32B41 /* IssueListViewController.swift */; };
 		02A31E5D24B5AD8900D32B41 /* Issue_Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E5C24B5AD8900D32B41 /* Issue_Github.swift */; };
+		02A31E5F24B5BF2200D32B41 /* Issue_Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E5E24B5BF2200D32B41 /* Issue_Repository.swift */; };
+		02A31E6124B5BF8700D32B41 /* Issue_Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E6024B5BF8700D32B41 /* Issue_Issue.swift */; };
+		02A31E6324B5C21C00D32B41 /* Issue_IssueTrackerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E6224B5C21C00D32B41 /* Issue_IssueTrackerModel.swift */; };
 		92F444E4429DEB1B063986B7 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
@@ -150,6 +153,9 @@
 		02A31E5724B59F4300D32B41 /* CircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewModel.swift; sourceTree = "<group>"; };
 		02A31E5A24B5AC6000D32B41 /* IssueListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListViewController.swift; sourceTree = "<group>"; };
 		02A31E5C24B5AD8900D32B41 /* Issue_Github.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue_Github.swift; sourceTree = "<group>"; };
+		02A31E5E24B5BF2200D32B41 /* Issue_Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue_Repository.swift; sourceTree = "<group>"; };
+		02A31E6024B5BF8700D32B41 /* Issue_Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue_Issue.swift; sourceTree = "<group>"; };
+		02A31E6224B5C21C00D32B41 /* Issue_IssueTrackerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue_IssueTrackerModel.swift; sourceTree = "<group>"; };
 		701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmNumber.swift; path = Realm/RealmNumber.swift; sourceTree = "<group>"; };
 		BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = Drawing/DrawingViewController.swift; sourceTree = "<group>"; };
@@ -370,6 +376,9 @@
 			children = (
 				02A31E5A24B5AC6000D32B41 /* IssueListViewController.swift */,
 				02A31E5C24B5AD8900D32B41 /* Issue_Github.swift */,
+				02A31E5E24B5BF2200D32B41 /* Issue_Repository.swift */,
+				02A31E6024B5BF8700D32B41 /* Issue_Issue.swift */,
+				02A31E6224B5C21C00D32B41 /* Issue_IssueTrackerModel.swift */,
 			);
 			path = "RxSwift-IssueTracker";
 			sourceTree = "<group>";
@@ -754,6 +763,7 @@
 				02A31E5824B59F4300D32B41 /* CircleViewModel.swift in Sources */,
 				021E5621249B584500AB89F3 /* SecondSwiftUIView.swift in Sources */,
 				BB5A800D1E96065100000670 /* RealmViewController.swift in Sources */,
+				02A31E6324B5C21C00D32B41 /* Issue_IssueTrackerModel.swift in Sources */,
 				021E561B249B3A2100AB89F3 /* SwiftUIView.swift in Sources */,
 				028AFB4D24AB0C6800661743 /* Landmark.swift in Sources */,
 				028AFBA524ADA54100661743 /* Hike.swift in Sources */,
@@ -779,11 +789,13 @@
 				02A31E5B24B5AC6000D32B41 /* IssueListViewController.swift in Sources */,
 				028AFBCB24AEBF2D00661743 /* PageView.swift in Sources */,
 				028AFBC424AEBA2700661743 /* CombineView.swift in Sources */,
+				02A31E5F24B5BF2200D32B41 /* Issue_Repository.swift in Sources */,
 				028AFBD724AF0B9B00661743 /* CombineTextView.swift in Sources */,
 				028AFBD524AED51900661743 /* PageControl.swift in Sources */,
 				028AFB4924AAF8D700661743 /* CircleImage.swift in Sources */,
 				028AFB9824AD67B000661743 /* BadgeSymbol.swift in Sources */,
 				028AFBB124ADCBD000661743 /* ProfileHost.swift in Sources */,
+				02A31E6124B5BF8700D32B41 /* Issue_Issue.swift in Sources */,
 				028AFB9224AC682600661743 /* Badge.swift in Sources */,
 				028AFBAC24ADB18700661743 /* Home.swift in Sources */,
 				02A31E5324B4649C00D32B41 /* RxCityViewController.swift in Sources */,
