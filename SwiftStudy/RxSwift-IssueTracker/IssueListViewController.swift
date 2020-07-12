@@ -15,7 +15,7 @@ class IssueListViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     let searchController = UISearchController(searchResultsController: nil)
-    var searchBar: UISearchBar {
+    var searchBar: UISearchBar { // set은 어떻게 넣지?
         return searchController.searchBar
     }
     let disposeBag = DisposeBag()
