@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020DCC5024BEC5160007A0C8 /* Moya_MyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020DCC4F24BEC5160007A0C8 /* Moya_MyService.swift */; };
 		021E561B249B3A2100AB89F3 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E561A249B3A2100AB89F3 /* SwiftUIView.swift */; };
 		021E5621249B584500AB89F3 /* SecondSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E5620249B584500AB89F3 /* SecondSwiftUIView.swift */; };
 		028AFB4424AAE6B600661743 /* SwiftUITutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB4324AAE6B600661743 /* SwiftUITutorialView.swift */; };
@@ -108,6 +109,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020DCC4F24BEC5160007A0C8 /* Moya_MyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moya_MyService.swift; sourceTree = "<group>"; };
 		021E561A249B3A2100AB89F3 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		021E5620249B584500AB89F3 /* SecondSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSwiftUIView.swift; sourceTree = "<group>"; };
 		028AFB3A24AAC5B300661743 /* SwiftUICombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUICombineView.swift; path = "../../../../../../Users/yoohg/Downloads/CombineWeatherApp/CombineWeatherApp-Starter/SwiftUICombineView.swift"; sourceTree = "<group>"; };
@@ -228,6 +230,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		020DCC4E24BEC1350007A0C8 /* Moya-base */ = {
+			isa = PBXGroup;
+			children = (
+				020DCC4F24BEC5160007A0C8 /* Moya_MyService.swift */,
+			);
+			path = "Moya-base";
+			sourceTree = "<group>";
+		};
 		021E5619249B3A0800AB89F3 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,6 +495,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				020DCC4E24BEC1350007A0C8 /* Moya-base */,
 				02A31E5924B5AC4C00D32B41 /* RxSwift-IssueTracker */,
 				02A31E5424B573A700D32B41 /* RxSwift-Chameleon */,
 				02A31E5124B4648400D32B41 /* RxSwift-city */,
@@ -803,6 +814,7 @@
 				028AFBB724ADCEBA00661743 /* HikeBadge.swift in Sources */,
 				028AFB9424AC68D100661743 /* HexagonParameters.swift in Sources */,
 				028AFBC924AEBE2700661743 /* PageViewController.swift in Sources */,
+				020DCC5024BEC5160007A0C8 /* Moya_MyService.swift in Sources */,
 				028AFB7024AB14E000661743 /* LandmarkList.swift in Sources */,
 				028AFBA724ADA60B00661743 /* HikeDetail.swift in Sources */,
 				028AFBA324ADA47700661743 /* HikeGraph.swift in Sources */,

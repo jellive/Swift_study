@@ -41,6 +41,10 @@ extension Issue_Github: TargetType {
         }
     }
     
+    var parameters: [String: Any]? {
+        return nil
+    }
+    
     var method: Moya.Method {
         return .get
     }

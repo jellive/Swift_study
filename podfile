@@ -9,4 +9,6 @@ target 'SwiftStudy' do
     pod 'ChameleonFramework'
     pod 'Moya-ModelMapper/RxSwift'
     pod 'RxOptional'
+    pod 'Moya'
+    pod 'Moya/RxSwift'
 end

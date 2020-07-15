@@ -37,7 +37,9 @@ PODS:
 
 DEPENDENCIES:
   - ChameleonFramework
+  - Moya
   - Moya-ModelMapper/RxSwift
+  - Moya/RxSwift
   - RealmSwift (~> 5.1.0)
   - RxCocoa
   - RxOptional
@@ -70,6 +72,6 @@ SPEC CHECKSUMS:
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
-PODFILE CHECKSUM: 956b7c5fa55630d2f150f0f09ef9e11371978bcd
+PODFILE CHECKSUM: 00ee7addac340fdb25fe08b62f866b6fa00e6557
 
 COCOAPODS: 1.9.1
