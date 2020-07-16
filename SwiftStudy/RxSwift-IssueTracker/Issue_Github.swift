@@ -71,6 +71,6 @@ extension Issue_Github: TargetType {
     }
     
     var headers: [String : String]? {
-        return nil
+        return ["Content-type": "application/json"]
     }
 }
