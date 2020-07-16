@@ -50,6 +50,7 @@ extension MyService: TargetType {
             return .requestParameters(parameters: ["first_name": firstName, "last_name": lastName], encoding: URLEncoding.queryString)
         case let .createUser(firstName, lastName):
             return .requestParameters(parameters: ["first_name": firstName, "last_name": lastName], encoding: JSONEncoding.default)
+            
         }
     }
     var sampleData: Data {

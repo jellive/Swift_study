@@ -11,4 +11,11 @@ target 'SwiftStudy' do
     pod 'RxOptional'
     pod 'Moya'
     pod 'Moya/RxSwift'
+    pod 'ReactorKit'
+    pod 'SnapKit'
+    pod 'Hero'
+    pod 'lottie-ios'
+    pod 'SwiftLint'
+    pod 'R.swift'
+    
 end
