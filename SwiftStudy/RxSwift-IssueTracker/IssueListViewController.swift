@@ -34,9 +34,23 @@ class IssueListViewController: UIViewController {
         setupRx()
     }
     
+    var issueTrackerModel: IssueTrackerModel!
+    
     func setupRx() {
         // Provider 생성
         provider = MoyaProvider<Issue_Github>()
+        
+        issueTrackerModel = IssueTrackerModel(provider: provider, repositoryName: latestRepositoryName)
+        
+        issueTrackerModel
+            .trackIssues()
+            .bind(to: tableView.rx.items) { (tableView, row, item) -> UITableViewCell in
+                let cell = tableView.dequeueReusableCell(withIdentifier: "issueCell", for: IndexPath(row: row, section: 0))
+                cell.textLabel?.text = item.title
+                
+                return cell
+        }
+        .disposed(by: disposeBag)
         
         // 유저가 셀을 클릭했을 때 테이블 뷰에게 알려줌.
         // 만약 키보드가 있다면 숨김.
