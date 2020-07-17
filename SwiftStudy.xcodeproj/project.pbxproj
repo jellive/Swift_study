@@ -61,6 +61,8 @@
 		02FF187124C14E67005636E7 /* SwiftUIJSONParseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187024C14E67005636E7 /* SwiftUIJSONParseView.swift */; };
 		02FF187424C167DA005636E7 /* SwiftUISpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187324C167DA005636E7 /* SwiftUISpacerView.swift */; };
 		02FF187824C16DD7005636E7 /* SwiftUIAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187724C16DD7005636E7 /* SwiftUIAnimationView.swift */; };
+		02FF187B24C16F84005636E7 /* OO_Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187A24C16F84005636E7 /* OO_Stopwatch.swift */; };
+		02FF187D24C170C0005636E7 /* SwiftUIObservableObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */; };
 		92F444E4429DEB1B063986B7 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
@@ -172,6 +174,8 @@
 		02FF187024C14E67005636E7 /* SwiftUIJSONParseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIJSONParseView.swift; sourceTree = "<group>"; };
 		02FF187324C167DA005636E7 /* SwiftUISpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISpacerView.swift; sourceTree = "<group>"; };
 		02FF187724C16DD7005636E7 /* SwiftUIAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationView.swift; sourceTree = "<group>"; };
+		02FF187A24C16F84005636E7 /* OO_Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OO_Stopwatch.swift; sourceTree = "<group>"; };
+		02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIObservableObjectView.swift; sourceTree = "<group>"; };
 		701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmNumber.swift; path = Realm/RealmNumber.swift; sourceTree = "<group>"; };
 		BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = Drawing/DrawingViewController.swift; sourceTree = "<group>"; };
@@ -449,6 +453,15 @@
 			path = "SwiftUI-Animation";
 			sourceTree = "<group>";
 		};
+		02FF187924C16F59005636E7 /* SwiftUI-ObervableObject */ = {
+			isa = PBXGroup;
+			children = (
+				02FF187A24C16F84005636E7 /* OO_Stopwatch.swift */,
+				02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */,
+			);
+			path = "SwiftUI-ObervableObject";
+			sourceTree = "<group>";
+		};
 		8D1FF8B14FBE33B357CB5F00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -551,6 +564,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				02FF187924C16F59005636E7 /* SwiftUI-ObervableObject */,
 				02FF187624C16DBB005636E7 /* SwiftUI-Animation */,
 				02FF187224C167C2005636E7 /* SwiftUI-spacer */,
 				02FF186F24C14E52005636E7 /* SwiftUI-JSONparse */,
@@ -884,6 +898,7 @@
 				BB9F4CE91F0DDCC400650829 /* CategoryViewController.swift in Sources */,
 				028AFB6A24AB0DF200661743 /* LandmarkDetail.swift in Sources */,
 				02FF187424C167DA005636E7 /* SwiftUISpacerView.swift in Sources */,
+				02FF187B24C16F84005636E7 /* OO_Stopwatch.swift in Sources */,
 				028AFB4B24AB070200661743 /* MapView.swift in Sources */,
 				D6C62F4F1E797D5E007D497A /* AppDelegate.swift in Sources */,
 				D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */,
@@ -911,6 +926,7 @@
 				028AFBAC24ADB18700661743 /* Home.swift in Sources */,
 				02A31E5324B4649C00D32B41 /* RxCityViewController.swift in Sources */,
 				028AFB9624AD675200661743 /* BadgeBackground.swift in Sources */,
+				02FF187D24C170C0005636E7 /* SwiftUIObservableObjectView.swift in Sources */,
 				028AFBB724ADCEBA00661743 /* HikeBadge.swift in Sources */,
 				028AFB9424AC68D100661743 /* HexagonParameters.swift in Sources */,
 				028AFBC924AEBE2700661743 /* PageViewController.swift in Sources */,
