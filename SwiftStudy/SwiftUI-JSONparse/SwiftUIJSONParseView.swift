@@ -46,7 +46,7 @@ struct SwiftUIJSONParseView: View {
             List(fetch.todos) { todo in
                 VStack(alignment: .leading) {
                     Text(todo.title)
-                    Text("\(todo.completed.description)")
+                    Text("\(todo.completed.description)") // print boolean text.
                         .font(.system(size: 11))
                         .foregroundColor(.gray)
                 }
