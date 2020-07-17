@@ -33,7 +33,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         //                }
         //            })
         
-        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push", "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue", "SwiftUI-localpush")
+        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push", "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue", "SwiftUI-localpush", "SwiftUI-JSONParse")
     }
     
     override func didReceiveMemoryWarning() {
@@ -97,6 +97,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         case 12:
             let vc = UIHostingController(rootView: SwiftUILocalPushView())
             self.present(vc, animated: true ){}
+        case 13:
+            let vc = UIHostingController(rootView: SwiftUIJSONParseView())
+            present(vc, animated: true, completion: nil)
         default:
             return;
         }

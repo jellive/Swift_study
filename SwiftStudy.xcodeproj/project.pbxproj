@@ -58,6 +58,7 @@
 		02FF186924C13F21005636E7 /* RxAlamofireViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF186824C13F21005636E7 /* RxAlamofireViewModel.swift */; };
 		02FF186C24C14298005636E7 /* SwiftUILocalPushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF186B24C14298005636E7 /* SwiftUILocalPushView.swift */; };
 		02FF186E24C14B03005636E7 /* applelogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 02FF186D24C14B02005636E7 /* applelogo.png */; };
+		02FF187124C14E67005636E7 /* SwiftUIJSONParseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187024C14E67005636E7 /* SwiftUIJSONParseView.swift */; };
 		92F444E4429DEB1B063986B7 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
@@ -166,6 +167,7 @@
 		02FF186824C13F21005636E7 /* RxAlamofireViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAlamofireViewModel.swift; sourceTree = "<group>"; };
 		02FF186B24C14298005636E7 /* SwiftUILocalPushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILocalPushView.swift; sourceTree = "<group>"; };
 		02FF186D24C14B02005636E7 /* applelogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applelogo.png; sourceTree = "<group>"; };
+		02FF187024C14E67005636E7 /* SwiftUIJSONParseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIJSONParseView.swift; sourceTree = "<group>"; };
 		701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmNumber.swift; path = Realm/RealmNumber.swift; sourceTree = "<group>"; };
 		BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = Drawing/DrawingViewController.swift; sourceTree = "<group>"; };
@@ -419,6 +421,14 @@
 			path = "SwiftUI-LocalPush";
 			sourceTree = "<group>";
 		};
+		02FF186F24C14E52005636E7 /* SwiftUI-JSONparse */ = {
+			isa = PBXGroup;
+			children = (
+				02FF187024C14E67005636E7 /* SwiftUIJSONParseView.swift */,
+			);
+			path = "SwiftUI-JSONparse";
+			sourceTree = "<group>";
+		};
 		8D1FF8B14FBE33B357CB5F00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -521,6 +531,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				02FF186F24C14E52005636E7 /* SwiftUI-JSONparse */,
 				02FF186A24C1426E005636E7 /* SwiftUI-LocalPush */,
 				02FF186524C13C64005636E7 /* RxAlamofire */,
 				020DCC4E24BEC1350007A0C8 /* Moya-base */,
@@ -812,6 +823,7 @@
 				028AFB9A24AD85B000661743 /* RotatedBadgeSymbol.swift in Sources */,
 				028AFBB924ADD19A00661743 /* ProfileEditor.swift in Sources */,
 				028AFBCD24AEC43D00661743 /* FeatureCard.swift in Sources */,
+				02FF187124C14E67005636E7 /* SwiftUIJSONParseView.swift in Sources */,
 				02FF186724C13C80005636E7 /* RxAlamofireView.swift in Sources */,
 				028AFB9D24ADA3E700661743 /* Data.swift in Sources */,
 				028AFBE124AF1BA400661743 /* RxGithubViewController.swift in Sources */,
