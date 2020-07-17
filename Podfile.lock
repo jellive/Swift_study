@@ -33,6 +33,11 @@ PODS:
   - Realm/Headers (5.1.0)
   - RealmSwift (5.1.0):
     - Realm (= 5.1.0)
+  - RxAlamofire (5.6.0):
+    - RxAlamofire/Core (= 5.6.0)
+  - RxAlamofire/Core (5.6.0):
+    - Alamofire (~> 5.1)
+    - RxSwift (~> 5.1)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -57,6 +62,7 @@ DEPENDENCIES:
   - R.swift
   - ReactorKit
   - RealmSwift (~> 5.1.0)
+  - RxAlamofire
   - RxCocoa
   - RxOptional
   - RxSwift (~> 5.1.0)
@@ -77,6 +83,7 @@ SPEC REPOS:
     - ReactorKit
     - Realm
     - RealmSwift
+    - RxAlamofire
     - RxCocoa
     - RxOptional
     - RxRelay
@@ -98,6 +105,7 @@ SPEC CHECKSUMS:
   ReactorKit: 12a93358c554bb3f167b16b14c40374fa9cd5acd
   Realm: bdea546851e37b4cf0a2400cef115c7c26fda488
   RealmSwift: 70945aa168db93b215c460e9c8ef680261aa28af
+  RxAlamofire: f34ddbab56fa2a36f99737f4d4ecc22288a1384f
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
@@ -106,6 +114,6 @@ SPEC CHECKSUMS:
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   WeakMapTable: d0327eda092be6a8f7c532942ae98dc7948f5d32
 
-PODFILE CHECKSUM: d0fa8232a7be99b74278909dc336aff58a978220
+PODFILE CHECKSUM: 5737e5e3c47bc144ac6cba322ef52399cd441c60
 
 COCOAPODS: 1.9.1

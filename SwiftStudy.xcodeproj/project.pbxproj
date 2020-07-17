@@ -54,6 +54,10 @@
 		02A31E5F24B5BF2200D32B41 /* Issue_Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E5E24B5BF2200D32B41 /* Issue_Repository.swift */; };
 		02A31E6124B5BF8700D32B41 /* Issue_Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E6024B5BF8700D32B41 /* Issue_Issue.swift */; };
 		02A31E6324B5C21C00D32B41 /* Issue_IssueTrackerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E6224B5C21C00D32B41 /* Issue_IssueTrackerModel.swift */; };
+		02FF186724C13C80005636E7 /* RxAlamofireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF186624C13C80005636E7 /* RxAlamofireView.swift */; };
+		02FF186924C13F21005636E7 /* RxAlamofireViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF186824C13F21005636E7 /* RxAlamofireViewModel.swift */; };
+		02FF186C24C14298005636E7 /* SwiftUILocalPushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF186B24C14298005636E7 /* SwiftUILocalPushView.swift */; };
+		02FF186E24C14B03005636E7 /* applelogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 02FF186D24C14B02005636E7 /* applelogo.png */; };
 		92F444E4429DEB1B063986B7 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
@@ -158,6 +162,10 @@
 		02A31E5E24B5BF2200D32B41 /* Issue_Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue_Repository.swift; sourceTree = "<group>"; };
 		02A31E6024B5BF8700D32B41 /* Issue_Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue_Issue.swift; sourceTree = "<group>"; };
 		02A31E6224B5C21C00D32B41 /* Issue_IssueTrackerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue_IssueTrackerModel.swift; sourceTree = "<group>"; };
+		02FF186624C13C80005636E7 /* RxAlamofireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAlamofireView.swift; sourceTree = "<group>"; };
+		02FF186824C13F21005636E7 /* RxAlamofireViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAlamofireViewModel.swift; sourceTree = "<group>"; };
+		02FF186B24C14298005636E7 /* SwiftUILocalPushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILocalPushView.swift; sourceTree = "<group>"; };
+		02FF186D24C14B02005636E7 /* applelogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applelogo.png; sourceTree = "<group>"; };
 		701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmNumber.swift; path = Realm/RealmNumber.swift; sourceTree = "<group>"; };
 		BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = Drawing/DrawingViewController.swift; sourceTree = "<group>"; };
@@ -266,6 +274,7 @@
 		028AFB4524AAF8AD00661743 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				02FF186D24C14B02005636E7 /* applelogo.png */,
 				D6E07EAB24B1B5D9009B6FBA /* charleyrivers_feature.jpg */,
 				D6E07EB724B1B5DA009B6FBA /* charleyrivers.jpg */,
 				D6E07EAC24B1B5D9009B6FBA /* chilkoottrail.jpg */,
@@ -393,6 +402,23 @@
 			path = "RxSwift-IssueTracker";
 			sourceTree = "<group>";
 		};
+		02FF186524C13C64005636E7 /* RxAlamofire */ = {
+			isa = PBXGroup;
+			children = (
+				02FF186624C13C80005636E7 /* RxAlamofireView.swift */,
+				02FF186824C13F21005636E7 /* RxAlamofireViewModel.swift */,
+			);
+			path = RxAlamofire;
+			sourceTree = "<group>";
+		};
+		02FF186A24C1426E005636E7 /* SwiftUI-LocalPush */ = {
+			isa = PBXGroup;
+			children = (
+				02FF186B24C14298005636E7 /* SwiftUILocalPushView.swift */,
+			);
+			path = "SwiftUI-LocalPush";
+			sourceTree = "<group>";
+		};
 		8D1FF8B14FBE33B357CB5F00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -495,6 +521,8 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				02FF186A24C1426E005636E7 /* SwiftUI-LocalPush */,
+				02FF186524C13C64005636E7 /* RxAlamofire */,
 				020DCC4E24BEC1350007A0C8 /* Moya-base */,
 				02A31E5924B5AC4C00D32B41 /* RxSwift-IssueTracker */,
 				02A31E5424B573A700D32B41 /* RxSwift-Chameleon */,
@@ -678,6 +706,7 @@
 				D6C62F541E797D5E007D497A /* Main.storyboard in Resources */,
 				D6E07EC724B1B5DA009B6FBA /* lakemcdonald.jpg in Resources */,
 				D6E07EC424B1B5DA009B6FBA /* icybay.jpg in Resources */,
+				02FF186E24C14B03005636E7 /* applelogo.png in Resources */,
 				D6E07EC224B1B5DA009B6FBA /* turtlerock_feature.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -716,6 +745,7 @@
 				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
@@ -736,6 +766,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
@@ -781,6 +812,7 @@
 				028AFB9A24AD85B000661743 /* RotatedBadgeSymbol.swift in Sources */,
 				028AFBB924ADD19A00661743 /* ProfileEditor.swift in Sources */,
 				028AFBCD24AEC43D00661743 /* FeatureCard.swift in Sources */,
+				02FF186724C13C80005636E7 /* RxAlamofireView.swift in Sources */,
 				028AFB9D24ADA3E700661743 /* Data.swift in Sources */,
 				028AFBE124AF1BA400661743 /* RxGithubViewController.swift in Sources */,
 				02A31E5824B59F4300D32B41 /* CircleViewModel.swift in Sources */,
@@ -803,12 +835,14 @@
 				D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */,
 				BB9F4CEB1F0DDD4200650829 /* UIView.swift in Sources */,
 				028AFBA124ADA42300661743 /* HikeView.swift in Sources */,
+				02FF186C24C14298005636E7 /* SwiftUILocalPushView.swift in Sources */,
 				028AFBDF24AF1B3200661743 /* RxGithubViewModel.swift in Sources */,
 				D604CCE324A89EDE006927DE /* SwiftUIViewModel.swift in Sources */,
 				028AFBA924ADA62900661743 /* GraphCapsule.swift in Sources */,
 				BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */,
 				02A31E5624B573BB00D32B41 /* RxChameleonViewController.swift in Sources */,
 				028AFB7224AB363700661743 /* UserData.swift in Sources */,
+				02FF186924C13F21005636E7 /* RxAlamofireViewModel.swift in Sources */,
 				02A31E5B24B5AC6000D32B41 /* IssueListViewController.swift in Sources */,
 				028AFBCB24AEBF2D00661743 /* PageView.swift in Sources */,
 				028AFBC424AEBA2700661743 /* CombineView.swift in Sources */,

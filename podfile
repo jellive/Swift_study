@@ -18,5 +18,5 @@ target 'SwiftStudy' do
     pod 'SwiftLint'
     pod 'R.swift'
     pod 'Alamofire'
-    
+    pod 'RxAlamofire'
 end

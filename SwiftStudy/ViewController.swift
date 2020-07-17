@@ -33,7 +33,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         //                }
         //            })
         
-        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push", "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue")
+        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push", "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue", "SwiftUI-localpush")
     }
     
     override func didReceiveMemoryWarning() {
@@ -94,6 +94,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         case 11:
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxissue") as! IssueListViewController
             self.present(vc, animated: true, completion: nil)
+        case 12:
+            let vc = UIHostingController(rootView: SwiftUILocalPushView())
+            self.present(vc, animated: true ){}
         default:
             return;
         }
