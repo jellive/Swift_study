@@ -47,6 +47,7 @@ PODS:
   - WeakMapTable (1.1.0)
 
 DEPENDENCIES:
+  - Alamofire
   - ChameleonFramework
   - Hero
   - lottie-ios
@@ -105,6 +106,6 @@ SPEC CHECKSUMS:
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   WeakMapTable: d0327eda092be6a8f7c532942ae98dc7948f5d32
 
-PODFILE CHECKSUM: 44eaea882a8e69a2e7f19c99c720a3d6fa943aa5
+PODFILE CHECKSUM: d0fa8232a7be99b74278909dc336aff58a978220
 
 COCOAPODS: 1.9.1

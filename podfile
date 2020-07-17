@@ -17,5 +17,6 @@ target 'SwiftStudy' do
     pod 'lottie-ios'
     pod 'SwiftLint'
     pod 'R.swift'
+    pod 'Alamofire'
     
 end
