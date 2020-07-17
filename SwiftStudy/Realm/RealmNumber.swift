@@ -9,12 +9,12 @@
 import RealmSwift
 
 class RealmNumber: Object {
-    var numberIndex = 0
-    dynamic var date : NSDate!
-    var number = 0
+    @objc var numberIndex: Int = 0
+    @objc dynamic var date : NSDate!
+    @objc var number: Int = 0
     
     
-    override static func primaryKey() -> String? {
+    override static func primaryKey() -> String {
         return "numberIndex"
     }
 }

@@ -19,6 +19,7 @@ class RealmViewController: UIViewController, UITextFieldDelegate {
         
         let realm = try! Realm()
         var realmNumber = realm.objects(RealmNumber.self).filter("numberIndex < 2").first
+        print("realmNumber, \(realmNumber != nil ? realmNumber.debugDescription : "nil")")
         if(realmNumber == nil) { // 왜 nil로 안들어가지?
             realmNumber = RealmNumber()
             realmNumber?.number = 0
@@ -29,7 +30,7 @@ class RealmViewController: UIViewController, UITextFieldDelegate {
             }
         }
         print(realmNumber?.number as Any)
-        numberTextField.text = String.init(format: "%d", (realmNumber?.number)!)
+        numberTextField.text = "\(realmNumber?.number ?? 0)"
         
         // Do any additional setup after loading the view.
     }
@@ -55,6 +56,7 @@ class RealmViewController: UIViewController, UITextFieldDelegate {
 
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        print("textFieldDidEndEditing, \(textField.text!)")
         
         let realm = try! Realm()
         let realmNumber = realm.objects(RealmNumber.self).filter("numberIndex < 2").first
@@ -62,7 +64,7 @@ class RealmViewController: UIViewController, UITextFieldDelegate {
         realmNumber?.number = Int(textField.text!)!
         
         try! realm.write {
-            realm.add(realmNumber!, update: .all)
+            realm.add(realmNumber!)
         }
         
     }
