@@ -60,6 +60,7 @@
 		02FF186E24C14B03005636E7 /* applelogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 02FF186D24C14B02005636E7 /* applelogo.png */; };
 		02FF187124C14E67005636E7 /* SwiftUIJSONParseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187024C14E67005636E7 /* SwiftUIJSONParseView.swift */; };
 		02FF187424C167DA005636E7 /* SwiftUISpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187324C167DA005636E7 /* SwiftUISpacerView.swift */; };
+		02FF187824C16DD7005636E7 /* SwiftUIAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187724C16DD7005636E7 /* SwiftUIAnimationView.swift */; };
 		92F444E4429DEB1B063986B7 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
@@ -170,6 +171,7 @@
 		02FF186D24C14B02005636E7 /* applelogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applelogo.png; sourceTree = "<group>"; };
 		02FF187024C14E67005636E7 /* SwiftUIJSONParseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIJSONParseView.swift; sourceTree = "<group>"; };
 		02FF187324C167DA005636E7 /* SwiftUISpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISpacerView.swift; sourceTree = "<group>"; };
+		02FF187724C16DD7005636E7 /* SwiftUIAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationView.swift; sourceTree = "<group>"; };
 		701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmNumber.swift; path = Realm/RealmNumber.swift; sourceTree = "<group>"; };
 		BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = Drawing/DrawingViewController.swift; sourceTree = "<group>"; };
@@ -439,6 +441,14 @@
 			path = "SwiftUI-spacer";
 			sourceTree = "<group>";
 		};
+		02FF187624C16DBB005636E7 /* SwiftUI-Animation */ = {
+			isa = PBXGroup;
+			children = (
+				02FF187724C16DD7005636E7 /* SwiftUIAnimationView.swift */,
+			);
+			path = "SwiftUI-Animation";
+			sourceTree = "<group>";
+		};
 		8D1FF8B14FBE33B357CB5F00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -541,6 +551,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				02FF187624C16DBB005636E7 /* SwiftUI-Animation */,
 				02FF187224C167C2005636E7 /* SwiftUI-spacer */,
 				02FF186F24C14E52005636E7 /* SwiftUI-JSONparse */,
 				02FF186A24C1426E005636E7 /* SwiftUI-LocalPush */,
@@ -607,6 +618,7 @@
 				D6C62F481E797D5E007D497A /* Frameworks */,
 				D6C62F491E797D5E007D497A /* Resources */,
 				9730E3D5B7C533C61D25E0E3 /* [CP] Embed Pods Frameworks */,
+				02FF187524C16C6F005636E7 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -750,6 +762,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		02FF187524C16C6F005636E7 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# \"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		9730E3D5B7C533C61D25E0E3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -894,6 +924,7 @@
 				028AFBAE24ADB5F500661743 /* CategoryRow.swift in Sources */,
 				BBD637F21EB0ACA4002CF131 /* CustomRectView.swift in Sources */,
 				D616938A24B1D670009F2EB1 /* LocalPushViewController.swift in Sources */,
+				02FF187824C16DD7005636E7 /* SwiftUIAnimationView.swift in Sources */,
 				028AFBB524ADCCD500661743 /* ProfileSummary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
