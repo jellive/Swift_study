@@ -7,11 +7,24 @@
 //
 
 import SwiftUI
+import RxSwift
 
 struct RxAlamofireView: View {
+    var viewModel: RxAlamofireViewModel = RxAlamofireViewModel()
+    var disposeBag = DisposeBag()
+    
+    init() {
+        viewModel.rxTodoArr.subscribe(onNext: { todo in
+            print(todo)
+        }).disposed(by: disposeBag)
+    }
     
     var body: some View {
-        Text("hi")
+        VStack {
+            
+            Text("hi")
+            //            Text("\(viewModel.rxTodoArr)")
+        }
     }
     
     
