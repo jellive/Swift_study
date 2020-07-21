@@ -23,9 +23,9 @@ class RxAlamofireViewModel {
     let disposeBag = DisposeBag()
     
     init() {
-        down(url: "https://jsonplaceholder.typicode.com/todos")
-            .bind(to: rxTodoArr)
-            .disposed(by: disposeBag)
+//        down(url: "https://jsonplaceholder.typicode.com/todos")
+//            .bind(to: rxTodoArr)
+//            .disposed(by: disposeBag)
 //            .bind(to: rxTodoArr)
 //            .disposed(by: disposeBag)
     }
