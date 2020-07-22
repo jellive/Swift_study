@@ -12,15 +12,15 @@ import RxSwift
 struct RxAlamofireView: View {
     var viewModel: RxAlamofireViewModel = RxAlamofireViewModel()
     var disposeBag = DisposeBag()
-    var todo = BehaviorSubject<[RxTodo]>(value:[])
+    var todos = BehaviorSubject<[RxTodo]>(value:[])
     
     init() {
         viewModel.rxTodoArr.subscribe(onNext: { res in
             print(res)
         }).disposed(by: disposeBag)
         viewModel.down(url: "https://jsonplaceholder.typicode.com/todos")
-            .bind(to: self.todo)
-        .disposed(by: disposeBag)
+            .bind(to: self.todos)
+            .disposed(by: disposeBag)
         
     }
     
@@ -29,14 +29,14 @@ struct RxAlamofireView: View {
             
             Text("hi")
             //            Text("\(viewModel.rxTodoArr)")
-//            List(self.todo) {todo in
-//                VStack(alignment: .leading) {
-//                    Text(todo.title)
-//                    Text("\(todo.completed.description)")
-//                        .font(.system(size: 11))
-//                        .foregroundColor(.gray)
-//                }
-//            }
+            List(self.todos.value()) {todo in
+                VStack(alignment: .leading) {
+                    Text(todo.title)
+                    Text("\(todo.completed.description)")
+                        .font(.system(size: 11))
+                        .foregroundColor(.gray)
+                }
+            }
         }
     }
     
