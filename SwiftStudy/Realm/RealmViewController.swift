@@ -22,15 +22,15 @@ class RealmViewController: UIViewController, UITextFieldDelegate {
         print("realmNumber, \(realmNumber != nil ? realmNumber.debugDescription : "nil")")
         if(realmNumber == nil) { // 왜 nil로 안들어가지?
             realmNumber = RealmNumber()
-            realmNumber?.number = 0
-            realmNumber?.numberIndex = 1
-            realmNumber?.date = NSDate()
+            realmNumber!.number = 0
+            realmNumber!.numberIndex = 1
+            realmNumber!.date = NSDate()
             try! realm.write {
                 realm.add(realmNumber!)
             }
         }
-        print(realmNumber?.number as Any)
-        numberTextField.text = "\(realmNumber?.number ?? 0)"
+        print(realmNumber!.number as Any)
+        numberTextField.text = "\(realmNumber!.number ?? 0)"
         
         // Do any additional setup after loading the view.
     }
@@ -64,8 +64,37 @@ class RealmViewController: UIViewController, UITextFieldDelegate {
         realmNumber?.number = Int(textField.text!)!
         
         try! realm.write {
-            realm.add(realmNumber!)
+            realm.add(realmNumber!, update: .modified)
         }
         
+        print(realmNumber!.number as Any)
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        numberTextField.endEditing(true)
+        
+    }
+    
+    func saveRealm() {
+        
+        let realm = try! Realm()
+        var realmNumber = realm.objects(RealmNumber.self).filter("numberIndex < 2").first
+        realmNumber?.number = Int(numberTextField.text!) ?? 0
+        realmNumber?.date = NSDate()
+        try! realm.write {
+            realm.add(realmNumber!, update: .modified)
+        }
+//        print("realmNumber, \(realmNumber != nil ? realmNumber.debugDescription : "nil")")
+//        if(realmNumber == nil) { // 왜 nil로 안들어가지?
+//            realmNumber = RealmNumber()
+//            realmNumber?.number = 0
+//            realmNumber?.numberIndex = 1
+//            realmNumber?.date = NSDate()
+//            try! realm.write {
+//                realm.add(realmNumber!)
+//            }
+//        }
+        print(realmNumber?.number as Any)
     }
 }

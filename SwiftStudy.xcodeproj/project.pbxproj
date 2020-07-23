@@ -10,6 +10,7 @@
 		020DCC5024BEC5160007A0C8 /* Moya_MyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020DCC4F24BEC5160007A0C8 /* Moya_MyService.swift */; };
 		021E561B249B3A2100AB89F3 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E561A249B3A2100AB89F3 /* SwiftUIView.swift */; };
 		021E5621249B584500AB89F3 /* SecondSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E5620249B584500AB89F3 /* SecondSwiftUIView.swift */; };
+		026FDF4824C9874300F584F4 /* RealmTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FDF4724C9874300F584F4 /* RealmTutorialViewController.swift */; };
 		028AFB4424AAE6B600661743 /* SwiftUITutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB4324AAE6B600661743 /* SwiftUITutorialView.swift */; };
 		028AFB4924AAF8D700661743 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB4824AAF8D700661743 /* CircleImage.swift */; };
 		028AFB4B24AB070200661743 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB4A24AB070200661743 /* MapView.swift */; };
@@ -121,6 +122,7 @@
 		020DCC4F24BEC5160007A0C8 /* Moya_MyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moya_MyService.swift; sourceTree = "<group>"; };
 		021E561A249B3A2100AB89F3 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		021E5620249B584500AB89F3 /* SecondSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSwiftUIView.swift; sourceTree = "<group>"; };
+		026FDF4724C9874300F584F4 /* RealmTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTutorialViewController.swift; sourceTree = "<group>"; };
 		028AFB3A24AAC5B300661743 /* SwiftUICombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUICombineView.swift; path = "../../../../../../Users/yoohg/Downloads/CombineWeatherApp/CombineWeatherApp-Starter/SwiftUICombineView.swift"; sourceTree = "<group>"; };
 		028AFB3C24AACC3900661743 /* SwiftUICombineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUICombineViewModel.swift; path = "../../../../../../Users/yoohg/Downloads/CombineWeatherApp/CombineWeatherApp-Starter/SwiftUICombineViewModel.swift"; sourceTree = "<group>"; };
 		028AFB4324AAE6B600661743 /* SwiftUITutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialView.swift; sourceTree = "<group>"; };
@@ -264,6 +266,14 @@
 				D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */,
 			);
 			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		026FDF4624C9873000F584F4 /* Realm-tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				026FDF4724C9874300F584F4 /* RealmTutorialViewController.swift */,
+			);
+			path = "Realm-tutorial";
 			sourceTree = "<group>";
 		};
 		028AFB4224AAE6A800661743 /* SwiftUI-tutorial */ = {
@@ -564,6 +574,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				026FDF4624C9873000F584F4 /* Realm-tutorial */,
 				02FF187924C16F59005636E7 /* SwiftUI-ObervableObject */,
 				02FF187624C16DBB005636E7 /* SwiftUI-Animation */,
 				02FF187224C167C2005636E7 /* SwiftUI-spacer */,
@@ -879,6 +890,7 @@
 				028AFBB924ADD19A00661743 /* ProfileEditor.swift in Sources */,
 				028AFBCD24AEC43D00661743 /* FeatureCard.swift in Sources */,
 				02FF187124C14E67005636E7 /* SwiftUIJSONParseView.swift in Sources */,
+				026FDF4824C9874300F584F4 /* RealmTutorialViewController.swift in Sources */,
 				02FF186724C13C80005636E7 /* RxAlamofireView.swift in Sources */,
 				028AFB9D24ADA3E700661743 /* Data.swift in Sources */,
 				028AFBE124AF1BA400661743 /* RxGithubViewController.swift in Sources */,
