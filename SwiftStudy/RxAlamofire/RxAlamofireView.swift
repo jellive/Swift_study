@@ -22,15 +22,15 @@ struct RxAlamofireView: View {
         viewModel.down(url: "https://jsonplaceholder.typicode.com/todos")
             .bind(to: self.todos)
             .disposed(by: disposeBag)
-        todos.subscribe{ todo in
-            self.resTodos = todo.element ?? []
-        }.disposed(by: disposeBag)
+//        todos.subscribe{ todo in
+//            self.resTodos = todo.element ?? []
+//        }.disposed(by: disposeBag)
     }
     
     var body: some View {
         VStack {
             
-            //            Text("hi")
+                        Text("hi")
             //            Text("\(viewModel.rxTodoArr)")
             //            if (self.resTodos.count > 0) {
 //            List(resTodos) { todo in
