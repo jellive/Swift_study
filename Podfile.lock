@@ -1,13 +1,13 @@
 PODS:
-  - Alamofire (5.2.1)
+  - Alamofire (5.2.2)
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
   - Hero (1.5.0)
   - lottie-ios (3.1.8)
-  - ModelMapper (10.0.0):
-    - ModelMapper/Core (= 10.0.0)
-  - ModelMapper/Core (10.0.0)
+  - ModelMapper (10.0.1):
+    - ModelMapper/Core (= 10.0.1)
+  - ModelMapper/Core (10.0.1)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
   - Moya-ModelMapper/Core (10.0.0):
@@ -44,6 +44,9 @@ PODS:
   - RxOptional (4.1.0):
     - RxCocoa (~> 5)
     - RxSwift (~> 5)
+  - RxRealm (3.0.0):
+    - RealmSwift (~> 5.0)
+    - RxSwift (~> 5.0)
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
@@ -65,6 +68,7 @@ DEPENDENCIES:
   - RxAlamofire
   - RxCocoa
   - RxOptional
+  - RxRealm
   - RxSwift (~> 5.1.0)
   - SnapKit
   - SwiftLint
@@ -86,6 +90,7 @@ SPEC REPOS:
     - RxAlamofire
     - RxCocoa
     - RxOptional
+    - RxRealm
     - RxRelay
     - RxSwift
     - SnapKit
@@ -93,11 +98,11 @@ SPEC REPOS:
     - WeakMapTable
 
 SPEC CHECKSUMS:
-  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Hero: b7385b75e7259da62f4f85462f59a5082d66b058
   lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
-  ModelMapper: a8dbf2a2003bf626627b9fe7c9a22b3405a30404
+  ModelMapper: 0f68dd4300d0e27290c70f66492c7f795da21bcf
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   Moya-ModelMapper: e3a478500921e7299804dc1ac550f1ebf3228ade
   R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
@@ -108,12 +113,13 @@ SPEC CHECKSUMS:
   RxAlamofire: f34ddbab56fa2a36f99737f4d4ecc22288a1384f
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
+  RxRealm: af7a3c857efd5a711c176f6df0d67418ad48293b
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   WeakMapTable: d0327eda092be6a8f7c532942ae98dc7948f5d32
 
-PODFILE CHECKSUM: 5737e5e3c47bc144ac6cba322ef52399cd441c60
+PODFILE CHECKSUM: d22890eb6092855c8aed07b0c06c9bf495524aee
 
 COCOAPODS: 1.9.1

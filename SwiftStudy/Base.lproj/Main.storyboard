@@ -305,9 +305,32 @@
                     <view key="view" contentMode="scaleToFill" id="x0f-jc-JkU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dHC-sZ-eRc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="wzz-gy-4ff">
+                                <rect key="frame" x="-20" y="39" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wzz-gy-4ff" id="Ijm-ub-AGP">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dHC-sZ-eRc" firstAttribute="width" secondItem="x0f-jc-JkU" secondAttribute="width" id="Hj0-jd-bma"/>
+                            <constraint firstItem="dHC-sZ-eRc" firstAttribute="height" secondItem="x0f-jc-JkU" secondAttribute="height" id="KHk-e3-rhn"/>
+                            <constraint firstItem="dHC-sZ-eRc" firstAttribute="centerY" secondItem="C1s-Tn-AJP" secondAttribute="centerY" id="gII-9U-buz"/>
+                            <constraint firstItem="dHC-sZ-eRc" firstAttribute="centerX" secondItem="C1s-Tn-AJP" secondAttribute="centerX" id="tOk-a8-YJJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="C1s-Tn-AJP"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="dHC-sZ-eRc" id="tet-lH-Qhl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TbN-fA-g1q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

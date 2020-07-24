@@ -19,4 +19,5 @@ target 'SwiftStudy' do
     pod 'R.swift'
     pod 'Alamofire'
     pod 'RxAlamofire'
+    pod 'RxRealm'
 end

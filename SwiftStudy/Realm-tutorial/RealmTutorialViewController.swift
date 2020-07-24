@@ -9,10 +9,18 @@
 import UIKit
 import Foundation
 import RealmSwift
+import RxRealm
+import RxSwift
+import RxCocoa
 
 class Dog: Object {
     @objc dynamic var name = ""
     @objc dynamic var age = 0
+    @objc dynamic var time: TimeInterval = Date().timeIntervalSinceReferenceDate
+    
+    //    override static func indexedProperties() -> [String] {
+    //        return ["name"]
+    //    }
 }
 
 class Person: Object {
@@ -22,16 +30,59 @@ class Person: Object {
 }
 
 class RealmTutorialViewController: UIViewController {
+    
+    @IBOutlet var tableView: UITableView!
+    
+    var dogs: Results<Dog>!
+    
+    let bag = DisposeBag()
+    
+    lazy var dog: Dog = {
+        let realm = try! Realm()
+        let dog = Dog()
+        try! realm.write {
+            realm.add(dog)
+        }
+        return dog
+    }()
+    
+    let config = Realm.Configuration(
+        schemaVersion: 2,
+        migrationBlock:  { migration, oldSchemaVersion in
+            // 아무것도 안써도 대부분 알아서 마이그레이션 해줌.
+    }
+    )
+    
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        Realm.Configuration.defaultConfiguration = config
+        let realm = try! Realm()
+        dogs = realm.objects(Dog.self)
+            .sorted(byKeyPath: "time", ascending: false)
+        
+        Observable.collection(from: dogs)
+            .map ({"laps: \($0.count)"})
+            .subscribe { event in
+                self.title = event.element
+        }
+        .disposed(by: bag)
+        
+        
+        
+        
+        
+        
         let myDog = Dog()
         myDog.name = "Rex"
         myDog.age = 1
         print("name of dog: \(myDog.name)")
         
-        let realm = try! Realm()
         
         let puppies = realm.objects(Dog.self)
-//            .filter("age < 2")
+        //            .filter("age < 2")
+        print(puppies.elements)
         print(puppies.count)
         
         try! realm.write {
