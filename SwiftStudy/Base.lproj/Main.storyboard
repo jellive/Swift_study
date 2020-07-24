@@ -298,6 +298,21 @@
             </objects>
             <point key="canvasLocation" x="137.59999999999999" y="138.53073463268368"/>
         </scene>
+        <!--Realm Tutorial View Controller-->
+        <scene sceneID="y9F-Qn-flD">
+            <objects>
+                <viewController storyboardIdentifier="realm_tutorial" id="LC0-LO-oPh" customClass="RealmTutorialViewController" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x0f-jc-JkU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="C1s-Tn-AJP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TbN-fA-g1q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-366" y="965"/>
+        </scene>
         <!--Realm View Controller-->
         <scene sceneID="uYd-Ok-Vgl">
             <objects>

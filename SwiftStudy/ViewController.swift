@@ -33,7 +33,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         //                }
         //            })
         
-        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push", "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue", "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire")
+        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push", "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue", "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire", "Realm-tutorial")
     }
     
     override func didReceiveMemoryWarning() {
@@ -105,6 +105,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             present(vc, animated: true){}
         case 15:
             let vc = UIHostingController(rootView: RxAlamofireView())
+            present(vc, animated: true){}
+        case 16:
+            let vc = self.storyboard?.instantiateViewController(identifier: "realm_tutorial") as! RealmTutorialViewController
             present(vc, animated: true){}
         default:
             return;
