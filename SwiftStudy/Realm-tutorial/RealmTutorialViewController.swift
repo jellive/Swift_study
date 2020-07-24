@@ -30,7 +30,8 @@ class RealmTutorialViewController: UIViewController {
         
         let realm = try! Realm()
         
-        let puppies = realm.objects(Dog.self).filter("age < 2")
+        let puppies = realm.objects(Dog.self)
+//            .filter("age < 2")
         print(puppies.count)
         
         try! realm.write {
