@@ -307,29 +307,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dHC-sZ-eRc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="467"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="wzz-gy-4ff">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" translatesAutoresizingMaskIntoConstraints="NO" id="wzz-gy-4ff">
                                 <rect key="frame" x="-20" y="39" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wzz-gy-4ff" id="Ijm-ub-AGP">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMT-md-Hcg">
+                                            <rect key="frame" x="52" y="7" width="30" height="30"/>
+                                            <state key="normal" title="add"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hX-eb-XUg">
+                                            <rect key="frame" x="346" y="7" width="30" height="30"/>
+                                            <state key="normal" title="Tick"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="0hX-eb-XUg" secondAttribute="trailing" constant="38" id="BPc-42-hWw"/>
+                                        <constraint firstItem="0hX-eb-XUg" firstAttribute="centerY" secondItem="GMT-md-Hcg" secondAttribute="centerY" id="TWU-PJ-5b4"/>
+                                        <constraint firstItem="GMT-md-Hcg" firstAttribute="centerY" secondItem="Ijm-ub-AGP" secondAttribute="centerY" id="ehC-07-6Tg"/>
+                                        <constraint firstItem="GMT-md-Hcg" firstAttribute="leading" secondItem="Ijm-ub-AGP" secondAttribute="leading" constant="52" id="wTU-3L-saz"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="dHC-sZ-eRc" firstAttribute="width" secondItem="x0f-jc-JkU" secondAttribute="width" id="Hj0-jd-bma"/>
-                            <constraint firstItem="dHC-sZ-eRc" firstAttribute="height" secondItem="x0f-jc-JkU" secondAttribute="height" id="KHk-e3-rhn"/>
+                            <constraint firstItem="dHC-sZ-eRc" firstAttribute="height" secondItem="x0f-jc-JkU" secondAttribute="height" multiplier="0.7" id="KHk-e3-rhn"/>
                             <constraint firstItem="dHC-sZ-eRc" firstAttribute="centerY" secondItem="C1s-Tn-AJP" secondAttribute="centerY" id="gII-9U-buz"/>
                             <constraint firstItem="dHC-sZ-eRc" firstAttribute="centerX" secondItem="C1s-Tn-AJP" secondAttribute="centerX" id="tOk-a8-YJJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="C1s-Tn-AJP"/>
                     </view>
                     <connections>
+                        <outlet property="addBtn" destination="GMT-md-Hcg" id="pcc-ev-m6X"/>
                         <outlet property="tableView" destination="dHC-sZ-eRc" id="tet-lH-Qhl"/>
+                        <outlet property="tickBtn" destination="0hX-eb-XUg" id="dZV-dg-6ug"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TbN-fA-g1q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

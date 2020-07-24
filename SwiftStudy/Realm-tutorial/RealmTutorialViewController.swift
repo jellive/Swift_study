@@ -18,6 +18,18 @@ class Dog: Object {
     @objc dynamic var age = 0
     @objc dynamic var time: TimeInterval = Date().timeIntervalSinceReferenceDate
     
+    init(name: String?, age: Int?) {
+        super.init()
+        self.name = name ?? ""
+        self.age = age ?? 0
+    }
+    
+    required init() {
+        super.init()
+        self.name = ""
+        self.age = 0
+    }
+    
     //    override static func indexedProperties() -> [String] {
     //        return ["name"]
     //    }
@@ -32,6 +44,8 @@ class Person: Object {
 class RealmTutorialViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var addBtn: UIButton!
+    @IBOutlet var tickBtn: UIButton!
     
     var dogs: Results<Dog>!
     
@@ -63,14 +77,39 @@ class RealmTutorialViewController: UIViewController {
             .sorted(byKeyPath: "time", ascending: false)
         
         Observable.collection(from: dogs)
-            .map ({"laps: \($0.count)"})
+            .map ({"dogs: \($0.count)"})
             .subscribe { event in
                 self.title = event.element
         }
         .disposed(by: bag)
         
+        Observable.changeset(from: dogs)
+            .subscribe(onNext: { [unowned self] _, changes in
+                if let changes = changes {
+                    self.tableView.applyChangeset(changes)
+                } else {
+                    self.tableView.reloadData()
+                }
+                
+            }).disposed(by: bag)
         
+        addBtn.rx.tap
+            .map{ [Dog(name: "dogname1", age: 4), Dog(name: "dogname2", age: 5)] }
+            .bind(to: Realm.rx.add(onError: {
+                if $0 != nil {
+                    print("Error \($1.localizedDescription) while saving objects \(String(describing: $0))")
+                } else {
+                    print("Error \($1.localizedDescription) while opening realm.")
+                }
+            }))
+            .disposed(by: bag)
         
+//        tickBtn.rx.tap
+//            .subscribe(onNext: { [unowned self] _ in
+//                try! realm.write {
+//                    self.ticker.ticks += 1
+//                }
+//            })
         
         
         
@@ -100,5 +139,47 @@ class RealmTutorialViewController: UIViewController {
                 }
             }
         }
+    }
+}
+
+extension RealmTutorialViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.dogs.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let dog = self.dogs[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
+//        cell.textLabel?.text = formatter.string(from: Date(timeIntervalSinceReferenceDate: dog.time))
+        cell.textLabel?.text = Formatter().string(for: Date(timeIntervalSinceReferenceDate: dog.time))
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Delete objects by tapping them, add ticks to trigger a footer update"
+    }
+}
+
+extension RealmTutorialViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        Observable.from([self.dogs[indexPath.row]])
+            .subscribe(Realm.rx.delete())
+//            .disposed(by: bag)
+            .disposed(by: self.bag)
+    }
+    
+//    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+//        return footer
+//    }
+}
+
+extension UITableView {
+    func applyChangeset(_ changes: RealmChangeset) {
+        beginUpdates()
+        deleteRows(at: changes.deleted.map { IndexPath(row: $0, section: 0) }, with: .automatic)
+        insertRows(at: changes.inserted.map { IndexPath(row: $0, section: 0) }, with: .automatic)
+        reloadRows(at: changes.updated.map { IndexPath(row: $0, section: 0) }, with: .automatic)
+        endUpdates()
     }
 }
