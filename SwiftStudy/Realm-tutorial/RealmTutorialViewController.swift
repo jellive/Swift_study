@@ -30,15 +30,19 @@ class Dog: Object {
         self.age = 0
     }
     
-    //    override static func indexedProperties() -> [String] {
-    //        return ["name"]
-    //    }
+        override static func indexedProperties() -> [String] {
+            return ["name"]
+        }
 }
 
 class Person: Object {
     @objc dynamic var name = ""
     @objc dynamic var picture: Data? = nil
     let dogs = List<Dog>()
+    
+    override class func indexedProperties() -> [String] {
+        return ["name"]
+    }
 }
 
 class RealmTutorialViewController: UIViewController {
@@ -54,9 +58,9 @@ class RealmTutorialViewController: UIViewController {
     lazy var dog: Dog = {
         let realm = try! Realm()
         let dog = Dog()
-        try! realm.write {
-            realm.add(dog)
-        }
+//        try! realm.write {
+//            realm.add(dog)
+//        }
         return dog
     }()
     
@@ -83,15 +87,6 @@ class RealmTutorialViewController: UIViewController {
         }
         .disposed(by: bag)
         
-        Observable.changeset(from: dogs)
-            .subscribe(onNext: { [unowned self] _, changes in
-                if let changes = changes {
-                    self.tableView.applyChangeset(changes)
-                } else {
-                    self.tableView.reloadData()
-                }
-                
-            }).disposed(by: bag)
         
         addBtn.rx.tap
             .map{ [Dog(name: "dogname1", age: 4), Dog(name: "dogname2", age: 5)] }
@@ -140,6 +135,18 @@ class RealmTutorialViewController: UIViewController {
             }
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        Observable.changeset(from: dogs)
+            .subscribe(onNext: { [unowned self] _, changes in
+                if let changes = changes {
+                    self.tableView.applyChangeset(changes)
+                } else {
+                    self.tableView.reloadData()
+                }
+                
+            }).disposed(by: bag)
+    }
 }
 
 extension RealmTutorialViewController: UITableViewDataSource {
@@ -180,6 +187,6 @@ extension UITableView {
         deleteRows(at: changes.deleted.map { IndexPath(row: $0, section: 0) }, with: .automatic)
         insertRows(at: changes.inserted.map { IndexPath(row: $0, section: 0) }, with: .automatic)
         reloadRows(at: changes.updated.map { IndexPath(row: $0, section: 0) }, with: .automatic)
-//        endUpdates()
+        endUpdates()
     }
 }
