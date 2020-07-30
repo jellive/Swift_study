@@ -115,10 +115,19 @@ class RealmTutorialViewController: UIViewController {
             }))
             .disposed(by: bag)
         
+        /* tab event(bind) */
+        //        tickBtn.rx.tap
+        //            .bind{[weak self] in
+        //                self?.tickBtnClicked()
+        //        }.disposed(by: bag)
+        
+        /* tab event(subscribe) */
         tickBtn.rx.tap
-            .bind{[weak self] in
+            .subscribe(onNext: {[weak self] in
                 self?.tickBtnClicked()
-        }.disposed(by: bag)
+            }).disposed(by: bag)
+        
+        
         //                    .subscribe(onNext: { [unowned self] _ in
         //                        try! realm.write {
         //                            self.ticker.ticks += 1
