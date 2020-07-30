@@ -51,7 +51,8 @@ class RealmTutorialViewController: UIViewController {
     @IBOutlet var addBtn: UIButton!
     @IBOutlet var tickBtn: UIButton!
     
-    let tick: BehaviorRelay<Int> = BehaviorRelay(value: 0)
+//    let tick: BehaviorRelay<Int> = BehaviorRelay(value: 0)
+    let tick: BehaviorSubject<Int> = BehaviorSubject(value: 0)
     
     var dogs: Results<Dog>!
     
@@ -177,7 +178,8 @@ class RealmTutorialViewController: UIViewController {
     
     func tickBtnClicked(){
         print("tickBtnClicked")
-        tick.accept(tick.value + 1)
+//        tick.accept(tick + 1) // relay
+        tick.onNext(try! tick.value() + 1) // subject
     }
 }
 
