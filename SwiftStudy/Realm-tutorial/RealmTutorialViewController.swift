@@ -30,9 +30,9 @@ class Dog: Object {
         self.age = 0
     }
     
-        override static func indexedProperties() -> [String] {
-            return ["name"]
-        }
+    override static func indexedProperties() -> [String] {
+        return ["name"]
+    }
 }
 
 class Person: Object {
@@ -55,12 +55,18 @@ class RealmTutorialViewController: UIViewController {
     
     let bag = DisposeBag()
     
+    let footer: UILabel = {
+        let l = UILabel()
+        l.textAlignment = .center
+        return l
+    }()
+    
     lazy var dog: Dog = {
         let realm = try! Realm()
         let dog = Dog()
-//        try! realm.write {
-//            realm.add(dog)
-//        }
+        //        try! realm.write {
+        //            realm.add(dog)
+        //        }
         return dog
     }()
     
@@ -74,6 +80,7 @@ class RealmTutorialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.rx.setDelegate(self).disposed(by: bag)
         
         Realm.Configuration.defaultConfiguration = config
         let realm = try! Realm()
@@ -87,6 +94,15 @@ class RealmTutorialViewController: UIViewController {
         }
         .disposed(by: bag)
         
+        Observable.changeset(from: dogs)
+            .subscribe(onNext: { [unowned self] _, changes in
+                if let changes = changes {
+                    self.tableView.applyChangeset(changes)
+                } else {
+                    self.tableView.reloadData()
+                }
+                
+            }).disposed(by: bag)
         
         addBtn.rx.tap
             .map{ [Dog(name: "dogname1", age: 4), Dog(name: "dogname2", age: 5)] }
@@ -99,53 +115,52 @@ class RealmTutorialViewController: UIViewController {
             }))
             .disposed(by: bag)
         
-//        tickBtn.rx.tap
-//            .subscribe(onNext: { [unowned self] _ in
-//                try! realm.write {
-//                    self.ticker.ticks += 1
-//                }
-//            })
+        tickBtn.rx.tap
+            .bind{[weak self] in
+                self?.tickBtnClicked()
+        }.disposed(by: bag)
+        //                    .subscribe(onNext: { [unowned self] _ in
+        //                        try! realm.write {
+        //                            self.ticker.ticks += 1
+        //                        }
+        //                    })
         
         
         
-        let myDog = Dog()
-        myDog.name = "Rex"
-        myDog.age = 1
-        print("name of dog: \(myDog.name)")
+        //        let myDog = Dog()
+        //        myDog.name = "Rex"
+        //        myDog.age = 1
+        //        print("name of dog: \(myDog.name)")
+        //
+        //
+        //        let puppies = realm.objects(Dog.self)
+        //        //            .filter("age < 2")
+        //        print(puppies.elements)
+        //        print(puppies.count)
+        //
+        //        try! realm.write {
+        //            realm.add(myDog)
+        //        }
+        //
+        //        print(puppies.count)
         
-        
-        let puppies = realm.objects(Dog.self)
-        //            .filter("age < 2")
-        print(puppies.elements)
-        print(puppies.count)
-        
-        try! realm.write {
-            realm.add(myDog)
-        }
-        
-        print(puppies.count)
-        
-        DispatchQueue(label: "background").async {
-            autoreleasepool {
-                let realm = try! Realm()
-                let theDog = realm.objects(Dog.self).filter("age == 1").first
-                try! realm.write {
-                    theDog!.age = 3
-                }
-            }
-        }
+        //        DispatchQueue(label: "background").async {
+        //            autoreleasepool {
+        //                let realm = try! Realm()
+        //                let theDog = realm.objects(Dog.self).filter("age == 1").first
+        //                try! realm.write {
+        //                    theDog!.age = 3
+        //                }
+        //            }
+        //        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        Observable.changeset(from: dogs)
-            .subscribe(onNext: { [unowned self] _, changes in
-                if let changes = changes {
-                    self.tableView.applyChangeset(changes)
-                } else {
-                    self.tableView.reloadData()
-                }
-                
-            }).disposed(by: bag)
+        super.viewWillAppear(animated)
+    }
+    
+    func tickBtnClicked(){
+        print("tickBtnClicked")
     }
 }
 
@@ -158,8 +173,8 @@ extension RealmTutorialViewController: UITableViewDataSource {
         let dog = self.dogs[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
-//        cell.textLabel?.text = formatter.string(from: Date(timeIntervalSinceReferenceDate: dog.time))
-        cell.textLabel?.text = Formatter().string(for: Date(timeIntervalSinceReferenceDate: dog.time))
+        //        cell.textLabel?.text = formatter.string(from: Date(timeIntervalSinceReferenceDate: dog.time))
+        cell.textLabel?.text = dog.name
         return cell
     }
     
@@ -172,13 +187,17 @@ extension RealmTutorialViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Observable.from([self.dogs[indexPath.row]])
             .subscribe(Realm.rx.delete())
-//            .disposed(by: bag)
+            //            .disposed(by: bag)
             .disposed(by: self.bag)
     }
     
-//    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-//        return footer
-//    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    //    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+    //        return footer
+    //    }
 }
 
 extension UITableView {
