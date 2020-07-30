@@ -51,6 +51,8 @@ class RealmTutorialViewController: UIViewController {
     @IBOutlet var addBtn: UIButton!
     @IBOutlet var tickBtn: UIButton!
     
+    let tick: BehaviorRelay<Int> = BehaviorRelay(value: 0)
+    
     var dogs: Results<Dog>!
     
     let bag = DisposeBag()
@@ -127,6 +129,11 @@ class RealmTutorialViewController: UIViewController {
                 self?.tickBtnClicked()
             }).disposed(by: bag)
         
+        /* subject observe */
+        tick.subscribe(onNext: { newValue in
+            print("tick's newValue : \(newValue)")
+            }).disposed(by: bag)
+        
         
         //                    .subscribe(onNext: { [unowned self] _ in
         //                        try! realm.write {
@@ -170,6 +177,7 @@ class RealmTutorialViewController: UIViewController {
     
     func tickBtnClicked(){
         print("tickBtnClicked")
+        tick.accept(tick.value + 1)
     }
 }
 
