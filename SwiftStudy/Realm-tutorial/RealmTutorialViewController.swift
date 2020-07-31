@@ -180,6 +180,7 @@ class RealmTutorialViewController: UIViewController {
         print("tickBtnClicked")
 //        tick.accept(tick + 1) // relay
         tick.onNext(try! tick.value() + 1) // subject
+        // 만약 여기서 에러가 난다면..?
     }
 }
 
