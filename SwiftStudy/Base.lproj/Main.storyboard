@@ -333,6 +333,9 @@
                                         <constraint firstItem="GMT-md-Hcg" firstAttribute="leading" secondItem="Ijm-ub-AGP" secondAttribute="leading" constant="52" id="wTU-3L-saz"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="Cell"/>
+                                </userDefinedRuntimeAttributes>
                             </tableViewCell>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

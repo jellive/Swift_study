@@ -12,6 +12,7 @@ import RealmSwift
 import RxRealm
 import RxSwift
 import RxCocoa
+import RxRealmDataSources
 
 class Dog: Object {
     @objc dynamic var name = ""
@@ -84,6 +85,13 @@ class RealmTutorialViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.rx.setDelegate(self).disposed(by: bag)
+//        tableView.rx.setDataSource(self).disposed(by: bag)
+//        tableView.dataSource = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        let dataSource = RxTableViewRealmDataSource<Dog>(cellIdentifier: "Cell", cellType: UITableViewCell.self) {
+            cell, indexPath, dog in
+            cell.textLabel?.text = "\(dog.name)"
+        }
         
         Realm.Configuration.defaultConfiguration = config
         let realm = try! Realm()
@@ -97,16 +105,22 @@ class RealmTutorialViewController: UIViewController {
         }
         .disposed(by: bag)
         
-        Observable.changeset(from: dogs)
-            .subscribe(onNext: { [unowned self] _, changes in
-                if let changes = changes {
-                    self.tableView.applyChangeset(changes)
-                } else {
-                    self.tableView.reloadData()
-                }
-                
-            }).disposed(by: bag)
+//        Observable.changeset(from: dogs)
+//            .subscribe(onNext: {
+////                [unowned self] _
+//                results
+//                , changes in
+//                print("results: \(results)")
+//                if let changes = changes {
+//                    self.tableView.applyChangeset(changes)
+//                } else {
+//                    self.tableView.reloadData()
+//                }
+//
+//            }).disposed(by: bag)
         
+        let result = Observable.changeset(from: realm.objects(Dog.self).sorted(byKeyPath: "time", ascending: false)).share()
+        result.bind(to: tableView.rx.realmChanges(dataSource)).disposed(by: bag)
         addBtn.rx.tap
             .map{ [Dog(name: "dogname1", age: 4), Dog(name: "dogname2", age: 5)] }
             .bind(to: Realm.rx.add(onError: {
@@ -191,8 +205,7 @@ extension RealmTutorialViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let dog = self.dogs[indexPath.row]
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "Cell")!
         //        cell.textLabel?.text = formatter.string(from: Date(timeIntervalSinceReferenceDate: dog.time))
         cell.textLabel?.text = dog.name
         return cell
@@ -220,12 +233,12 @@ extension RealmTutorialViewController: UITableViewDelegate {
     //    }
 }
 
-extension UITableView {
-    func applyChangeset(_ changes: RealmChangeset) {
-        beginUpdates()
-        deleteRows(at: changes.deleted.map { IndexPath(row: $0, section: 0) }, with: .automatic)
-        insertRows(at: changes.inserted.map { IndexPath(row: $0, section: 0) }, with: .automatic)
-        reloadRows(at: changes.updated.map { IndexPath(row: $0, section: 0) }, with: .automatic)
-        endUpdates()
-    }
-}
+//extension UITableView {
+//    func applyChangeset(_ changes: RealmChangeset) {
+//        beginUpdates()
+//        deleteRows(at: changes.deleted.map { IndexPath(row: $0, section: 0) }, with: .automatic)
+//        insertRows(at: changes.inserted.map { IndexPath(row: $0, section: 0) }, with: .automatic)
+//        reloadRows(at: changes.updated.map { IndexPath(row: $0, section: 0) }, with: .automatic)
+//        endUpdates()
+//    }
+//}

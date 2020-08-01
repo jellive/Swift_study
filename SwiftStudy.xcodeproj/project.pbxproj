@@ -72,6 +72,8 @@
 		BB9F4CEB1F0DDD4200650829 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F4CEA1F0DDD4200650829 /* UIView.swift */; };
 		BBD637F01EB0AB60002CF131 /* IBDesignableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */; };
 		BBD637F21EB0ACA4002CF131 /* CustomRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */; };
+		D6021C2024D56CCA00D23DB9 /* Playground in Resources */ = {isa = PBXBuildFile; fileRef = D6021C1F24D56CCA00D23DB9 /* Playground */; };
+		D6021C2324D56F2700D23DB9 /* RxRealmStopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6021C2224D56F2700D23DB9 /* RxRealmStopWatchViewController.swift */; };
 		D604CCE324A89EDE006927DE /* SwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */; };
 		D616938A24B1D670009F2EB1 /* LocalPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616938924B1D670009F2EB1 /* LocalPushViewController.swift */; };
 		D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6663DBB1E7EB74900531889 /* GugudanViewController.swift */; };
@@ -189,6 +191,8 @@
 		BBEAA0C71EFCAFEB00D3E06F /* SwiftStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftStudy-Bridging-Header.h"; sourceTree = "<group>"; };
 		C7A834BF95CB488F90CC8E0D /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		D01BC2A218865C774A6E22E3 /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
+		D6021C1F24D56CCA00D23DB9 /* Playground */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Playground; sourceTree = "<group>"; };
+		D6021C2224D56F2700D23DB9 /* RxRealmStopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxRealmStopWatchViewController.swift; sourceTree = "<group>"; };
 		D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewModel.swift; sourceTree = "<group>"; };
 		D616938924B1D670009F2EB1 /* LocalPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushViewController.swift; sourceTree = "<group>"; };
 		D6663DBB1E7EB74900531889 /* GugudanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GugudanViewController.swift; path = Gugudan/GugudanViewController.swift; sourceTree = "<group>"; };
@@ -524,6 +528,14 @@
 			name = IBDesignable;
 			sourceTree = "<group>";
 		};
+		D6021C2124D56F0300D23DB9 /* RxRealm-example */ = {
+			isa = PBXGroup;
+			children = (
+				D6021C2224D56F2700D23DB9 /* RxRealmStopWatchViewController.swift */,
+			);
+			path = "RxRealm-example";
+			sourceTree = "<group>";
+		};
 		D604CCE124A86D82006927DE /* SwiftUI-combine */ = {
 			isa = PBXGroup;
 			children = (
@@ -574,6 +586,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				D6021C2124D56F0300D23DB9 /* RxRealm-example */,
 				026FDF4624C9873000F584F4 /* Realm-tutorial */,
 				02FF187924C16F59005636E7 /* SwiftUI-ObervableObject */,
 				02FF187624C16DBB005636E7 /* SwiftUI-Animation */,
@@ -604,6 +617,7 @@
 				D6663DBA1E7EB73300531889 /* Gugudan */,
 				D6C62F4E1E797D5E007D497A /* AppDelegate.swift */,
 				D6C62F501E797D5E007D497A /* ViewController.swift */,
+				D6021C1F24D56CCA00D23DB9 /* Playground */,
 				D6C62F521E797D5E007D497A /* Main.storyboard */,
 				D6C62F551E797D5E007D497A /* Assets.xcassets */,
 				D6C62F571E797D5E007D497A /* LaunchScreen.storyboard */,
@@ -767,6 +781,7 @@
 				D6E07EC424B1B5DA009B6FBA /* icybay.jpg in Resources */,
 				02FF186E24C14B03005636E7 /* applelogo.png in Resources */,
 				D6E07EC224B1B5DA009B6FBA /* turtlerock_feature.jpg in Resources */,
+				D6021C2024D56CCA00D23DB9 /* Playground in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -826,6 +841,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealmDataSources/RxRealmDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -848,6 +864,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealmDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -907,6 +924,7 @@
 				D6C62F511E797D5E007D497A /* ViewController.swift in Sources */,
 				028AFBC624AEBBF000661743 /* CombineViewController.swift in Sources */,
 				BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */,
+				D6021C2324D56F2700D23DB9 /* RxRealmStopWatchViewController.swift in Sources */,
 				028AFB6E24AB123500661743 /* LandmarkRow.swift in Sources */,
 				028AFBDD24AF1B0300661743 /* Repository.swift in Sources */,
 				BB9F4CE91F0DDCC400650829 /* CategoryViewController.swift in Sources */,

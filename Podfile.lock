@@ -47,6 +47,11 @@ PODS:
   - RxRealm (3.0.0):
     - RealmSwift (~> 5.0)
     - RxSwift (~> 5.0)
+  - RxRealmDataSources (0.3):
+    - RealmSwift (~> 5.1)
+    - RxCocoa (~> 5.1)
+    - RxRealm (~> 3.0)
+    - RxSwift (~> 5.1)
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
@@ -69,6 +74,7 @@ DEPENDENCIES:
   - RxCocoa
   - RxOptional
   - RxRealm
+  - RxRealmDataSources
   - RxSwift (~> 5.1.0)
   - SnapKit
   - SwiftLint
@@ -91,6 +97,7 @@ SPEC REPOS:
     - RxCocoa
     - RxOptional
     - RxRealm
+    - RxRealmDataSources
     - RxRelay
     - RxSwift
     - SnapKit
@@ -114,12 +121,13 @@ SPEC CHECKSUMS:
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
   RxRealm: af7a3c857efd5a711c176f6df0d67418ad48293b
+  RxRealmDataSources: 3607aa8cae303f46a1cdf451a255a8f2ebb0fcbe
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
   WeakMapTable: d0327eda092be6a8f7c532942ae98dc7948f5d32
 
-PODFILE CHECKSUM: d22890eb6092855c8aed07b0c06c9bf495524aee
+PODFILE CHECKSUM: 1f242cbddc191926c40c7d422cb1c4bcbc7f7ac4
 
 COCOAPODS: 1.9.3
