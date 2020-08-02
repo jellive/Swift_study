@@ -73,10 +73,10 @@
 		BBD637F01EB0AB60002CF131 /* IBDesignableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */; };
 		BBD637F21EB0ACA4002CF131 /* CustomRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */; };
 		D6021C2024D56CCA00D23DB9 /* Playground in Resources */ = {isa = PBXBuildFile; fileRef = D6021C1F24D56CCA00D23DB9 /* Playground */; };
-		D6021C2324D56F2700D23DB9 /* RxRealmStopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6021C2224D56F2700D23DB9 /* RxRealmStopWatchViewController.swift */; };
 		D604CCE324A89EDE006927DE /* SwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */; };
 		D616938A24B1D670009F2EB1 /* LocalPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616938924B1D670009F2EB1 /* LocalPushViewController.swift */; };
 		D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6663DBB1E7EB74900531889 /* GugudanViewController.swift */; };
+		D6A6D49524D6921900E39419 /* RxMoyaGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */; };
 		D6C62F4F1E797D5E007D497A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C62F4E1E797D5E007D497A /* AppDelegate.swift */; };
 		D6C62F511E797D5E007D497A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C62F501E797D5E007D497A /* ViewController.swift */; };
 		D6C62F541E797D5E007D497A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C62F521E797D5E007D497A /* Main.storyboard */; };
@@ -192,10 +192,10 @@
 		C7A834BF95CB488F90CC8E0D /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		D01BC2A218865C774A6E22E3 /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		D6021C1F24D56CCA00D23DB9 /* Playground */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Playground; sourceTree = "<group>"; };
-		D6021C2224D56F2700D23DB9 /* RxRealmStopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxRealmStopWatchViewController.swift; sourceTree = "<group>"; };
 		D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewModel.swift; sourceTree = "<group>"; };
 		D616938924B1D670009F2EB1 /* LocalPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushViewController.swift; sourceTree = "<group>"; };
 		D6663DBB1E7EB74900531889 /* GugudanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GugudanViewController.swift; path = Gugudan/GugudanViewController.swift; sourceTree = "<group>"; };
+		D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMoyaGithubViewController.swift; sourceTree = "<group>"; };
 		D6C62F4B1E797D5E007D497A /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C62F4E1E797D5E007D497A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6C62F501E797D5E007D497A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -528,14 +528,6 @@
 			name = IBDesignable;
 			sourceTree = "<group>";
 		};
-		D6021C2124D56F0300D23DB9 /* RxRealm-example */ = {
-			isa = PBXGroup;
-			children = (
-				D6021C2224D56F2700D23DB9 /* RxRealmStopWatchViewController.swift */,
-			);
-			path = "RxRealm-example";
-			sourceTree = "<group>";
-		};
 		D604CCE124A86D82006927DE /* SwiftUI-combine */ = {
 			isa = PBXGroup;
 			children = (
@@ -559,6 +551,14 @@
 				D6663DBB1E7EB74900531889 /* GugudanViewController.swift */,
 			);
 			name = Gugudan;
+			sourceTree = "<group>";
+		};
+		D6A6D49324D691F200E39419 /* RxMoya-Github */ = {
+			isa = PBXGroup;
+			children = (
+				D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */,
+			);
+			path = "RxMoya-Github";
 			sourceTree = "<group>";
 		};
 		D6C62F421E797D5E007D497A = {
@@ -586,7 +586,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
-				D6021C2124D56F0300D23DB9 /* RxRealm-example */,
+				D6A6D49324D691F200E39419 /* RxMoya-Github */,
 				026FDF4624C9873000F584F4 /* Realm-tutorial */,
 				02FF187924C16F59005636E7 /* SwiftUI-ObervableObject */,
 				02FF187624C16DBB005636E7 /* SwiftUI-Animation */,
@@ -924,7 +924,6 @@
 				D6C62F511E797D5E007D497A /* ViewController.swift in Sources */,
 				028AFBC624AEBBF000661743 /* CombineViewController.swift in Sources */,
 				BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */,
-				D6021C2324D56F2700D23DB9 /* RxRealmStopWatchViewController.swift in Sources */,
 				028AFB6E24AB123500661743 /* LandmarkRow.swift in Sources */,
 				028AFBDD24AF1B0300661743 /* Repository.swift in Sources */,
 				BB9F4CE91F0DDCC400650829 /* CategoryViewController.swift in Sources */,
@@ -942,6 +941,7 @@
 				028AFBA924ADA62900661743 /* GraphCapsule.swift in Sources */,
 				BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */,
 				02A31E5624B573BB00D32B41 /* RxChameleonViewController.swift in Sources */,
+				D6A6D49524D6921900E39419 /* RxMoyaGithubViewController.swift in Sources */,
 				028AFB7224AB363700661743 /* UserData.swift in Sources */,
 				02FF186924C13F21005636E7 /* RxAlamofireViewModel.swift in Sources */,
 				02A31E5B24B5AC6000D32B41 /* IssueListViewController.swift in Sources */,
