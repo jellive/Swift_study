@@ -26,7 +26,6 @@ struct RxMoyaGithubUser: Codable {
 }
 
 // MARK: - Provider
-
 enum provider {
     case userInfo(name: String)
 }

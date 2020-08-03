@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SwiftStudy/Playground/Combine.playground">
-   </FileRef>
-   <FileRef
       location = "group:SwiftStudy.xcodeproj">
    </FileRef>
    <FileRef

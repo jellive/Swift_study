@@ -55,6 +55,7 @@
 		02A31E5F24B5BF2200D32B41 /* Issue_Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E5E24B5BF2200D32B41 /* Issue_Repository.swift */; };
 		02A31E6124B5BF8700D32B41 /* Issue_Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E6024B5BF8700D32B41 /* Issue_Issue.swift */; };
 		02A31E6324B5C21C00D32B41 /* Issue_IssueTrackerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E6224B5C21C00D32B41 /* Issue_IssueTrackerModel.swift */; };
+		02D6F32B24D7D844001BA1E9 /* RxAlamoFireGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6F32A24D7D844001BA1E9 /* RxAlamoFireGithubViewController.swift */; };
 		02FF186724C13C80005636E7 /* RxAlamofireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF186624C13C80005636E7 /* RxAlamofireView.swift */; };
 		02FF186924C13F21005636E7 /* RxAlamofireViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF186824C13F21005636E7 /* RxAlamofireViewModel.swift */; };
 		02FF186C24C14298005636E7 /* SwiftUILocalPushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF186B24C14298005636E7 /* SwiftUILocalPushView.swift */; };
@@ -171,6 +172,7 @@
 		02A31E5E24B5BF2200D32B41 /* Issue_Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue_Repository.swift; sourceTree = "<group>"; };
 		02A31E6024B5BF8700D32B41 /* Issue_Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue_Issue.swift; sourceTree = "<group>"; };
 		02A31E6224B5C21C00D32B41 /* Issue_IssueTrackerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue_IssueTrackerModel.swift; sourceTree = "<group>"; };
+		02D6F32A24D7D844001BA1E9 /* RxAlamoFireGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAlamoFireGithubViewController.swift; sourceTree = "<group>"; };
 		02FF186624C13C80005636E7 /* RxAlamofireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAlamofireView.swift; sourceTree = "<group>"; };
 		02FF186824C13F21005636E7 /* RxAlamofireViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAlamofireViewModel.swift; sourceTree = "<group>"; };
 		02FF186B24C14298005636E7 /* SwiftUILocalPushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILocalPushView.swift; sourceTree = "<group>"; };
@@ -426,6 +428,14 @@
 			path = "RxSwift-IssueTracker";
 			sourceTree = "<group>";
 		};
+		02D6F32924D7D7DD001BA1E9 /* RxAlamoFire-github */ = {
+			isa = PBXGroup;
+			children = (
+				02D6F32A24D7D844001BA1E9 /* RxAlamoFireGithubViewController.swift */,
+			);
+			path = "RxAlamoFire-github";
+			sourceTree = "<group>";
+		};
 		02FF186524C13C64005636E7 /* RxAlamofire */ = {
 			isa = PBXGroup;
 			children = (
@@ -586,13 +596,14 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
-				D6A6D49324D691F200E39419 /* RxMoya-Github */,
 				026FDF4624C9873000F584F4 /* Realm-tutorial */,
 				02FF187924C16F59005636E7 /* SwiftUI-ObervableObject */,
 				02FF187624C16DBB005636E7 /* SwiftUI-Animation */,
 				02FF187224C167C2005636E7 /* SwiftUI-spacer */,
 				02FF186F24C14E52005636E7 /* SwiftUI-JSONparse */,
 				02FF186A24C1426E005636E7 /* SwiftUI-LocalPush */,
+				D6A6D49324D691F200E39419 /* RxMoya-Github */,
+				02D6F32924D7D7DD001BA1E9 /* RxAlamoFire-github */,
 				02FF186524C13C64005636E7 /* RxAlamofire */,
 				020DCC4E24BEC1350007A0C8 /* Moya-base */,
 				02A31E5924B5AC4C00D32B41 /* RxSwift-IssueTracker */,
@@ -931,6 +942,7 @@
 				02FF187424C167DA005636E7 /* SwiftUISpacerView.swift in Sources */,
 				02FF187B24C16F84005636E7 /* OO_Stopwatch.swift in Sources */,
 				028AFB4B24AB070200661743 /* MapView.swift in Sources */,
+				02D6F32B24D7D844001BA1E9 /* RxAlamoFireGithubViewController.swift in Sources */,
 				D6C62F4F1E797D5E007D497A /* AppDelegate.swift in Sources */,
 				D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */,
 				BB9F4CEB1F0DDD4200650829 /* UIView.swift in Sources */,
