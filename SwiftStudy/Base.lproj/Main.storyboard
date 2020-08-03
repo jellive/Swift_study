@@ -645,5 +645,45 @@
             </objects>
             <point key="canvasLocation" x="3062" y="-654"/>
         </scene>
+        <!--Rx Alamo Fire Github View Controller-->
+        <scene sceneID="rcF-DJ-lbz">
+            <objects>
+                <viewController storyboardIdentifier="rxalamofire_github" id="6X9-PW-eMK" customClass="RxAlamoFireGithubViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ft8-4n-Izc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ngk-Lw-iXn">
+                                <rect key="frame" x="34" y="44" width="307" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghn-RT-pKC">
+                                <rect key="frame" x="311" y="86" width="30" height="30"/>
+                                <state key="normal" title="Get"/>
+                                <connections>
+                                    <action selector="getButtonClicked:" destination="6X9-PW-eMK" eventType="touchUpInside" id="rCf-L0-MwA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ghn-RT-pKC" firstAttribute="trailing" secondItem="ngk-Lw-iXn" secondAttribute="trailing" id="2zN-I5-Gmj"/>
+                            <constraint firstItem="ngk-Lw-iXn" firstAttribute="centerX" secondItem="T8b-Y9-o7S" secondAttribute="centerX" id="3i1-KL-Szu"/>
+                            <constraint firstItem="ngk-Lw-iXn" firstAttribute="width" secondItem="Ft8-4n-Izc" secondAttribute="width" multiplier="0.818667" id="Zpp-bQ-Ezv"/>
+                            <constraint firstItem="Ghn-RT-pKC" firstAttribute="top" secondItem="ngk-Lw-iXn" secondAttribute="bottom" constant="8" id="fAn-W7-SR6"/>
+                            <constraint firstItem="ngk-Lw-iXn" firstAttribute="top" secondItem="T8b-Y9-o7S" secondAttribute="top" constant="44" id="onT-ya-Xf8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="T8b-Y9-o7S"/>
+                    </view>
+                    <connections>
+                        <outlet property="getButton" destination="Ghn-RT-pKC" id="aSM-1r-gAT"/>
+                        <outlet property="userTextField" destination="ngk-Lw-iXn" id="scB-Yi-XJp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FQd-7b-jWJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063" y="967"/>
+        </scene>
     </scenes>
 </document>
