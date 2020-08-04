@@ -98,12 +98,12 @@ class RealmTutorialViewController: UIViewController {
         dogs = realm.objects(Dog.self)
             .sorted(byKeyPath: "time", ascending: false)
         
-        Observable.collection(from: dogs)
-            .map ({"dogs: \($0.count)"})
-            .subscribe { event in
-                self.title = event.element
-        }
-        .disposed(by: bag)
+//        Observable.collection(from: dogs)
+//            .map ({"dogs: \($0.count)"})
+//            .subscribe { event in
+//                self.title = event.element
+//        }
+//        .disposed(by: bag)
         
 //        Observable.changeset(from: dogs)
 //            .subscribe(onNext: {
