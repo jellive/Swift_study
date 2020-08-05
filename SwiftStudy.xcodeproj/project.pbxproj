@@ -264,14 +264,14 @@
 			path = "Moya-base";
 			sourceTree = "<group>";
 		};
-		021E5619249B3A0800AB89F3 /* SwiftUI */ = {
+		021E5619249B3A0800AB89F3 /* SwiftUI-multiView */ = {
 			isa = PBXGroup;
 			children = (
 				021E561A249B3A2100AB89F3 /* SwiftUIView.swift */,
 				021E5620249B584500AB89F3 /* SecondSwiftUIView.swift */,
 				D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */,
 			);
-			path = SwiftUI;
+			path = "SwiftUI-multiView";
 			sourceTree = "<group>";
 		};
 		026FDF4624C9873000F584F4 /* Realm-tutorial */ = {
@@ -436,6 +436,46 @@
 			path = "RxAlamoFire-github";
 			sourceTree = "<group>";
 		};
+		02D6F33024DAAA5F001BA1E9 /* Realm-menu */ = {
+			isa = PBXGroup;
+			children = (
+				BB5A800E1E96065600000670 /* Realm */,
+				026FDF4624C9873000F584F4 /* Realm-tutorial */,
+			);
+			path = "Realm-menu";
+			sourceTree = "<group>";
+		};
+		02D6F33124DAAB0D001BA1E9 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				02A31E5424B573A700D32B41 /* RxSwift-Chameleon */,
+				02A31E5124B4648400D32B41 /* RxSwift-city */,
+				028AFBDB24AF1AF300661743 /* RxSwift-github */,
+				02A31E5924B5AC4C00D32B41 /* RxSwift-IssueTracker */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		02D6F33224DAAB23001BA1E9 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				028AFB9B24ADA3DB00661743 /* SwiftUI-animate */,
+				02FF187624C16DBB005636E7 /* SwiftUI-Animation */,
+				D604CCE124A86D82006927DE /* SwiftUI-combine */,
+				028AFBAA24ADB16800661743 /* SwiftUI-complexInterface */,
+				02FF186F24C14E52005636E7 /* SwiftUI-JSONparse */,
+				02FF186A24C1426E005636E7 /* SwiftUI-LocalPush */,
+				021E5619249B3A0800AB89F3 /* SwiftUI-multiView */,
+				02FF187924C16F59005636E7 /* SwiftUI-ObervableObject */,
+				028AFB9024AC680500661743 /* SwiftUI-shape */,
+				02FF187224C167C2005636E7 /* SwiftUI-spacer */,
+				028AFB4224AAE6A800661743 /* SwiftUI-tutorial */,
+				028AFBAF24ADCBBD00661743 /* SwiftUI-UIControl */,
+				028AFBC724AEBDDA00661743 /* SwiftUI-UIKit */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		02FF186524C13C64005636E7 /* RxAlamofire */ = {
 			isa = PBXGroup;
 			children = (
@@ -518,6 +558,7 @@
 				BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */,
 			);
 			name = Realm;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		BB9F4CE71F0DDCA100650829 /* Category */ = {
@@ -544,8 +585,9 @@
 				028AFB3A24AAC5B300661743 /* SwiftUICombineView.swift */,
 				028AFB3C24AACC3900661743 /* SwiftUICombineViewModel.swift */,
 			);
-			path = "SwiftUI-combine";
-			sourceTree = "<group>";
+			name = "SwiftUI-combine";
+			path = "SwiftStudy/SwiftUI-combine";
+			sourceTree = SOURCE_ROOT;
 		};
 		D616938824B1D652009F2EB1 /* Local-push */ = {
 			isa = PBXGroup;
@@ -596,44 +638,28 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
-				026FDF4624C9873000F584F4 /* Realm-tutorial */,
-				02FF187924C16F59005636E7 /* SwiftUI-ObervableObject */,
-				02FF187624C16DBB005636E7 /* SwiftUI-Animation */,
-				02FF187224C167C2005636E7 /* SwiftUI-spacer */,
-				02FF186F24C14E52005636E7 /* SwiftUI-JSONparse */,
-				02FF186A24C1426E005636E7 /* SwiftUI-LocalPush */,
-				D6A6D49324D691F200E39419 /* RxMoya-Github */,
-				02D6F32924D7D7DD001BA1E9 /* RxAlamoFire-github */,
-				02FF186524C13C64005636E7 /* RxAlamofire */,
-				020DCC4E24BEC1350007A0C8 /* Moya-base */,
-				02A31E5924B5AC4C00D32B41 /* RxSwift-IssueTracker */,
-				02A31E5424B573A700D32B41 /* RxSwift-Chameleon */,
-				02A31E5124B4648400D32B41 /* RxSwift-city */,
-				D616938824B1D652009F2EB1 /* Local-push */,
-				028AFBDB24AF1AF300661743 /* RxSwift-github */,
-				028AFBC724AEBDDA00661743 /* SwiftUI-UIKit */,
-				028AFBC024AEBA2700661743 /* Combine */,
-				028AFBAF24ADCBBD00661743 /* SwiftUI-UIControl */,
-				028AFBAA24ADB16800661743 /* SwiftUI-complexInterface */,
-				028AFB9B24ADA3DB00661743 /* SwiftUI-animate */,
-				028AFB9024AC680500661743 /* SwiftUI-shape */,
-				028AFB4524AAF8AD00661743 /* Resources */,
-				028AFB4224AAE6A800661743 /* SwiftUI-tutorial */,
-				D604CCE124A86D82006927DE /* SwiftUI-combine */,
-				021E5619249B3A0800AB89F3 /* SwiftUI */,
-				BB9F4CE71F0DDCA100650829 /* Category */,
-				BB3CB1FE1F0B9AB70072178C /* Drawing */,
-				BBD637EE1EB0AB39002CF131 /* IBDesignable */,
-				BB5A800E1E96065600000670 /* Realm */,
-				D6663DBA1E7EB73300531889 /* Gugudan */,
 				D6C62F4E1E797D5E007D497A /* AppDelegate.swift */,
-				D6C62F501E797D5E007D497A /* ViewController.swift */,
-				D6021C1F24D56CCA00D23DB9 /* Playground */,
-				D6C62F521E797D5E007D497A /* Main.storyboard */,
 				D6C62F551E797D5E007D497A /* Assets.xcassets */,
-				D6C62F571E797D5E007D497A /* LaunchScreen.storyboard */,
+				BB9F4CE71F0DDCA100650829 /* Category */,
+				028AFBC024AEBA2700661743 /* Combine */,
+				BB3CB1FE1F0B9AB70072178C /* Drawing */,
+				D6663DBA1E7EB73300531889 /* Gugudan */,
+				BBD637EE1EB0AB39002CF131 /* IBDesignable */,
 				D6C62F5A1E797D5E007D497A /* Info.plist */,
+				D6C62F571E797D5E007D497A /* LaunchScreen.storyboard */,
+				D616938824B1D652009F2EB1 /* Local-push */,
+				D6C62F521E797D5E007D497A /* Main.storyboard */,
+				020DCC4E24BEC1350007A0C8 /* Moya-base */,
+				D6021C1F24D56CCA00D23DB9 /* Playground */,
+				02D6F33024DAAA5F001BA1E9 /* Realm-menu */,
+				028AFB4524AAF8AD00661743 /* Resources */,
+				02FF186524C13C64005636E7 /* RxAlamofire */,
+				02D6F32924D7D7DD001BA1E9 /* RxAlamoFire-github */,
+				D6A6D49324D691F200E39419 /* RxMoya-Github */,
+				02D6F33124DAAB0D001BA1E9 /* RxSwift */,
 				BBEAA0C71EFCAFEB00D3E06F /* SwiftStudy-Bridging-Header.h */,
+				02D6F33224DAAB23001BA1E9 /* SwiftUI */,
+				D6C62F501E797D5E007D497A /* ViewController.swift */,
 			);
 			path = SwiftStudy;
 			sourceTree = "<group>";
