@@ -23,15 +23,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Do any additional setup after loading the view, typically from a nib.
         print("hihihi");
         
-        //        UIDevice.rx.orientation
-        //            .subscribe(onNext: { current in
-        //                switch current {
-        //                case .landscape:
-        //                    print("landscape")
-        //                case .portrait:
-        //                    print("portrait")
-        //                }
-        //            })
+        UIDevice.rx.orientation
+            .subscribe(onNext: { current in
+                switch current {
+                case .landscape:
+                    print("landscape")
+                case .portrait:
+                    print("portrait")
+                }
+            })
         
         menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push", "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue", "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire", "Realm-tutorial", "RxMoya-Github", "RxAlamofire-Github")
     }
