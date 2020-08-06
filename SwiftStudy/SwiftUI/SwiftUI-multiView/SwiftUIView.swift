@@ -22,7 +22,7 @@ struct SwiftUIView: View {
     @ObservedObject var viewModel: SwiftUIViewModel
     @State var touchedCount = 0
     @State var name = "0"
-    let genderArr = ["남성", "여성"]
+    let genderArr = ["남성", "여성", "무언가"]
     
     let actArr = [(key: "거의 안해요", value: 1.2), (key: "1~3일", value: 1.3), (key: "3~5일", value: 1.5), (key: "매일", value: 1.7), (key: "격하게 매일", value: 1.9)]
     @State var selectedAct = 0
