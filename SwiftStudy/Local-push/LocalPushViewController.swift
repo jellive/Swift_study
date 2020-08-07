@@ -16,7 +16,7 @@ class LocalPushViewController: UIViewController {
         super.viewDidLoad()
         
         requestNotificationAuthorization()
-        sendNotification(seconds: 10)
+        sendNotification(seconds: 5)
     }
     
     func requestNotificationAuthorization() {
