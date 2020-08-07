@@ -78,6 +78,7 @@
 		D616938A24B1D670009F2EB1 /* LocalPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616938924B1D670009F2EB1 /* LocalPushViewController.swift */; };
 		D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6663DBB1E7EB74900531889 /* GugudanViewController.swift */; };
 		D6A6D49524D6921900E39419 /* RxMoyaGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */; };
+		D6A6D49724DD10EE00E39419 /* RealmMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6D49624DD10EE00E39419 /* RealmMenuViewController.swift */; };
 		D6C62F4F1E797D5E007D497A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C62F4E1E797D5E007D497A /* AppDelegate.swift */; };
 		D6C62F511E797D5E007D497A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C62F501E797D5E007D497A /* ViewController.swift */; };
 		D6C62F541E797D5E007D497A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C62F521E797D5E007D497A /* Main.storyboard */; };
@@ -198,6 +199,7 @@
 		D616938924B1D670009F2EB1 /* LocalPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushViewController.swift; sourceTree = "<group>"; };
 		D6663DBB1E7EB74900531889 /* GugudanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GugudanViewController.swift; path = Gugudan/GugudanViewController.swift; sourceTree = "<group>"; };
 		D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMoyaGithubViewController.swift; sourceTree = "<group>"; };
+		D6A6D49624DD10EE00E39419 /* RealmMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMenuViewController.swift; sourceTree = "<group>"; };
 		D6C62F4B1E797D5E007D497A /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C62F4E1E797D5E007D497A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6C62F501E797D5E007D497A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -441,6 +443,7 @@
 			children = (
 				BB5A800E1E96065600000670 /* Realm */,
 				026FDF4624C9873000F584F4 /* Realm-tutorial */,
+				D6A6D49624DD10EE00E39419 /* RealmMenuViewController.swift */,
 			);
 			path = "Realm-menu";
 			sourceTree = "<group>";
@@ -1004,6 +1007,7 @@
 				028AFB7024AB14E000661743 /* LandmarkList.swift in Sources */,
 				028AFBA724ADA60B00661743 /* HikeDetail.swift in Sources */,
 				028AFBA324ADA47700661743 /* HikeGraph.swift in Sources */,
+				D6A6D49724DD10EE00E39419 /* RealmMenuViewController.swift in Sources */,
 				028AFB4424AAE6B600661743 /* SwiftUITutorialView.swift in Sources */,
 				02A31E5D24B5AD8900D32B41 /* Issue_Github.swift in Sources */,
 				028AFBB324ADCC2100661743 /* Profile.swift in Sources */,
