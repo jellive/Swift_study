@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 import RxSwift
 import RxCocoa
 
@@ -14,20 +15,27 @@ class RealmMenuViewController: UIViewController, UIScrollViewDelegate, UITableVi
     
     @IBOutlet var tableView: UITableView!
     
+    let menuArr = ["Realm", "Realm-tutorial"]
+    
     let bag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.rx.setDelegate(self).disposed(by: bag)
-        
+        tableView.rx.itemSelected.subscribe(onNext: { indexPath in
+            print("\(indexPath)")
+        })
+        .disposed(by: bag)
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return menuArr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
+    
+    
     
 }

@@ -33,7 +33,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //                }
 //            })
         
-        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push", "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue", "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire", "Realm-tutorial", "RxMoya-Github", "RxAlamofire-Github")
+        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push", "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue", "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire",
+//                                 "Realm-tutorial",
+                                 "RxMoya-Github", "RxAlamofire-Github")
     }
     
     override func didReceiveMemoryWarning() {
@@ -61,7 +63,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             self.present(vc, animated: true, completion: nil);
             break;
         case 1:
-            let vc : RealmViewController = self.storyboard?.instantiateViewController(withIdentifier: "realm") as! RealmViewController;
+            let vc : RealmMenuViewController = self.storyboard?.instantiateViewController(withIdentifier: "realm_menu") as! RealmMenuViewController;
             self.present(vc, animated: true, completion: nil);
         case 2:
             let vc : IBDesignableViewController = self.storyboard?.instantiateViewController(withIdentifier: "ib_designable") as! IBDesignableViewController
@@ -106,9 +108,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         case 15:
             let vc = UIHostingController(rootView: RxAlamofireView())
             present(vc, animated: true){}
-        case 16:
-            let vc = self.storyboard?.instantiateViewController(identifier: "realm_tutorial") as! RealmTutorialViewController
-            present(vc, animated: true){}
+//        case 16:
+//            let vc = self.storyboard?.instantiateViewController(identifier: "realm_tutorial") as! RealmTutorialViewController
+//            present(vc, animated: true){}
         case 17:
             let vc = self.storyboard?.instantiateViewController(identifier: "rxmoya_github") as! RxMoyaGithubViewController
             present(vc, animated: true){}
