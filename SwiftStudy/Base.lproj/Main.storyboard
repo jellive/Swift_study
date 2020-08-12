@@ -686,7 +686,7 @@
         <!--Realm Menu View Controller-->
         <scene sceneID="Y15-eD-99B">
             <objects>
-                <viewController storyboardIdentifier="realm_menu" id="rTt-Si-Ioz" customClass="RealmMenuViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="realm_menu" id="rTt-Si-Ioz" customClass="RealmMenuViewController" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qJ5-Zg-zsB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
