@@ -22,7 +22,9 @@ class RealmMenuViewController: UIViewController, UIScrollViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.rx.setDelegate(self).disposed(by: bag)
+//        tableView.rx.setDelegate(self).disposed(by: bag)
+        tableView.delegate = self
+        
         tableView.rx.itemSelected.subscribe(onNext: { indexPath in
             print("\(indexPath)")
         })
@@ -33,7 +35,9 @@ class RealmMenuViewController: UIViewController, UIScrollViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell()
+        cell.detailTextLabel?.text = menuArr[indexPath.row]
+        return cell
     }
     
     
