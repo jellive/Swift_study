@@ -17,7 +17,6 @@ class RealmMenuViewController: UIViewController, UIScrollViewDelegate, UITableVi
     
     
     let menuArr = ["Realm", "Realm-tutorial"]
-
     
     let bag = DisposeBag()
     
@@ -26,7 +25,7 @@ class RealmMenuViewController: UIViewController, UIScrollViewDelegate, UITableVi
         
 //        tableView.rx.setDelegate(self).disposed(by: bag)
         tableView.delegate = self
-        
+         
         tableView.rx.itemSelected.subscribe(onNext: { indexPath in
             print("\(indexPath)")
         })
