@@ -42,5 +42,4 @@ class RealmMenuViewController: UIViewController, UIScrollViewDelegate, UITableVi
     }
     
     
-    
 }
