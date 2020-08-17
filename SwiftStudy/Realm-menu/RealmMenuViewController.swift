@@ -37,15 +37,7 @@ class RealmMenuViewController: UIViewController, UIScrollViewDelegate {
         })
         .disposed(by: bag)
     }
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return menuArr.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell()
-//        cell.detailTextLabel?.text = menuArr[indexPath.row]
-//        return cell
-//    }
+    
     
     
 }
