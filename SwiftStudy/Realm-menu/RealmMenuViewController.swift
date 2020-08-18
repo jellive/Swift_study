@@ -32,6 +32,7 @@ class RealmMenuViewController: UIViewController, UIScrollViewDelegate {
             cell.textLabel?.text = element
             return cell
         }.disposed(by: bag)
+        
         tableView.rx.itemSelected.subscribe(onNext: { indexPath in
             print("\(indexPath)")
         })
