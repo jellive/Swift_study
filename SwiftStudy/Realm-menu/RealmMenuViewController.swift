@@ -28,13 +28,15 @@ class RealmMenuViewController: UIViewController, UIScrollViewDelegate {
          
         let menuOb = Observable.of(menuArr)
         menuOb.bind(to: tableView.rx.items) { (tableView: UITableView, index: Int, element: String) -> UITableViewCell in
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") else { return UITableViewCell()}
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") else { return UITableViewCell() }
             cell.textLabel?.text = element
             return cell
         }.disposed(by: bag)
         
         tableView.rx.itemSelected.subscribe(onNext: { indexPath in
-            print("\(indexPath)")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+                print("\(indexPath)")
+            })
         })
         .disposed(by: bag)
     }
