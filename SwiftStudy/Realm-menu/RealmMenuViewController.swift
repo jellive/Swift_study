@@ -33,7 +33,7 @@ class RealmMenuViewController: UIViewController, UIScrollViewDelegate {
         }.disposed(by: bag)
         
         tableView.rx.itemSelected.subscribe(onNext: { indexPath in
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
                 switch indexPath.row {
                     case 0:
                         let vc = self.storyboard?.instantiateViewController(withIdentifier: "realm") as! RealmViewController
