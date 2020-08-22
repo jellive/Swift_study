@@ -15,7 +15,6 @@ class RealmMenuViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet var tableView: UITableView!
     
-    
     let menuArr = ["Realm", "Realm-tutorial"]
     
     let bag = DisposeBag()
