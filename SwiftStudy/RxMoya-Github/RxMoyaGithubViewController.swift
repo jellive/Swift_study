@@ -45,7 +45,6 @@ extension provider: TargetType {
         }
     }
     
-    
     var method: Moya.Method {
         return .get
     }
