@@ -42,7 +42,7 @@ class RealmMenuViewController: UIViewController, UIScrollViewDelegate {
                         let vc = self.storyboard?.instantiateViewController(withIdentifier: "realm_tutorial") as! RealmTutorialViewController
                         self.present(vc, animated: true){}
                     default:
-                    print("\(indexPath)")
+                        print("\(indexPath)")
                 }
             })
         })
