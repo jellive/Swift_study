@@ -10,6 +10,7 @@
 		020DCC5024BEC5160007A0C8 /* Moya_MyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020DCC4F24BEC5160007A0C8 /* Moya_MyService.swift */; };
 		021E561B249B3A2100AB89F3 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E561A249B3A2100AB89F3 /* SwiftUIView.swift */; };
 		021E5621249B584500AB89F3 /* SecondSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E5620249B584500AB89F3 /* SecondSwiftUIView.swift */; };
+		0260AE0D24F6257D00125671 /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260AE0C24F6257C00125671 /* RxSwiftViewController.swift */; };
 		026FDF4824C9874300F584F4 /* RealmTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FDF4724C9874300F584F4 /* RealmTutorialViewController.swift */; };
 		028AFB4424AAE6B600661743 /* SwiftUITutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB4324AAE6B600661743 /* SwiftUITutorialView.swift */; };
 		028AFB4924AAF8D700661743 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB4824AAF8D700661743 /* CircleImage.swift */; };
@@ -126,6 +127,7 @@
 		020DCC4F24BEC5160007A0C8 /* Moya_MyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moya_MyService.swift; sourceTree = "<group>"; };
 		021E561A249B3A2100AB89F3 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		021E5620249B584500AB89F3 /* SecondSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSwiftUIView.swift; sourceTree = "<group>"; };
+		0260AE0C24F6257C00125671 /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
 		026FDF4724C9874300F584F4 /* RealmTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTutorialViewController.swift; sourceTree = "<group>"; };
 		028AFB3A24AAC5B300661743 /* SwiftUICombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUICombineView.swift; path = "../../../../../../Users/yoohg/Downloads/CombineWeatherApp/CombineWeatherApp-Starter/SwiftUICombineView.swift"; sourceTree = "<group>"; };
 		028AFB3C24AACC3900661743 /* SwiftUICombineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUICombineViewModel.swift; path = "../../../../../../Users/yoohg/Downloads/CombineWeatherApp/CombineWeatherApp-Starter/SwiftUICombineViewModel.swift"; sourceTree = "<group>"; };
@@ -455,6 +457,7 @@
 				02A31E5124B4648400D32B41 /* RxSwift-city */,
 				028AFBDB24AF1AF300661743 /* RxSwift-github */,
 				02A31E5924B5AC4C00D32B41 /* RxSwift-IssueTracker */,
+				0260AE0C24F6257C00125671 /* RxSwiftViewController.swift */,
 			);
 			path = RxSwift;
 			sourceTree = "<group>";
@@ -1013,6 +1016,7 @@
 				028AFBB324ADCC2100661743 /* Profile.swift in Sources */,
 				028AFBAE24ADB5F500661743 /* CategoryRow.swift in Sources */,
 				BBD637F21EB0ACA4002CF131 /* CustomRectView.swift in Sources */,
+				0260AE0D24F6257D00125671 /* RxSwiftViewController.swift in Sources */,
 				D616938A24B1D670009F2EB1 /* LocalPushViewController.swift in Sources */,
 				02FF187824C16DD7005636E7 /* SwiftUIAnimationView.swift in Sources */,
 				028AFBB524ADCCD500661743 /* ProfileSummary.swift in Sources */,

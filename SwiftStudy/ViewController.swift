@@ -35,7 +35,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push", "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue", "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire",
 //                                 "Realm-tutorial",
-                                 "RxMoya-Github", "RxAlamofire-Github")
+                                 "RxMoya-Github", "RxAlamofire-Github", "RxSwift")
     }
     
     override func didReceiveMemoryWarning() {
@@ -112,11 +112,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //        case 16:
 //            let vc = self.storyboard?.instantiateViewController(identifier: "realm_tutorial") as! RealmTutorialViewController
 //            present(vc, animated: true){}
-        case 17:
+        case 16:
             let vc = self.storyboard?.instantiateViewController(identifier: "rxmoya_github") as! RxMoyaGithubViewController
             present(vc, animated: true){}
-        case 18:
+        case 17:
             let vc = self.storyboard?.instantiateViewController(identifier: "rxalamofire_github") as! RxAlamoFireGithubViewController
+            present(vc, animated: true){}
+        case 18:
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxswift") as! RxSwiftViewController
             present(vc, animated: true){}
         default:
             return;
