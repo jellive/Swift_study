@@ -28,6 +28,22 @@ class RxSwiftViewController: UIViewController {
         
         tableView.rx.itemSelected.subscribe(onNext: {
             print($0.row)
+            switch($0.row) {
+            case 0:
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxchameleon") as! RXChameleonViewController
+                self.present(vc, animated: true){}
+            case 1:
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxcity") as! RxCityViewController
+                self.present(vc, animated: true){}
+            case 2:
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxgithub") as! RxGithubViewController
+                self.present(vc, animated: true){}
+            case 3:
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxissue") as! IssueListViewController
+                self.present(vc, animated: true){}
+            default:
+                return
+            }
         }).disposed(by: bag)
     }
 }
