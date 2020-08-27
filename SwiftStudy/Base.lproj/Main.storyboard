@@ -735,9 +735,9 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="CDP-eK-mJl" firstAttribute="height" secondItem="tbh-jV-Gvr" secondAttribute="height" id="PtR-5K-oob"/>
                             <constraint firstItem="CDP-eK-mJl" firstAttribute="centerX" secondItem="D7H-vg-Viq" secondAttribute="centerX" id="ddp-vT-1Tk"/>
                             <constraint firstItem="CDP-eK-mJl" firstAttribute="centerY" secondItem="D7H-vg-Viq" secondAttribute="centerY" id="pnj-oC-c7n"/>
+                            <constraint firstItem="CDP-eK-mJl" firstAttribute="height" secondItem="D7H-vg-Viq" secondAttribute="height" id="t70-G3-q68"/>
                             <constraint firstItem="CDP-eK-mJl" firstAttribute="width" secondItem="tbh-jV-Gvr" secondAttribute="width" id="tro-mf-fIi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D7H-vg-Viq"/>

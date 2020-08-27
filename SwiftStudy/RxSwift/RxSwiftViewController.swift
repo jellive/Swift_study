@@ -25,5 +25,9 @@ class RxSwiftViewController: UIViewController {
             return cell
         }
         .disposed(by: bag)
+        
+        tableView.rx.itemSelected.subscribe(onNext: {
+            print($0.row)
+        }).disposed(by: bag)
     }
 }
