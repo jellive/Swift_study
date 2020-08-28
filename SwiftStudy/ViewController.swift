@@ -33,7 +33,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //                }
 //            })
         
-        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push", "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue", "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire",
+        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push",
+//                                 "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue",
+                                 "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire",
 //                                 "Realm-tutorial",
                                  "RxMoya-Github", "RxAlamofire-Github", "RxSwift")
     }
@@ -84,41 +86,41 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         case 7:
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "localpush") as! LocalPushViewController
             self.present(vc, animated: true, completion: nil)
+//        case 8:
+//            let vc = self.storyboard?
+//                .instantiateViewController(withIdentifier: "rxgithub") as! RxGithubViewController
+//            self.present(vc, animated: true, completion: nil)
+//        case 9:
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxcity") as! RxCityViewController
+//            self.present(vc, animated: true, completion: nil)
+//        case 10:
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxchameleon") as! RXChameleonViewController
+//            self.present(vc, animated: true, completion: nil)
+//        case 11:
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxissue") as! IssueListViewController
+//            self.present(vc, animated: true, completion: nil)
         case 8:
-            let vc = self.storyboard?
-                .instantiateViewController(withIdentifier: "rxgithub") as! RxGithubViewController
-            self.present(vc, animated: true, completion: nil)
-        case 9:
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxcity") as! RxCityViewController
-            self.present(vc, animated: true, completion: nil)
-        case 10:
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxchameleon") as! RXChameleonViewController
-            self.present(vc, animated: true, completion: nil)
-        case 11:
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxissue") as! IssueListViewController
-            self.present(vc, animated: true, completion: nil)
-        case 12:
             let vc = UIHostingController(rootView: SwiftUILocalPushView())
             self.present(vc, animated: true ){}
-        case 13:
+        case 9:
             let vc = UIHostingController(rootView: SwiftUIJSONParseView())
             present(vc, animated: true, completion: nil)
-        case 14:
+        case 10:
             let vc = UIHostingController(rootView: SwiftUIObservableObjectView())
             present(vc, animated: true){}
-        case 15:
+        case 11:
             let vc = UIHostingController(rootView: RxAlamofireView())
             present(vc, animated: true){}
 //        case 16:
 //            let vc = self.storyboard?.instantiateViewController(identifier: "realm_tutorial") as! RealmTutorialViewController
 //            present(vc, animated: true){}
-        case 16:
+        case 12:
             let vc = self.storyboard?.instantiateViewController(identifier: "rxmoya_github") as! RxMoyaGithubViewController
             present(vc, animated: true){}
-        case 17:
+        case 13:
             let vc = self.storyboard?.instantiateViewController(identifier: "rxalamofire_github") as! RxAlamoFireGithubViewController
             present(vc, animated: true){}
-        case 18:
+        case 14:
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxswift") as! RxSwiftViewController
             present(vc, animated: true){}
         default:
