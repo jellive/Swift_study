@@ -37,7 +37,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //                                 "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue",
                                  "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire",
 //                                 "Realm-tutorial",
-                                 "RxMoya-Github", "RxAlamofire-Github", "RxSwift")
+                                 "RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera")
     }
     
     override func didReceiveMemoryWarning() {
@@ -122,6 +122,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             present(vc, animated: true){}
         case 14:
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxswift") as! RxSwiftViewController
+            present(vc, animated: true){}
+        case 15:
+            let vc = self.storyboard?.instantiateViewController(identifier: "camera") as! CameraViewController
             present(vc, animated: true){}
         default:
             return;
