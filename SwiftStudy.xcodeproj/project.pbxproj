@@ -78,6 +78,7 @@
 		D604CCE324A89EDE006927DE /* SwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */; };
 		D616938A24B1D670009F2EB1 /* LocalPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616938924B1D670009F2EB1 /* LocalPushViewController.swift */; };
 		D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6663DBB1E7EB74900531889 /* GugudanViewController.swift */; };
+		D666F16524FB525600357FF2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666F16424FB525600357FF2 /* CameraViewController.swift */; };
 		D6A6D49524D6921900E39419 /* RxMoyaGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */; };
 		D6A6D49724DD10EE00E39419 /* RealmMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6D49624DD10EE00E39419 /* RealmMenuViewController.swift */; };
 		D6C62F4F1E797D5E007D497A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C62F4E1E797D5E007D497A /* AppDelegate.swift */; };
@@ -200,6 +201,7 @@
 		D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewModel.swift; sourceTree = "<group>"; };
 		D616938924B1D670009F2EB1 /* LocalPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushViewController.swift; sourceTree = "<group>"; };
 		D6663DBB1E7EB74900531889 /* GugudanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GugudanViewController.swift; path = Gugudan/GugudanViewController.swift; sourceTree = "<group>"; };
+		D666F16424FB525600357FF2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMoyaGithubViewController.swift; sourceTree = "<group>"; };
 		D6A6D49624DD10EE00E39419 /* RealmMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMenuViewController.swift; sourceTree = "<group>"; };
 		D6C62F4B1E797D5E007D497A /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -611,6 +613,14 @@
 			name = Gugudan;
 			sourceTree = "<group>";
 		};
+		D666F16324FB523800357FF2 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				D666F16424FB525600357FF2 /* CameraViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		D6A6D49324D691F200E39419 /* RxMoya-Github */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,6 +654,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				D666F16324FB523800357FF2 /* Camera */,
 				D6C62F4E1E797D5E007D497A /* AppDelegate.swift */,
 				D6C62F551E797D5E007D497A /* Assets.xcassets */,
 				BB9F4CE71F0DDCA100650829 /* Category */,
@@ -972,6 +983,7 @@
 				BB9F4CE91F0DDCC400650829 /* CategoryViewController.swift in Sources */,
 				028AFB6A24AB0DF200661743 /* LandmarkDetail.swift in Sources */,
 				02FF187424C167DA005636E7 /* SwiftUISpacerView.swift in Sources */,
+				D666F16524FB525600357FF2 /* CameraViewController.swift in Sources */,
 				02FF187B24C16F84005636E7 /* OO_Stopwatch.swift in Sources */,
 				028AFB4B24AB070200661743 /* MapView.swift in Sources */,
 				02D6F32B24D7D844001BA1E9 /* RxAlamoFireGithubViewController.swift in Sources */,
