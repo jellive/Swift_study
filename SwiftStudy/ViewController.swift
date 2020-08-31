@@ -64,7 +64,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let vc : GugudanViewController = self.storyboard?.instantiateViewController(withIdentifier: "gugudan") as! GugudanViewController;
             self.present(vc, animated: true, completion: nil);
             break;
-            
         case 1:
             let vc : RealmMenuViewController = self.storyboard?.instantiateViewController(withIdentifier: "realm_menu") as! RealmMenuViewController;
             self.present(vc, animated: true, completion: nil);
