@@ -32,7 +32,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //                    print("portrait")
 //                }
 //            })
-        
         menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push",
 //                                 "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue",
                                  "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire",
