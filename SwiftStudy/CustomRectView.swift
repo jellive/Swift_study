@@ -38,8 +38,7 @@ class CustomRectView: UIView {
     override func draw(_ rect: CGRect) {
         // Drawing code
     }
-    */
-    
+     */
     override func draw(_ rect: CGRect) {
         let context = UIGraphicsGetCurrentContext()
         let myFrame = self.bounds
