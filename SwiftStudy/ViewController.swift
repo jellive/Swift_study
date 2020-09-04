@@ -40,18 +40,18 @@ class ViewController: UIViewController, UICollectionViewDelegate{
                                  "RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera"]
         let menuArr = Observable.of(menuArray)
         
-//        menuArr
-//        .bind(to: mainCollectionView.rx.items) { (collectionView, row, element) in
-//            let indexPath = IndexPath(row: row, section: 0)
-//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "main_collection_view_cell", for: indexPath)
-//            let label = cell.viewWithTag(2) as! UILabel
-//            label.text = "\(element) @ \(row)"
-//            return cell
-//        }.disposed(by: bag)
-        menuArr.bind(to: mainCollectionView.rx.items(cellIdentifier: "main_collection_view_cell", cellType: UICollectionViewCell.self)) { (row, element, cell) in
+        
+        menuArr
+            .bind(to: mainCollectionView.rx.items(cellIdentifier: "main_collection_view_cell")) { (cell, row, element) in
+            let indexPath = IndexPath(row: row, section: 0)
             let label = cell.viewWithTag(2) as! UILabel
             label.text = "\(element) @ \(row)"
+            return cell
         }.disposed(by: bag)
+//        menuArr.bind(to: mainCollectionView.rx.items(cellIdentifier: "main_collection_view_cell", cellType: UICollectionViewCell.self)) { (row, element, cell) in
+//            let label = cell.viewWithTag(2) as! UILabel
+//            label.text = "\(element) @ \(row)"
+//        }.disposed(by: bag)
     }
     
     override func didReceiveMemoryWarning() {
