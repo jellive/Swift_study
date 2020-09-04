@@ -33,10 +33,10 @@ PODS:
   - Realm/Headers (5.1.0)
   - RealmSwift (5.1.0):
     - Realm (= 5.1.0)
-  - RxAlamofire (5.6.0):
-    - RxAlamofire/Core (= 5.6.0)
-  - RxAlamofire/Core (5.6.0):
-    - Alamofire (~> 5.1)
+  - RxAlamofire (5.6.1):
+    - RxAlamofire/Core (= 5.6.1)
+  - RxAlamofire/Core (5.6.1):
+    - Alamofire (~> 5.2)
     - RxSwift (~> 5.1)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
@@ -117,7 +117,7 @@ SPEC CHECKSUMS:
   ReactorKit: 12a93358c554bb3f167b16b14c40374fa9cd5acd
   Realm: bdea546851e37b4cf0a2400cef115c7c26fda488
   RealmSwift: 70945aa168db93b215c460e9c8ef680261aa28af
-  RxAlamofire: f34ddbab56fa2a36f99737f4d4ecc22288a1384f
+  RxAlamofire: 0531dddf378c84270e97e897333678f1cfaec3ba
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
   RxRealm: af7a3c857efd5a711c176f6df0d67418ad48293b
@@ -130,4 +130,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 1f242cbddc191926c40c7d422cb1c4bcbc7f7ac4
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.9.1
