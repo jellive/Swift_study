@@ -23,6 +23,7 @@ class CustomRectView: UIView {
     
     @IBInspectable var lineWidth: Int = 100
     @IBInspectable var fillColor: UIColor = UIColor.blue
+    
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
