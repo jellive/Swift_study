@@ -12,11 +12,13 @@ import RxSwift
 import RxCocoa
 import Foundation
 
-class ViewController: UIViewController, UICollectionViewDelegate{
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
     
     @IBOutlet weak var mainCollectionView: UICollectionView!
     
-    var menuArray: Array<String>!
+    var menuArray : NSArray = []
+
+//    var menuArray: Array<String>!
     
     let bag = DisposeBag()
     
@@ -33,21 +35,24 @@ class ViewController: UIViewController, UICollectionViewDelegate{
 //                    print("portrait")
 //                }
 //            })
-        menuArray = ["구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push",
+
+        menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push",
+//        menuArray = ["구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push",
 //                                 "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue",
                                  "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire",
 //                                 "Realm-tutorial",
-                                 "RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera"]
-        let menuArr = Observable.of(menuArray)
+//"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera"]
+"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera")
+//        let menuArr = Observable.of(menuArray)
         
         
-        menuArr
-            .bind(to: mainCollectionView.rx.items(cellIdentifier: "main_collection_view_cell")) { (cell, row, element) in
-            let indexPath = IndexPath(row: row, section: 0)
-            let label = cell.viewWithTag(2) as! UILabel
-            label.text = "\(element) @ \(row)"
-            return cell
-        }.disposed(by: bag)
+//        menuArr
+//            .bind(to: mainCollectionView.rx.items(cellIdentifier: "main_collection_view_cell")) { (cell, row, element) in
+//            let indexPath = IndexPath(row: row, section: 0)
+//            let label = cell.viewWithTag(2) as! UILabel
+//            label.text = "\(element) @ \(row)"
+//            return cell
+//        }.disposed(by: bag)
 //        menuArr.bind(to: mainCollectionView.rx.items(cellIdentifier: "main_collection_view_cell", cellType: UICollectionViewCell.self)) { (row, element, cell) in
 //            let label = cell.viewWithTag(2) as! UILabel
 //            label.text = "\(element) @ \(row)"
@@ -59,18 +64,18 @@ class ViewController: UIViewController, UICollectionViewDelegate{
         // Dispose of any resources that can be recreated.
     }
     
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return menuArray.count;
-//    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return menuArray.count;
+    }
     
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//
-//        let mainCollectionViewCell : UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "main_collection_view_cell", for: indexPath)
-//        let label : UILabel = mainCollectionViewCell.viewWithTag(2) as! UILabel;
-//        label.text = (menuArray.object(at: indexPath.row) as! String);
-//
-//        return mainCollectionViewCell;
-//    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
+        let mainCollectionViewCell : UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "main_collection_view_cell", for: indexPath)
+        let label : UILabel = mainCollectionViewCell.viewWithTag(2) as! UILabel;
+        label.text = (menuArray.object(at: indexPath.row) as! String);
+
+        return mainCollectionViewCell;
+    }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch indexPath.row {
