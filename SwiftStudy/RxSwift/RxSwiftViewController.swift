@@ -12,7 +12,7 @@ import RxCocoa
 
 class RxSwiftViewController: UIViewController {
     
-    let menuArr = ["Chameleon","city","github","Issuetracker"]
+    let menuArr = ["Chameleon","city","github","Issuetracker", "Sketchbook"]
     let bag = DisposeBag()
     
     @IBOutlet var tableView: UITableView!
@@ -41,6 +41,9 @@ class RxSwiftViewController: UIViewController {
             case 3:
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxissue") as! IssueListViewController
                 self.present(vc, animated: true){}
+            case 4:
+                let vc = self.storyboard?.instantiateViewController(identifier: "rxsketchbook") as! RxSwiftSketchbookViewController
+                self.present(vc, animated: true) {}
             default:
                 return
             }
