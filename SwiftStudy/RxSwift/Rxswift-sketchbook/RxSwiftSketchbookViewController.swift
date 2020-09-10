@@ -11,6 +11,8 @@ import RxCocoa
 
 class RxSwiftSketchbookViewController: UIViewController {
     
+    @IBOutlet var countLabel: UILabel!
+    
     let behavior: BehaviorSubject<Int> = BehaviorSubject(value: 0)
     
     let bag = DisposeBag()
@@ -36,6 +38,7 @@ class RxSwiftSketchbookViewController: UIViewController {
         
         behavior.subscribe(onNext: {
             print("behavior: \($0)")
+            self.countLabel.text = "\($0)"
             }).disposed(by: bag)
         
         behavior.onNext(try! behavior.value() + 1)
@@ -52,5 +55,8 @@ class RxSwiftSketchbookViewController: UIViewController {
         
         behavior.onNext(100)
 
+    }
+    @IBAction func increaseBtnClicked(_ sender: Any) {
+        behavior.onNext(try! behavior.value() + 1)
     }
 }
