@@ -46,7 +46,6 @@ class RxSwiftSketchbookViewController: UIViewController {
         behavior.onNext(try! behavior.value() + 1)
         behavior.onNext(try! behavior.value() + 1)
         
-
 //        a.bind(to: behavior).disposed(by: bag)
 //
 //        z = 100
