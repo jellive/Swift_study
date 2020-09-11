@@ -41,13 +41,6 @@ class RxSwiftSketchbookViewController: UIViewController {
             self.countLabel.text = "\($0)"
             }).disposed(by: bag)
         
-        behavior.onNext(try! behavior.value() + 1)
-        
-        
-        behavior.onNext(try! behavior.value() + 1)
-        behavior.onNext(try! behavior.value() + 1)
-        behavior.onNext(try! behavior.value() + 1)
-        behavior.onNext(try! behavior.value() + 1)
         
 //        a.bind(to: behavior).disposed(by: bag)
 //
