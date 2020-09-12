@@ -25,7 +25,6 @@ class RxSwiftSketchbookViewController: UIViewController {
         
         let a = Observable.from(optional: z)
         
-        
         a.subscribe(onNext: {
             print("onNext: \($0)")
         }, onError: {error in
