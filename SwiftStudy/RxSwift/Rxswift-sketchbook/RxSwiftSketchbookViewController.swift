@@ -19,7 +19,6 @@ class RxSwiftSketchbookViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Hello world!")
         
         let z = 1
         
