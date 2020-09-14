@@ -59,5 +59,13 @@ class RxSwiftSketchbookViewController: UIViewController {
         vm.down(url: "https://jsonplaceholder.typicode.com/todos")
             .bind(to: json)
         .disposed(by: bag)
+        behavior.onNext(try! behavior.value() + 1)
+        vm.down(url: "https://jsonplaceholder.typicode.com/todos")
+            .bind(to: json)
+        .disposed(by: bag)
+        behavior.onNext(try! behavior.value() + 1)
+        vm.down(url: "https://jsonplaceholder.typicode.com/todos")
+            .bind(to: json)
+        .disposed(by: bag)
     }
 }
