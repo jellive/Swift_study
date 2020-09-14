@@ -13,6 +13,8 @@ class RxSwiftSketchbookViewController: UIViewController {
     
     @IBOutlet var countLabel: UILabel!
     
+    let vm = RxSwiftSketchbookViewModel()
+    
     let behavior: BehaviorSubject<Int> = BehaviorSubject(value: 0)
     
     let bag = DisposeBag()
@@ -45,6 +47,10 @@ class RxSwiftSketchbookViewController: UIViewController {
 //        z = 100
         
         behavior.onNext(100)
+        vm.down(url: "https://jsonplaceholder.typicode.com/todos")
+            .subscribe(onNext: {
+                print($0)
+            }).disposed(by: bag)
 
     }
     @IBAction func increaseBtnClicked(_ sender: Any) {
