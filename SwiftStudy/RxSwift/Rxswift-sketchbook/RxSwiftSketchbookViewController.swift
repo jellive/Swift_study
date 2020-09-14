@@ -16,6 +16,7 @@ class RxSwiftSketchbookViewController: UIViewController {
     let vm = RxSwiftSketchbookViewModel()
     
     let behavior: BehaviorSubject<Int> = BehaviorSubject(value: 0)
+    let json: BehaviorSubject<[RxTodo]> = BehaviorSubject<[RxTodo]>(value: [])
     
     let bag = DisposeBag()
     
@@ -41,19 +42,22 @@ class RxSwiftSketchbookViewController: UIViewController {
             self.countLabel.text = "\($0)"
             }).disposed(by: bag)
         
-        
-//        a.bind(to: behavior).disposed(by: bag)
-//
-//        z = 100
-        
         behavior.onNext(100)
-        vm.down(url: "https://jsonplaceholder.typicode.com/todos")
-            .subscribe(onNext: {
-                print($0)
+//        vm.down(url: "https://jsonplaceholder.typicode.com/todos")
+//            .subscribe(onNext: {
+//                print($0)
+//            }).disposed(by: bag)
+        
+        json.asObserver().subscribe(onNext: { todo in
+            print(todo)
+            print("json is complete!")
             }).disposed(by: bag)
 
     }
     @IBAction func increaseBtnClicked(_ sender: Any) {
         behavior.onNext(try! behavior.value() + 1)
+        vm.down(url: "https://jsonplaceholder.typicode.com/todos")
+            .bind(to: json)
+        .disposed(by: bag)
     }
 }
