@@ -26,4 +26,19 @@ class RxSwiftSketchbookViewModel {
     init() {
         
     }
+    
+    func down(url: String) -> Observable<[RxTodo]> {
+        return RxAlamofire
+            .requestData(.get, url)
+            .flatMap{(response, data) ->
+                Observable<[RxTodo]> in
+                do {
+                    let todoArr = try JSONDecoder().decode([RxTodo].self, from: data)
+                    return Observable.just(todoArr)
+                } catch {
+                    print("Error: \(error)")
+                    return Observable.just([])
+                }
+        }
+    }
 }
