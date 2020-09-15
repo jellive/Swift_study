@@ -29,7 +29,6 @@ struct RxAlamofireView: View {
     
     var body: some View {
         VStack {
-            
                         Text("hi")
             //            Text("\(viewModel.rxTodoArr)")
             //            if (self.resTodos.count > 0) {
