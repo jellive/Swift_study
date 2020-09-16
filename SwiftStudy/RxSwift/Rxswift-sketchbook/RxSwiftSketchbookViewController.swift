@@ -37,9 +37,9 @@ class RxSwiftSketchbookViewController: UIViewController {
             print("onDisposed")
         }).disposed(by: bag)
         
-        behavior.subscribe(onNext: {
+        behavior.subscribe(onNext: {[weak self] in
             print("behavior: \($0)")
-            self.countLabel.text = "\($0)"
+            self?.countLabel.text = "\($0)"
             }).disposed(by: bag)
         
         behavior.onNext(100)
@@ -48,9 +48,12 @@ class RxSwiftSketchbookViewController: UIViewController {
 //                print($0)
 //            }).disposed(by: bag)
         
-        json.asObserver().subscribe(onNext: { todo in
+        json.asObserver().subscribe(onNext: {[weak self] todo in
             print(todo)
             print("json is complete!")
+            if (try! self?.behavior.value())! > 130 {
+                self?.behavior.onNext(0)
+            }
             }).disposed(by: bag)
 
     }
