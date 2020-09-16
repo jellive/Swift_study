@@ -40,7 +40,7 @@ extension provider: TargetType {
     
     var path: String {
         switch self {
-        case .userInfo(let name):
+        case .userInfo(let name): // enum의 영향을 받음.
             return "/users/\(name)"
         }
     }
