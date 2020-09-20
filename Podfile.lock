@@ -56,7 +56,7 @@ PODS:
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
   - SnapKit (5.0.1)
-  - SwiftLint (0.40.1)
+  - SwiftLint (0.40.2)
   - WeakMapTable (1.1.0)
 
 DEPENDENCIES:
@@ -125,7 +125,7 @@ SPEC CHECKSUMS:
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  SwiftLint: bbfed21bf4451dcbd0f5cdbee44a18e06cf91b12
+  SwiftLint: 1216c910d27c2633ade33b4f071bb6b930982e62
   WeakMapTable: d0327eda092be6a8f7c532942ae98dc7948f5d32
 
 PODFILE CHECKSUM: 1f242cbddc191926c40c7d422cb1c4bcbc7f7ac4
