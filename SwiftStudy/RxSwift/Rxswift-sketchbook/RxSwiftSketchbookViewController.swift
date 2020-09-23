@@ -57,6 +57,7 @@ class RxSwiftSketchbookViewController: UIViewController {
             }).disposed(by: bag)
 
     }
+    
     @IBAction func increaseBtnClicked(_ sender: Any) {
         behavior.onNext(try! behavior.value() + 1)
         vm.down(url: "https://jsonplaceholder.typicode.com/todos") // 데이터형을 뽑아야 함.
