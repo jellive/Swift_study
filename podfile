@@ -3,8 +3,10 @@ use_frameworks!
 platform :ios, '13.0'
 
 target 'SwiftStudy' do
-    pod 'RealmSwift', '~> 5.1.0'
-    pod 'RxSwift', '~> 5.1.0'
+    pod 'RealmSwift'
+    #, '~> 5.1.0'
+    pod 'RxSwift'
+    #, '~> 5.1.0'
     pod 'RxCocoa'
     pod 'ChameleonFramework'
     pod 'Moya-ModelMapper/RxSwift'
