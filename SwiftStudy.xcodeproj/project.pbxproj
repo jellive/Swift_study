@@ -726,6 +726,7 @@
 				D6C62F491E797D5E007D497A /* Resources */,
 				9730E3D5B7C533C61D25E0E3 /* [CP] Embed Pods Frameworks */,
 				02FF187524C16C6F005636E7 /* SwiftLint */,
+				026C146D251C6EA1005CDCDC /* Fix cocoapods 8.0 bug. */,
 			);
 			buildRules = (
 			);
@@ -870,6 +871,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		026C146D251C6EA1005CDCDC /* Fix cocoapods 8.0 bug. */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Fix cocoapods 8.0 bug.";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\npost_install do |pi|\n   t = pi.pods_project.targets.find { |t| t.name == 'MyPod' }\n   t.build_configurations.each do |bc|\n     bc.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'\n   end\nend\n";
+		};
 		02FF187524C16C6F005636E7 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
