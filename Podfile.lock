@@ -80,7 +80,7 @@ DEPENDENCIES:
   - SwiftLint
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/Cocoapods/Specs.git:
     - Alamofire
     - ChameleonFramework
     - Hero
