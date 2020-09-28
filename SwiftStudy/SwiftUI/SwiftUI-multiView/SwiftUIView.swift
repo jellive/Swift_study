@@ -82,13 +82,13 @@ struct SwiftUIView: View {
                     Text("\(name)님의 나이는 \(viewModel.age)살입니다.")
                 }
                 
-                Group {
-                    Text("hi?")
-                    Text("hi?")
-                    Text("hi?")
-                    Text("hi?")
-                    Text("hi?")
-                }
+//                Group {
+//                    Text("hi?")
+//                    Text("hi?")
+//                    Text("hi?")
+//                    Text("hi?")
+//                    Text("hi?")
+//                }
             }.navigationBarTitle("this is title")
         }.onAppear {
             print("view appeared")
