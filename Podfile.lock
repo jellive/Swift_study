@@ -28,14 +28,14 @@ PODS:
   - ReactorKit (2.1.0):
     - RxSwift (~> 5.0)
     - WeakMapTable (~> 1.1)
-  - Realm (5.4.3):
-    - Realm/Headers (= 5.4.3)
-  - Realm/Headers (5.4.3)
-  - RealmSwift (5.4.3):
-    - Realm (= 5.4.3)
-  - RxAlamofire (5.6.1):
-    - RxAlamofire/Core (= 5.6.1)
-  - RxAlamofire/Core (5.6.1):
+  - Realm (5.4.5):
+    - Realm/Headers (= 5.4.5)
+  - Realm/Headers (5.4.5)
+  - RealmSwift (5.4.5):
+    - Realm (= 5.4.5)
+  - RxAlamofire (5.6.2):
+    - RxAlamofire/Core (= 5.6.2)
+  - RxAlamofire/Core (5.6.2):
     - Alamofire (~> 5.2)
     - RxSwift (~> 5.1)
   - RxCocoa (5.1.1):
@@ -80,7 +80,7 @@ DEPENDENCIES:
   - SwiftLint
 
 SPEC REPOS:
-  https://github.com/Cocoapods/Specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - ChameleonFramework
     - Hero
@@ -115,9 +115,9 @@ SPEC CHECKSUMS:
   R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
   R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
   ReactorKit: 12a93358c554bb3f167b16b14c40374fa9cd5acd
-  Realm: e3d5fcc50fd79ddf87a2d86301f6edbf57531f84
-  RealmSwift: db608068eccc54bce47928e8118bde13c120c307
-  RxAlamofire: 0531dddf378c84270e97e897333678f1cfaec3ba
+  Realm: 155c60aec98b1044a05d676017be6900a9ee93b6
+  RealmSwift: fa80dc70fa91f762c2bc3d09328da92214b36bbb
+  RxAlamofire: aa949d345b1689eae02b7c7a217518878144f6df
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
   RxRealm: 50e5fe5c1f22518205afbb313fbc5580d73bc586
