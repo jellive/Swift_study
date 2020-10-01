@@ -44,7 +44,6 @@ struct RxAlamofireView: View {
         }
     }
 }
-
 struct RxAlamofireView_Previews: PreviewProvider {
     static var previews: some View {
         RxAlamofireView()
