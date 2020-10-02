@@ -69,7 +69,7 @@ DEPENDENCIES:
   - Moya/RxSwift
   - R.swift
   - ReactorKit
-  - RealmSwift
+  - RealmSwift (~> 5.4.3)
   - RxAlamofire
   - RxCocoa
   - RxOptional
@@ -128,6 +128,6 @@ SPEC CHECKSUMS:
   SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
   WeakMapTable: d0327eda092be6a8f7c532942ae98dc7948f5d32
 
-PODFILE CHECKSUM: 0c32adb58962c37c6d710969916b299576c246ae
+PODFILE CHECKSUM: aba850a08c0be08d3af577b1f800d2171a79c32f
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.8.3

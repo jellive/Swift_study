@@ -68,7 +68,6 @@
 		02FF187824C16DD7005636E7 /* SwiftUIAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187724C16DD7005636E7 /* SwiftUIAnimationView.swift */; };
 		02FF187B24C16F84005636E7 /* OO_Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187A24C16F84005636E7 /* OO_Stopwatch.swift */; };
 		02FF187D24C170C0005636E7 /* SwiftUIObservableObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */; };
-		92F444E4429DEB1B063986B7 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
 		BB5A800D1E96065100000670 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A800C1E96065100000670 /* RealmViewController.swift */; };
@@ -107,6 +106,7 @@
 		D6E07EC824B1B5DA009B6FBA /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6E07EB724B1B5DA009B6FBA /* charleyrivers.jpg */; };
 		D6E07EC924B1B5DA009B6FBA /* silversalmoncreek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6E07EB824B1B5DA009B6FBA /* silversalmoncreek.jpg */; };
 		D6E07ECA24B1B5DA009B6FBA /* umbagog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6E07EB924B1B5DA009B6FBA /* umbagog.jpg */; };
+		DF78E95574FA0B625377C9A0 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866EAB5D5642529DB11AC746 /* Pods_SwiftStudy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,7 +190,9 @@
 		02FF187724C16DD7005636E7 /* SwiftUIAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationView.swift; sourceTree = "<group>"; };
 		02FF187A24C16F84005636E7 /* OO_Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OO_Stopwatch.swift; sourceTree = "<group>"; };
 		02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIObservableObjectView.swift; sourceTree = "<group>"; };
-		701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AF3CA73DA1C01B905B8D298 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
+		6EC0336A336E10FCB95D2880 /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
+		866EAB5D5642529DB11AC746 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmNumber.swift; path = Realm/RealmNumber.swift; sourceTree = "<group>"; };
 		BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = Drawing/DrawingViewController.swift; sourceTree = "<group>"; };
 		BB5A800C1E96065100000670 /* RealmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmViewController.swift; path = Realm/RealmViewController.swift; sourceTree = "<group>"; };
@@ -199,8 +201,6 @@
 		BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IBDesignableViewController.swift; path = IBDesignable/IBDesignableViewController.swift; sourceTree = "<group>"; };
 		BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRectView.swift; sourceTree = "<group>"; };
 		BBEAA0C71EFCAFEB00D3E06F /* SwiftStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftStudy-Bridging-Header.h"; sourceTree = "<group>"; };
-		C7A834BF95CB488F90CC8E0D /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
-		D01BC2A218865C774A6E22E3 /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		D6021C1F24D56CCA00D23DB9 /* Playground */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Playground; sourceTree = "<group>"; };
 		D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewModel.swift; sourceTree = "<group>"; };
 		D616938924B1D670009F2EB1 /* LocalPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +208,7 @@
 		D666F16424FB525600357FF2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMoyaGithubViewController.swift; sourceTree = "<group>"; };
 		D6A6D49624DD10EE00E39419 /* RealmMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMenuViewController.swift; sourceTree = "<group>"; };
+		D6AEE15C25271BEE00C3E840 /* RxRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C62F4B1E797D5E007D497A /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C62F4E1E797D5E007D497A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6C62F501E797D5E007D497A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -245,7 +246,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92F444E4429DEB1B063986B7 /* Pods_SwiftStudy.framework in Frameworks */,
+				DF78E95574FA0B625377C9A0 /* Pods_SwiftStudy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,10 +549,11 @@
 			path = "SwiftUI-ObervableObject";
 			sourceTree = "<group>";
 		};
-		8D1FF8B14FBE33B357CB5F00 /* Frameworks */ = {
+		0D9D7C10B86EBCBD4B73DC1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				701CA004967BCA636513B2AB /* Pods_SwiftStudy.framework */,
+				D6AEE15C25271BEE00C3E840 /* RxRealm.framework */,
+				866EAB5D5642529DB11AC746 /* Pods_SwiftStudy.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -559,8 +561,8 @@
 		B6EEC42565C84E54685299FA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C7A834BF95CB488F90CC8E0D /* Pods-SwiftStudy.debug.xcconfig */,
-				D01BC2A218865C774A6E22E3 /* Pods-SwiftStudy.release.xcconfig */,
+				5AF3CA73DA1C01B905B8D298 /* Pods-SwiftStudy.debug.xcconfig */,
+				6EC0336A336E10FCB95D2880 /* Pods-SwiftStudy.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -651,7 +653,7 @@
 				D6C62F6D1E797D5E007D497A /* SwiftStudyUITests */,
 				D6C62F4C1E797D5E007D497A /* Products */,
 				B6EEC42565C84E54685299FA /* Pods */,
-				8D1FF8B14FBE33B357CB5F00 /* Frameworks */,
+				0D9D7C10B86EBCBD4B73DC1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -720,13 +722,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6C62F731E797D5E007D497A /* Build configuration list for PBXNativeTarget "SwiftStudy" */;
 			buildPhases = (
-				C95C9120504302866B5262A0 /* [CP] Check Pods Manifest.lock */,
+				F312790454D770C7A92E185D /* [CP] Check Pods Manifest.lock */,
 				D6C62F471E797D5E007D497A /* Sources */,
 				D6C62F481E797D5E007D497A /* Frameworks */,
 				D6C62F491E797D5E007D497A /* Resources */,
-				9730E3D5B7C533C61D25E0E3 /* [CP] Embed Pods Frameworks */,
 				02FF187524C16C6F005636E7 /* SwiftLint */,
 				026C146D251C6EA1005CDCDC /* Fix cocoapods 8.0 bug. */,
+				E06C3A99548F3EF97EB84512 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -907,7 +909,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# \"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
-		9730E3D5B7C533C61D25E0E3 /* [CP] Embed Pods Frameworks */ = {
+		E06C3A99548F3EF97EB84512 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -963,7 +965,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C95C9120504302866B5262A0 /* [CP] Check Pods Manifest.lock */ = {
+		F312790454D770C7A92E185D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1145,6 +1147,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1196,6 +1199,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1218,7 +1222,7 @@
 		};
 		D6C62F741E797D5E007D497A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7A834BF95CB488F90CC8E0D /* Pods-SwiftStudy.debug.xcconfig */;
+			baseConfigurationReference = 5AF3CA73DA1C01B905B8D298 /* Pods-SwiftStudy.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1227,6 +1231,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R3TQXEXN8;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1241,7 +1246,7 @@
 		};
 		D6C62F751E797D5E007D497A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D01BC2A218865C774A6E22E3 /* Pods-SwiftStudy.release.xcconfig */;
+			baseConfigurationReference = 6EC0336A336E10FCB95D2880 /* Pods-SwiftStudy.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1250,9 +1255,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R3TQXEXN8;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.jell.swiftstudy.SwiftStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
