@@ -1,10 +1,10 @@
 PODS:
-  - Alamofire (5.2.2)
+  - Alamofire (5.4.1)
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
-  - Hero (1.5.0)
-  - lottie-ios (3.1.8)
+  - Hero (1.6.1)
+  - lottie-ios (3.2.1)
   - ModelMapper (10.0.1):
     - ModelMapper/Core (= 10.0.1)
   - ModelMapper/Core (10.0.1)
@@ -22,21 +22,21 @@ PODS:
   - Moya/RxSwift (14.0.0):
     - Moya/Core
     - RxSwift (~> 5.0)
-  - R.swift (5.2.2):
-    - R.swift.Library (~> 5.2.0)
-  - R.swift.Library (5.2.0)
-  - ReactorKit (2.1.0):
+  - R.swift (5.4.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - ReactorKit (2.1.1):
     - RxSwift (~> 5.0)
     - WeakMapTable (~> 1.1)
-  - Realm (5.4.7):
-    - Realm/Headers (= 5.4.7)
-  - Realm/Headers (5.4.7)
-  - RealmSwift (5.4.7):
-    - Realm (= 5.4.7)
-  - RxAlamofire (5.6.2):
-    - RxAlamofire/Core (= 5.6.2)
-  - RxAlamofire/Core (5.6.2):
-    - Alamofire (~> 5.2)
+  - Realm (5.4.8):
+    - Realm/Headers (= 5.4.8)
+  - Realm/Headers (5.4.8)
+  - RealmSwift (5.4.8):
+    - Realm (= 5.4.8)
+  - RxAlamofire (5.7.1):
+    - RxAlamofire/Core (= 5.7.1)
+  - RxAlamofire/Core (5.7.1):
+    - Alamofire (~> 5.4)
     - RxSwift (~> 5.1)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
@@ -54,10 +54,10 @@ PODS:
     - RxSwift (~> 5.1)
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
-  - RxSwift (5.1.1)
+  - RxSwift (5.1.2)
   - SnapKit (5.0.1)
-  - SwiftLint (0.40.3)
-  - WeakMapTable (1.1.0)
+  - SwiftLint (0.43.1)
+  - WeakMapTable (1.2.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -105,28 +105,28 @@ SPEC REPOS:
     - WeakMapTable
 
 SPEC CHECKSUMS:
-  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
-  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
+  lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
   ModelMapper: 0f68dd4300d0e27290c70f66492c7f795da21bcf
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   Moya-ModelMapper: e3a478500921e7299804dc1ac550f1ebf3228ade
-  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
-  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
-  ReactorKit: 12a93358c554bb3f167b16b14c40374fa9cd5acd
-  Realm: 4bfc08e376b2e30c84ec3200ebe715574da05cc0
-  RealmSwift: ed40f371b62e8677141939e05b44a0c1a0a2d965
-  RxAlamofire: aa949d345b1689eae02b7c7a217518878144f6df
+  R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  ReactorKit: 6d894a20c3d508344320901cd8e386fde92df4b6
+  Realm: 042bbb59227a0159eda397b8a5a49fbd67495ce7
+  RealmSwift: 15ddd6b3398ebfc99810811c44f095df1313adb3
+  RxAlamofire: 8e144c62dcc01d68dcb366bfc542eb6dd46bab78
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
   RxRealm: 50e5fe5c1f22518205afbb313fbc5580d73bc586
   RxRealmDataSources: 3607aa8cae303f46a1cdf451a255a8f2ebb0fcbe
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
-  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
-  WeakMapTable: d0327eda092be6a8f7c532942ae98dc7948f5d32
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
 PODFILE CHECKSUM: aba850a08c0be08d3af577b1f800d2171a79c32f
 
