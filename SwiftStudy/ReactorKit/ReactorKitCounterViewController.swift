@@ -21,7 +21,24 @@ final class ReactorKitCounterViewController: UIViewController, StoryboardView {
     
     func bind(reactor: ReactorKitCounterViewReactor) {
         // Action
+        increaseButton.rx.tap
+            .map {Reactor.Action.increase}
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        decreaseButton.rx.tap
+            .map {Reactor.Action.decrease}
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
         
+        reactor.state.map {$0.value}
+            .distinctUntilChanged()
+            .map { "\($0)"}
+            .bind(to: valueLabel.rx.text)
+            .disposed(by: disposeBag)
+        reactor.state.map {$0.isLoading}
+            .distinctUntilChanged()
+            .bind(to: activityIndicatorView.rx.isAnimating)
+            .disposed(by: disposeBag)
     }
     
 }
