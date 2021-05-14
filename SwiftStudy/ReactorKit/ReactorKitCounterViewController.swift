@@ -22,11 +22,11 @@ final class ReactorKitCounterViewController: UIViewController, StoryboardView {
     func bind(reactor: ReactorKitCounterViewReactor) {
         // Action
         increaseButton.rx.tap
-            .map {Reactor.Action.increase}
-            .bind(to: reactor.action)
+            .map { Reactor.Action.increase } // 탭은 void라 새로운 액션을 반환한다.
+            .bind(to: reactor.action) // mutate(action.increase)와 같음.
             .disposed(by: disposeBag)
         decreaseButton.rx.tap
-            .map {Reactor.Action.decrease}
+            .map { Reactor.Action.decrease }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
