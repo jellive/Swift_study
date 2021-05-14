@@ -1,11 +1,11 @@
 PODS:
-  - Alamofire (5.4.1)
+  - Alamofire (5.4.3)
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
   - Hero (1.6.1)
-  - Kingfisher (6.2.1)
-  - lottie-ios (3.2.1)
+  - Kingfisher (6.3.0)
+  - lottie-ios (3.2.2)
   - ModelMapper (10.0.1):
     - ModelMapper/Core (= 10.0.1)
   - ModelMapper/Core (10.0.1)
@@ -108,11 +108,11 @@ SPEC REPOS:
     - WeakMapTable
 
 SPEC CHECKSUMS:
-  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
-  Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
-  lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
+  lottie-ios: a033bb989eea77d9f99cc4e2bbdd3788229761ad
   ModelMapper: 0f68dd4300d0e27290c70f66492c7f795da21bcf
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   Moya-ModelMapper: e3a478500921e7299804dc1ac550f1ebf3228ade
@@ -132,6 +132,6 @@ SPEC CHECKSUMS:
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: 901ad92da0d6a2fdb9ab2e5affb3261e04f4ed37
+PODFILE CHECKSUM: a5642b8b3fefb6b425618ab52feb632530a85707
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.10.1

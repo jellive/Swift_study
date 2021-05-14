@@ -23,4 +23,5 @@ target 'SwiftStudy' do
     pod 'RxRealm'
     pod 'RxRealmDataSources'
     pod 'Kingfisher'
+    pod 'ReactorKit'
 end
