@@ -42,7 +42,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                                  "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire",
 //                                 "Realm-tutorial",
 //"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera"]
-"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera")
+"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera", "KingFisher", "DaumMap")
 //        let menuArr = Observable.of(menuArray)
         
         
@@ -143,6 +143,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             present(vc, animated: true){}
         case 15:
             let vc = self.storyboard?.instantiateViewController(identifier: "camera") as! CameraViewController
+            present(vc, animated: true){}
+        case 16:
+            let vc = self.storyboard?.instantiateViewController(identifier: "kingfisher") as! KingFisherViewController
+            present(vc, animated: true){}
+        case 17:
+            let vc = self.storyboard?.instantiateViewController(identifier: "daummap") as! DaumMapViewController
             present(vc, animated: true){}
         default:
             return;

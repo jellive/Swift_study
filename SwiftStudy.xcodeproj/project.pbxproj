@@ -50,6 +50,16 @@
 		028AFBDD24AF1B0300661743 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBDC24AF1B0300661743 /* Repository.swift */; };
 		028AFBDF24AF1B3200661743 /* RxGithubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBDE24AF1B3200661743 /* RxGithubViewModel.swift */; };
 		028AFBE124AF1BA400661743 /* RxGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBE024AF1BA400661743 /* RxGithubViewController.swift */; };
+		028C0F272615BB8000FF8BC9 /* KingFisherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028C0F262615BB8000FF8BC9 /* KingFisherViewController.swift */; };
+		028C0FE7261AF70C00FF8BC9 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C0FE6261AF70C00FF8BC9 /* DaumMap.framework */; };
+		028C0FE9261AF73D00FF8BC9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C0FE8261AF73D00FF8BC9 /* OpenGLES.framework */; };
+		028C0FEB261AF74900FF8BC9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C0FEA261AF74900FF8BC9 /* SystemConfiguration.framework */; };
+		028C0FED261AF74F00FF8BC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C0FEC261AF74F00FF8BC9 /* CoreLocation.framework */; };
+		028C0FEF261AF75500FF8BC9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C0FEE261AF75500FF8BC9 /* QuartzCore.framework */; };
+		028C0FF1261AF75D00FF8BC9 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C0FF0261AF75D00FF8BC9 /* libc++.tbd */; };
+		028C0FF6261AF76C00FF8BC9 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C0FF5261AF76C00FF8BC9 /* libxml2.tbd */; };
+		028C0FFB261AF77200FF8BC9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C0FFA261AF77200FF8BC9 /* libsqlite3.tbd */; };
+		028C1004261AFC2C00FF8BC9 /* DaumMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028C1003261AFC2C00FF8BC9 /* DaumMapViewController.swift */; };
 		02A31E5324B4649C00D32B41 /* RxCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E5224B4649C00D32B41 /* RxCityViewController.swift */; };
 		02A31E5624B573BB00D32B41 /* RxChameleonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E5524B573BB00D32B41 /* RxChameleonViewController.swift */; };
 		02A31E5824B59F4300D32B41 /* CircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E5724B59F4300D32B41 /* CircleViewModel.swift */; };
@@ -172,6 +182,16 @@
 		028AFBDC24AF1B0300661743 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		028AFBDE24AF1B3200661743 /* RxGithubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxGithubViewModel.swift; sourceTree = "<group>"; };
 		028AFBE024AF1BA400661743 /* RxGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxGithubViewController.swift; sourceTree = "<group>"; };
+		028C0F262615BB8000FF8BC9 /* KingFisherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingFisherViewController.swift; sourceTree = "<group>"; };
+		028C0FE6261AF70C00FF8BC9 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
+		028C0FE8261AF73D00FF8BC9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		028C0FEA261AF74900FF8BC9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		028C0FEC261AF74F00FF8BC9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		028C0FEE261AF75500FF8BC9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		028C0FF0261AF75D00FF8BC9 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		028C0FF5261AF76C00FF8BC9 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		028C0FFA261AF77200FF8BC9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		028C1003261AFC2C00FF8BC9 /* DaumMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaumMapViewController.swift; sourceTree = "<group>"; };
 		02A31E5224B4649C00D32B41 /* RxCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCityViewController.swift; sourceTree = "<group>"; };
 		02A31E5524B573BB00D32B41 /* RxChameleonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxChameleonViewController.swift; sourceTree = "<group>"; };
 		02A31E5724B59F4300D32B41 /* CircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewModel.swift; sourceTree = "<group>"; };
@@ -246,6 +266,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				028C0FFB261AF77200FF8BC9 /* libsqlite3.tbd in Frameworks */,
+				028C0FF6261AF76C00FF8BC9 /* libxml2.tbd in Frameworks */,
+				028C0FF1261AF75D00FF8BC9 /* libc++.tbd in Frameworks */,
+				028C0FEF261AF75500FF8BC9 /* QuartzCore.framework in Frameworks */,
+				028C0FED261AF74F00FF8BC9 /* CoreLocation.framework in Frameworks */,
+				028C0FEB261AF74900FF8BC9 /* SystemConfiguration.framework in Frameworks */,
+				028C0FE9261AF73D00FF8BC9 /* OpenGLES.framework in Frameworks */,
+				028C0FE7261AF70C00FF8BC9 /* DaumMap.framework in Frameworks */,
 				597657F190E524617133602D /* Pods_SwiftStudy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +447,22 @@
 			path = "RxSwift-github";
 			sourceTree = "<group>";
 		};
+		028C0F252615BB6E00FF8BC9 /* KingFIsher */ = {
+			isa = PBXGroup;
+			children = (
+				028C0F262615BB8000FF8BC9 /* KingFisherViewController.swift */,
+			);
+			path = KingFIsher;
+			sourceTree = "<group>";
+		};
+		028C1002261AFC1700FF8BC9 /* DaumMap */ = {
+			isa = PBXGroup;
+			children = (
+				028C1003261AFC2C00FF8BC9 /* DaumMapViewController.swift */,
+			);
+			path = DaumMap;
+			sourceTree = "<group>";
+		};
 		02A31E5124B4648400D32B41 /* RxSwift-city */ = {
 			isa = PBXGroup;
 			children = (
@@ -552,6 +596,13 @@
 		0D9D7C10B86EBCBD4B73DC1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				028C0FFA261AF77200FF8BC9 /* libsqlite3.tbd */,
+				028C0FF5261AF76C00FF8BC9 /* libxml2.tbd */,
+				028C0FF0261AF75D00FF8BC9 /* libc++.tbd */,
+				028C0FEE261AF75500FF8BC9 /* QuartzCore.framework */,
+				028C0FEC261AF74F00FF8BC9 /* CoreLocation.framework */,
+				028C0FEA261AF74900FF8BC9 /* SystemConfiguration.framework */,
+				028C0FE8261AF73D00FF8BC9 /* OpenGLES.framework */,
 				D6AEE15C25271BEE00C3E840 /* RxRealm.framework */,
 				CBD47489492FE0E2712570E9 /* Pods_SwiftStudy.framework */,
 			);
@@ -670,6 +721,9 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				028C1002261AFC1700FF8BC9 /* DaumMap */,
+				028C0FE6261AF70C00FF8BC9 /* DaumMap.framework */,
+				028C0F252615BB6E00FF8BC9 /* KingFIsher */,
 				D666F16324FB523800357FF2 /* Camera */,
 				D6C62F4E1E797D5E007D497A /* AppDelegate.swift */,
 				D6C62F551E797D5E007D497A /* Assets.xcassets */,
@@ -919,6 +973,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-ModelMapper/Moya_ModelMapper.framework",
@@ -942,6 +997,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ModelMapper.framework",
@@ -1019,6 +1075,7 @@
 				028AFB6A24AB0DF200661743 /* LandmarkDetail.swift in Sources */,
 				02FF187424C167DA005636E7 /* SwiftUISpacerView.swift in Sources */,
 				D666F16524FB525600357FF2 /* CameraViewController.swift in Sources */,
+				028C1004261AFC2C00FF8BC9 /* DaumMapViewController.swift in Sources */,
 				02FF187B24C16F84005636E7 /* OO_Stopwatch.swift in Sources */,
 				028AFB4B24AB070200661743 /* MapView.swift in Sources */,
 				02D6F32B24D7D844001BA1E9 /* RxAlamoFireGithubViewController.swift in Sources */,
@@ -1036,6 +1093,7 @@
 				D6A6D49524D6921900E39419 /* RxMoyaGithubViewController.swift in Sources */,
 				028AFB7224AB363700661743 /* UserData.swift in Sources */,
 				02FF186924C13F21005636E7 /* RxAlamofireViewModel.swift in Sources */,
+				028C0F272615BB8000FF8BC9 /* KingFisherViewController.swift in Sources */,
 				02A31E5B24B5AC6000D32B41 /* IssueListViewController.swift in Sources */,
 				028AFBCB24AEBF2D00661743 /* PageView.swift in Sources */,
 				028AFBC424AEBA2700661743 /* CombineView.swift in Sources */,
@@ -1227,11 +1285,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R3TQXEXN8;
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftStudy",
+				);
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1251,11 +1314,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R3TQXEXN8;
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftStudy",
+				);
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

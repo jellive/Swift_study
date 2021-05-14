@@ -87,7 +87,7 @@ class GugudanViewController: UIViewController, UITextFieldDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: "gugudan_tableview_cell")
-        let cellLabel : UILabel! = cell.viewWithTag(1) as! UILabel
+        let cellLabel : UILabel! = cell.viewWithTag(1) as? UILabel
         cellLabel.text = gugudanArray.object(at: indexPath.row) as? String
         
         return cell

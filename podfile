@@ -22,4 +22,5 @@ target 'SwiftStudy' do
     pod 'RxAlamofire'
     pod 'RxRealm'
     pod 'RxRealmDataSources'
+    pod 'Kingfisher'
 end
