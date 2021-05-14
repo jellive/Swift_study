@@ -14,7 +14,7 @@ class RxSwiftSketchbookViewController: UIViewController {
     @IBOutlet var countLabel: UILabel!
     
     let vm = RxSwiftSketchbookViewModel()
-    
+//    let publish: PublishSubject<Int> = PublishSubject()
     let behavior: BehaviorSubject<Int> = BehaviorSubject(value: 0)
     let json: BehaviorSubject<[RxTodo]> = BehaviorSubject<[RxTodo]>(value: [])
     
@@ -36,6 +36,7 @@ class RxSwiftSketchbookViewController: UIViewController {
         }, onDisposed: {
             print("onDisposed")
         }).disposed(by: bag)
+        
         
         behavior.subscribe(onNext: {[weak self] in
             print("behavior: \($0)")
