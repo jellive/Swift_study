@@ -12,6 +12,8 @@
 		021E5621249B584500AB89F3 /* SecondSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E5620249B584500AB89F3 /* SecondSwiftUIView.swift */; };
 		0226464D25087F6B00316B35 /* RxSwiftSketchbookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0226464C25087F6B00316B35 /* RxSwiftSketchbookViewController.swift */; };
 		02264651250F4C5200316B35 /* RxSwiftSketchbookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02264650250F4C5200316B35 /* RxSwiftSketchbookViewModel.swift */; };
+		02525B77264E15C300B34983 /* ReactorKitCounterViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02525B76264E15C300B34983 /* ReactorKitCounterViewReactor.swift */; };
+		02525B79264E1DA800B34983 /* ReactorKitCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02525B78264E1DA800B34983 /* ReactorKitCounterViewController.swift */; };
 		0260AE0D24F6257D00125671 /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260AE0C24F6257C00125671 /* RxSwiftViewController.swift */; };
 		026FDF4824C9874300F584F4 /* RealmTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FDF4724C9874300F584F4 /* RealmTutorialViewController.swift */; };
 		028AFB4424AAE6B600661743 /* SwiftUITutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB4324AAE6B600661743 /* SwiftUITutorialView.swift */; };
@@ -142,6 +144,8 @@
 		021E5620249B584500AB89F3 /* SecondSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSwiftUIView.swift; sourceTree = "<group>"; };
 		0226464C25087F6B00316B35 /* RxSwiftSketchbookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftSketchbookViewController.swift; sourceTree = "<group>"; };
 		02264650250F4C5200316B35 /* RxSwiftSketchbookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftSketchbookViewModel.swift; sourceTree = "<group>"; };
+		02525B76264E15C300B34983 /* ReactorKitCounterViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKitCounterViewReactor.swift; sourceTree = "<group>"; };
+		02525B78264E1DA800B34983 /* ReactorKitCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKitCounterViewController.swift; sourceTree = "<group>"; };
 		0260AE0C24F6257C00125671 /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
 		026FDF4724C9874300F584F4 /* RealmTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTutorialViewController.swift; sourceTree = "<group>"; };
 		028AFB3A24AAC5B300661743 /* SwiftUICombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUICombineView.swift; path = "../../../../../../Users/yoohg/Downloads/CombineWeatherApp/CombineWeatherApp-Starter/SwiftUICombineView.swift"; sourceTree = "<group>"; };
@@ -320,6 +324,15 @@
 				02264650250F4C5200316B35 /* RxSwiftSketchbookViewModel.swift */,
 			);
 			path = "Rxswift-sketchbook";
+			sourceTree = "<group>";
+		};
+		02525B75264E149400B34983 /* ReactorKit */ = {
+			isa = PBXGroup;
+			children = (
+				02525B76264E15C300B34983 /* ReactorKitCounterViewReactor.swift */,
+				02525B78264E1DA800B34983 /* ReactorKitCounterViewController.swift */,
+			);
+			path = ReactorKit;
 			sourceTree = "<group>";
 		};
 		026FDF4624C9873000F584F4 /* Realm-tutorial */ = {
@@ -721,6 +734,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				02525B75264E149400B34983 /* ReactorKit */,
 				028C1002261AFC1700FF8BC9 /* DaumMap */,
 				028C0FE6261AF70C00FF8BC9 /* DaumMap.framework */,
 				028C0F252615BB6E00FF8BC9 /* KingFIsher */,
@@ -1098,6 +1112,7 @@
 				028AFBCB24AEBF2D00661743 /* PageView.swift in Sources */,
 				028AFBC424AEBA2700661743 /* CombineView.swift in Sources */,
 				02A31E5F24B5BF2200D32B41 /* Issue_Repository.swift in Sources */,
+				02525B77264E15C300B34983 /* ReactorKitCounterViewReactor.swift in Sources */,
 				028AFBD724AF0B9B00661743 /* CombineTextView.swift in Sources */,
 				028AFBD524AED51900661743 /* PageControl.swift in Sources */,
 				028AFB4924AAF8D700661743 /* CircleImage.swift in Sources */,
@@ -1126,6 +1141,7 @@
 				0260AE0D24F6257D00125671 /* RxSwiftViewController.swift in Sources */,
 				D616938A24B1D670009F2EB1 /* LocalPushViewController.swift in Sources */,
 				02FF187824C16DD7005636E7 /* SwiftUIAnimationView.swift in Sources */,
+				02525B79264E1DA800B34983 /* ReactorKitCounterViewController.swift in Sources */,
 				028AFBB524ADCCD500661743 /* ProfileSummary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
