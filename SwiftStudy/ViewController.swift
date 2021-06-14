@@ -136,7 +136,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let vc = self.storyboard?.instantiateViewController(identifier: "rxmoya_github") as! RxMoyaGithubViewController
             present(vc, animated: true){}
         case 13:
-            let vc = self.storyboard?.instantiateViewController(identifier: "rxalamofire_github") as! RxAlamoFireGithubViewController
+            guard let vc = self.storyboard?.instantiateViewController(identifier: "rxalamofire_github") as? RxAlamoFireGithubViewController else {
+                return
+            }
             present(vc, animated: true){}
         case 14:
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxswift") as! RxSwiftViewController
