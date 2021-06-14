@@ -5,7 +5,7 @@ PODS:
   - ChameleonFramework/Default (2.1.0)
   - Hero (1.6.1)
   - Kingfisher (6.3.0)
-  - lottie-ios (3.2.2)
+  - lottie-ios (3.2.3)
   - ModelMapper (10.0.1):
     - ModelMapper/Core (= 10.0.1)
   - ModelMapper/Core (10.0.1)
@@ -112,7 +112,7 @@ SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
   Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
-  lottie-ios: a033bb989eea77d9f99cc4e2bbdd3788229761ad
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   ModelMapper: 0f68dd4300d0e27290c70f66492c7f795da21bcf
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   Moya-ModelMapper: e3a478500921e7299804dc1ac550f1ebf3228ade
@@ -132,6 +132,6 @@ SPEC CHECKSUMS:
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: a5642b8b3fefb6b425618ab52feb632530a85707
+PODFILE CHECKSUM: b1e1ce71dfc74249ac698074a07f8b66e78fe29f
 
 COCOAPODS: 1.10.1

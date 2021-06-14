@@ -77,7 +77,6 @@ class GugudanViewController: UIViewController, UITextFieldDelegate, UITableViewD
                 print(error)
             }
         }.resume()
-        
             return true;
     }
     
