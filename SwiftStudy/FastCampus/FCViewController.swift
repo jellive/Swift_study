@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 import RxSwift
 import RxCocoa
 
@@ -26,10 +27,15 @@ class FCViewController: UIViewController {
         
         tableView.rx.itemSelected.subscribe(onNext: {
             print($0.row)
-            switch($0.row) {
+            switch $0.row {
             case 0:
-                let vc = self.story
+                let vc = UIHostingController(rootView: FCLuffyView())
+                self.present(vc, animated: true){}
+            default:
+                return
+            
             }
-        })
+        }).disposed(by: bag)
     }
 }
+

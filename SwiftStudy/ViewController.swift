@@ -42,7 +42,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                                  "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire",
 //                                 "Realm-tutorial",
 //"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera"]
-"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera", "KingFisher", "DaumMap", "ReactorKit-counter")
+"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera", "KingFisher", "DaumMap", "ReactorKit-counter", "FastCampus")
 //        let menuArr = Observable.of(menuArray)
         
         
@@ -156,6 +156,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let vc = self.storyboard?.instantiateViewController(identifier: "reactorkitcounter") as! ReactorKitCounterViewController
             let reactor = ReactorKitCounterViewReactor()
             vc.reactor = reactor
+            present(vc, animated: true){}
+        case 19:
+            let vc = self.storyboard?.instantiateViewController(identifier: "fc_main") as! FCViewController
             present(vc, animated: true){}
             
         default:
