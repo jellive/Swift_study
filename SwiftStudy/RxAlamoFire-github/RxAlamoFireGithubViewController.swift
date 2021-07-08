@@ -53,7 +53,7 @@ class RxAlamoFireGithubViewController: UIViewController {
     }
     
     @IBAction func getButtonClicked(_ sender: Any) {
-        RxAlamofire.requestData(.get, "https://api.github.com/users/\(name)")
+        RxAlamofire.requestData(.get, "https://api.github.com/users/\(String(describing: name.value))")
             .flatMap{ (response, data) -> Observable<RxAlamoFireGithubUser> in
                 do {
                     let user = try JSONDecoder().decode(RxAlamoFireGithubUser.self, from: data)

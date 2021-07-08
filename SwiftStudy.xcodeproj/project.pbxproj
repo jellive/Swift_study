@@ -16,6 +16,7 @@
 		02525B79264E1DA800B34983 /* ReactorKitCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02525B78264E1DA800B34983 /* ReactorKitCounterViewController.swift */; };
 		0260AE0D24F6257D00125671 /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260AE0C24F6257C00125671 /* RxSwiftViewController.swift */; };
 		026FDF4824C9874300F584F4 /* RealmTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FDF4724C9874300F584F4 /* RealmTutorialViewController.swift */; };
+		027D1D852696C087006A2123 /* FCLuppyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D1D842696C087006A2123 /* FCLuppyView.swift */; };
 		028AFB4424AAE6B600661743 /* SwiftUITutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB4324AAE6B600661743 /* SwiftUITutorialView.swift */; };
 		028AFB4924AAF8D700661743 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB4824AAF8D700661743 /* CircleImage.swift */; };
 		028AFB4B24AB070200661743 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB4A24AB070200661743 /* MapView.swift */; };
@@ -80,7 +81,7 @@
 		02FF187824C16DD7005636E7 /* SwiftUIAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187724C16DD7005636E7 /* SwiftUIAnimationView.swift */; };
 		02FF187B24C16F84005636E7 /* OO_Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187A24C16F84005636E7 /* OO_Stopwatch.swift */; };
 		02FF187D24C170C0005636E7 /* SwiftUIObservableObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */; };
-		597657F190E524617133602D /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD47489492FE0E2712570E9 /* Pods_SwiftStudy.framework */; };
+		2C324DBF2B3734B0D57C505E /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28847CFAAFC56BDA9312A9A8 /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
 		BB5A800D1E96065100000670 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A800C1E96065100000670 /* RealmViewController.swift */; };
@@ -148,6 +149,7 @@
 		02525B78264E1DA800B34983 /* ReactorKitCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKitCounterViewController.swift; sourceTree = "<group>"; };
 		0260AE0C24F6257C00125671 /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
 		026FDF4724C9874300F584F4 /* RealmTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTutorialViewController.swift; sourceTree = "<group>"; };
+		027D1D842696C087006A2123 /* FCLuppyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCLuppyView.swift; sourceTree = "<group>"; };
 		028AFB3A24AAC5B300661743 /* SwiftUICombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUICombineView.swift; path = "../../../../../../Users/yoohg/Downloads/CombineWeatherApp/CombineWeatherApp-Starter/SwiftUICombineView.swift"; sourceTree = "<group>"; };
 		028AFB3C24AACC3900661743 /* SwiftUICombineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUICombineViewModel.swift; path = "../../../../../../Users/yoohg/Downloads/CombineWeatherApp/CombineWeatherApp-Starter/SwiftUICombineViewModel.swift"; sourceTree = "<group>"; };
 		028AFB4324AAE6B600661743 /* SwiftUITutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialView.swift; sourceTree = "<group>"; };
@@ -214,7 +216,8 @@
 		02FF187724C16DD7005636E7 /* SwiftUIAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationView.swift; sourceTree = "<group>"; };
 		02FF187A24C16F84005636E7 /* OO_Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OO_Stopwatch.swift; sourceTree = "<group>"; };
 		02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIObservableObjectView.swift; sourceTree = "<group>"; };
-		142070A430C66D57B316E30C /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
+		28847CFAAFC56BDA9312A9A8 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90ACBE8F56558788A071F57E /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmNumber.swift; path = Realm/RealmNumber.swift; sourceTree = "<group>"; };
 		BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = Drawing/DrawingViewController.swift; sourceTree = "<group>"; };
 		BB5A800C1E96065100000670 /* RealmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmViewController.swift; path = Realm/RealmViewController.swift; sourceTree = "<group>"; };
@@ -223,7 +226,6 @@
 		BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IBDesignableViewController.swift; path = IBDesignable/IBDesignableViewController.swift; sourceTree = "<group>"; };
 		BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRectView.swift; sourceTree = "<group>"; };
 		BBEAA0C71EFCAFEB00D3E06F /* SwiftStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftStudy-Bridging-Header.h"; sourceTree = "<group>"; };
-		CBD47489492FE0E2712570E9 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6021C1F24D56CCA00D23DB9 /* Playground */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Playground; sourceTree = "<group>"; };
 		D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewModel.swift; sourceTree = "<group>"; };
 		D616938924B1D670009F2EB1 /* LocalPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushViewController.swift; sourceTree = "<group>"; };
@@ -262,7 +264,7 @@
 		D6E07EB724B1B5DA009B6FBA /* charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers.jpg; sourceTree = "<group>"; };
 		D6E07EB824B1B5DA009B6FBA /* silversalmoncreek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silversalmoncreek.jpg; sourceTree = "<group>"; };
 		D6E07EB924B1B5DA009B6FBA /* umbagog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbagog.jpg; sourceTree = "<group>"; };
-		FBC276825BC80382D6482FDE /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
+		F651846779BC6987319F3F36 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,7 +280,7 @@
 				028C0FEB261AF74900FF8BC9 /* SystemConfiguration.framework in Frameworks */,
 				028C0FE9261AF73D00FF8BC9 /* OpenGLES.framework in Frameworks */,
 				028C0FE7261AF70C00FF8BC9 /* DaumMap.framework in Frameworks */,
-				597657F190E524617133602D /* Pods_SwiftStudy.framework in Frameworks */,
+				2C324DBF2B3734B0D57C505E /* Pods_SwiftStudy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +343,14 @@
 				026FDF4724C9874300F584F4 /* RealmTutorialViewController.swift */,
 			);
 			path = "Realm-tutorial";
+			sourceTree = "<group>";
+		};
+		027D1D832696C041006A2123 /* FastCampus */ = {
+			isa = PBXGroup;
+			children = (
+				027D1D842696C087006A2123 /* FCLuppyView.swift */,
+			);
+			path = FastCampus;
 			sourceTree = "<group>";
 		};
 		028AFB4224AAE6A800661743 /* SwiftUI-tutorial */ = {
@@ -617,7 +627,7 @@
 				028C0FEA261AF74900FF8BC9 /* SystemConfiguration.framework */,
 				028C0FE8261AF73D00FF8BC9 /* OpenGLES.framework */,
 				D6AEE15C25271BEE00C3E840 /* RxRealm.framework */,
-				CBD47489492FE0E2712570E9 /* Pods_SwiftStudy.framework */,
+				28847CFAAFC56BDA9312A9A8 /* Pods_SwiftStudy.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -625,8 +635,8 @@
 		B6EEC42565C84E54685299FA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				142070A430C66D57B316E30C /* Pods-SwiftStudy.debug.xcconfig */,
-				FBC276825BC80382D6482FDE /* Pods-SwiftStudy.release.xcconfig */,
+				F651846779BC6987319F3F36 /* Pods-SwiftStudy.debug.xcconfig */,
+				90ACBE8F56558788A071F57E /* Pods-SwiftStudy.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -734,6 +744,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				027D1D832696C041006A2123 /* FastCampus */,
 				02525B75264E149400B34983 /* ReactorKit */,
 				028C1002261AFC1700FF8BC9 /* DaumMap */,
 				028C0FE6261AF70C00FF8BC9 /* DaumMap.framework */,
@@ -790,13 +801,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6C62F731E797D5E007D497A /* Build configuration list for PBXNativeTarget "SwiftStudy" */;
 			buildPhases = (
-				9DC53A1D98D18FD0F8A888C0 /* [CP] Check Pods Manifest.lock */,
+				23A3719D2812F7EF33A2CE9D /* [CP] Check Pods Manifest.lock */,
 				D6C62F471E797D5E007D497A /* Sources */,
 				D6C62F481E797D5E007D497A /* Frameworks */,
 				D6C62F491E797D5E007D497A /* Resources */,
 				02FF187524C16C6F005636E7 /* SwiftLint */,
 				026C146D251C6EA1005CDCDC /* Fix cocoapods 8.0 bug. */,
-				722B501655342B7D4789A301 /* [CP] Embed Pods Frameworks */,
+				6C63FC6615672A9EE39E4521 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -977,7 +988,29 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# \"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
-		722B501655342B7D4789A301 /* [CP] Embed Pods Frameworks */ = {
+		23A3719D2812F7EF33A2CE9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftStudy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C63FC6615672A9EE39E4521 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1035,28 +1068,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9DC53A1D98D18FD0F8A888C0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SwiftStudy-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1106,6 +1117,7 @@
 				02A31E5624B573BB00D32B41 /* RxChameleonViewController.swift in Sources */,
 				D6A6D49524D6921900E39419 /* RxMoyaGithubViewController.swift in Sources */,
 				028AFB7224AB363700661743 /* UserData.swift in Sources */,
+				027D1D852696C087006A2123 /* FCLuppyView.swift in Sources */,
 				02FF186924C13F21005636E7 /* RxAlamofireViewModel.swift in Sources */,
 				028C0F272615BB8000FF8BC9 /* KingFisherViewController.swift in Sources */,
 				02A31E5B24B5AC6000D32B41 /* IssueListViewController.swift in Sources */,
@@ -1224,6 +1236,8 @@
 				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1276,6 +1290,7 @@
 				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1297,7 +1312,7 @@
 		};
 		D6C62F741E797D5E007D497A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 142070A430C66D57B316E30C /* Pods-SwiftStudy.debug.xcconfig */;
+			baseConfigurationReference = F651846779BC6987319F3F36 /* Pods-SwiftStudy.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1326,7 +1341,7 @@
 		};
 		D6C62F751E797D5E007D497A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBC276825BC80382D6482FDE /* Pods-SwiftStudy.release.xcconfig */;
+			baseConfigurationReference = 90ACBE8F56558788A071F57E /* Pods-SwiftStudy.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
