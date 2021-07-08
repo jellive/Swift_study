@@ -16,7 +16,7 @@
 		02525B79264E1DA800B34983 /* ReactorKitCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02525B78264E1DA800B34983 /* ReactorKitCounterViewController.swift */; };
 		0260AE0D24F6257D00125671 /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260AE0C24F6257C00125671 /* RxSwiftViewController.swift */; };
 		026FDF4824C9874300F584F4 /* RealmTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FDF4724C9874300F584F4 /* RealmTutorialViewController.swift */; };
-		027D1D852696C087006A2123 /* FCLuppyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D1D842696C087006A2123 /* FCLuppyView.swift */; };
+		027D1D852696C087006A2123 /* FCLuffyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027D1D842696C087006A2123 /* FCLuffyView.swift */; };
 		028AFB4424AAE6B600661743 /* SwiftUITutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB4324AAE6B600661743 /* SwiftUITutorialView.swift */; };
 		028AFB4924AAF8D700661743 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB4824AAF8D700661743 /* CircleImage.swift */; };
 		028AFB4B24AB070200661743 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFB4A24AB070200661743 /* MapView.swift */; };
@@ -72,6 +72,7 @@
 		02A31E6124B5BF8700D32B41 /* Issue_Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E6024B5BF8700D32B41 /* Issue_Issue.swift */; };
 		02A31E6324B5C21C00D32B41 /* Issue_IssueTrackerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A31E6224B5C21C00D32B41 /* Issue_IssueTrackerModel.swift */; };
 		02D6F32B24D7D844001BA1E9 /* RxAlamoFireGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6F32A24D7D844001BA1E9 /* RxAlamoFireGithubViewController.swift */; };
+		02E2EA792696D3BA00FEBAC5 /* FCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E2EA782696D3BA00FEBAC5 /* FCViewController.swift */; };
 		02FF186724C13C80005636E7 /* RxAlamofireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF186624C13C80005636E7 /* RxAlamofireView.swift */; };
 		02FF186924C13F21005636E7 /* RxAlamofireViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF186824C13F21005636E7 /* RxAlamofireViewModel.swift */; };
 		02FF186C24C14298005636E7 /* SwiftUILocalPushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF186B24C14298005636E7 /* SwiftUILocalPushView.swift */; };
@@ -149,7 +150,7 @@
 		02525B78264E1DA800B34983 /* ReactorKitCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKitCounterViewController.swift; sourceTree = "<group>"; };
 		0260AE0C24F6257C00125671 /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
 		026FDF4724C9874300F584F4 /* RealmTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTutorialViewController.swift; sourceTree = "<group>"; };
-		027D1D842696C087006A2123 /* FCLuppyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCLuppyView.swift; sourceTree = "<group>"; };
+		027D1D842696C087006A2123 /* FCLuffyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCLuffyView.swift; sourceTree = "<group>"; };
 		028AFB3A24AAC5B300661743 /* SwiftUICombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUICombineView.swift; path = "../../../../../../Users/yoohg/Downloads/CombineWeatherApp/CombineWeatherApp-Starter/SwiftUICombineView.swift"; sourceTree = "<group>"; };
 		028AFB3C24AACC3900661743 /* SwiftUICombineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUICombineViewModel.swift; path = "../../../../../../Users/yoohg/Downloads/CombineWeatherApp/CombineWeatherApp-Starter/SwiftUICombineViewModel.swift"; sourceTree = "<group>"; };
 		028AFB4324AAE6B600661743 /* SwiftUITutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialView.swift; sourceTree = "<group>"; };
@@ -207,6 +208,7 @@
 		02A31E6024B5BF8700D32B41 /* Issue_Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue_Issue.swift; sourceTree = "<group>"; };
 		02A31E6224B5C21C00D32B41 /* Issue_IssueTrackerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue_IssueTrackerModel.swift; sourceTree = "<group>"; };
 		02D6F32A24D7D844001BA1E9 /* RxAlamoFireGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAlamoFireGithubViewController.swift; sourceTree = "<group>"; };
+		02E2EA782696D3BA00FEBAC5 /* FCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCViewController.swift; sourceTree = "<group>"; };
 		02FF186624C13C80005636E7 /* RxAlamofireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAlamofireView.swift; sourceTree = "<group>"; };
 		02FF186824C13F21005636E7 /* RxAlamofireViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAlamofireViewModel.swift; sourceTree = "<group>"; };
 		02FF186B24C14298005636E7 /* SwiftUILocalPushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILocalPushView.swift; sourceTree = "<group>"; };
@@ -348,7 +350,8 @@
 		027D1D832696C041006A2123 /* FastCampus */ = {
 			isa = PBXGroup;
 			children = (
-				027D1D842696C087006A2123 /* FCLuppyView.swift */,
+				027D1D842696C087006A2123 /* FCLuffyView.swift */,
+				02E2EA782696D3BA00FEBAC5 /* FCViewController.swift */,
 			);
 			path = FastCampus;
 			sourceTree = "<group>";
@@ -1117,7 +1120,8 @@
 				02A31E5624B573BB00D32B41 /* RxChameleonViewController.swift in Sources */,
 				D6A6D49524D6921900E39419 /* RxMoyaGithubViewController.swift in Sources */,
 				028AFB7224AB363700661743 /* UserData.swift in Sources */,
-				027D1D852696C087006A2123 /* FCLuppyView.swift in Sources */,
+				02E2EA792696D3BA00FEBAC5 /* FCViewController.swift in Sources */,
+				027D1D852696C087006A2123 /* FCLuffyView.swift in Sources */,
 				02FF186924C13F21005636E7 /* RxAlamofireViewModel.swift in Sources */,
 				028C0F272615BB8000FF8BC9 /* KingFisherViewController.swift in Sources */,
 				02A31E5B24B5AC6000D32B41 /* IssueListViewController.swift in Sources */,

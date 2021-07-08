@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-struct FCLuppyView: View {
+struct FCLuffyView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct FCLuppyView_Previews: PreviewProvider {
+struct FCLuffyView_Previews: PreviewProvider {
     static var previews: some View {
-        FCLuppyView()
+        FCLuffyView()
     }
 }
