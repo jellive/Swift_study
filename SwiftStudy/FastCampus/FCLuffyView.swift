@@ -9,8 +9,29 @@
 import SwiftUI
 
 struct FCLuffyView: View {
+    @State var price = 100000
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if #available(iOS 14.0, *) {
+        
+            VStack {
+                Spacer()
+                Text("Wanted").font(.system(size: 50))
+                Image(systemName: "paperplane.fill")
+                    .resizable()
+                    .frame(width: 200, height: 200)
+                Text("₩\(price)").font(.system(size: 50))
+                Spacer()
+                Button(action: {
+                    self.price = 2000000
+                }, label: {
+                    Text("reload")
+                })
+                
+            }
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
 
