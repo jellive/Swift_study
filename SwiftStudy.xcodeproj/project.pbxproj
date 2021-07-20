@@ -55,7 +55,6 @@
 		028AFBE124AF1BA400661743 /* RxGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028AFBE024AF1BA400661743 /* RxGithubViewController.swift */; };
 		028C0F272615BB8000FF8BC9 /* KingFisherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028C0F262615BB8000FF8BC9 /* KingFisherViewController.swift */; };
 		028C0FE7261AF70C00FF8BC9 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C0FE6261AF70C00FF8BC9 /* DaumMap.framework */; };
-		028C0FE9261AF73D00FF8BC9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C0FE8261AF73D00FF8BC9 /* OpenGLES.framework */; };
 		028C0FEB261AF74900FF8BC9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C0FEA261AF74900FF8BC9 /* SystemConfiguration.framework */; };
 		028C0FED261AF74F00FF8BC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C0FEC261AF74F00FF8BC9 /* CoreLocation.framework */; };
 		028C0FEF261AF75500FF8BC9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028C0FEE261AF75500FF8BC9 /* QuartzCore.framework */; };
@@ -104,6 +103,8 @@
 		D6C62F591E797D5E007D497A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C62F571E797D5E007D497A /* LaunchScreen.storyboard */; };
 		D6C62F641E797D5E007D497A /* SwiftStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C62F631E797D5E007D497A /* SwiftStudyTests.swift */; };
 		D6C62F6F1E797D5E007D497A /* SwiftStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C62F6E1E797D5E007D497A /* SwiftStudyUITests.swift */; };
+		D6DF7DE426981C390032CE40 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DF7DE326981C390032CE40 /* Metal.framework */; };
+		D6DF7DEB26A6CE670032CE40 /* FCLuffyTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DF7DEA26A6CE670032CE40 /* FCLuffyTestView.swift */; };
 		D6E07EBA24B1B5DA009B6FBA /* stmarylake_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6E07EA924B1B5D9009B6FBA /* stmarylake_feature.jpg */; };
 		D6E07EBB24B1B5DA009B6FBA /* hiddenlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6E07EAA24B1B5D9009B6FBA /* hiddenlake.jpg */; };
 		D6E07EBC24B1B5DA009B6FBA /* charleyrivers_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6E07EAB24B1B5D9009B6FBA /* charleyrivers_feature.jpg */; };
@@ -249,6 +250,8 @@
 		D6C62F6A1E797D5E007D497A /* SwiftStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C62F6E1E797D5E007D497A /* SwiftStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStudyUITests.swift; sourceTree = "<group>"; };
 		D6C62F701E797D5E007D497A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6DF7DE326981C390032CE40 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		D6DF7DEA26A6CE670032CE40 /* FCLuffyTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCLuffyTestView.swift; sourceTree = "<group>"; };
 		D6E07EA924B1B5D9009B6FBA /* stmarylake_feature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stmarylake_feature.jpg; sourceTree = "<group>"; };
 		D6E07EAA24B1B5D9009B6FBA /* hiddenlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hiddenlake.jpg; sourceTree = "<group>"; };
 		D6E07EAB24B1B5D9009B6FBA /* charleyrivers_feature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers_feature.jpg; sourceTree = "<group>"; };
@@ -276,11 +279,11 @@
 			files = (
 				028C0FFB261AF77200FF8BC9 /* libsqlite3.tbd in Frameworks */,
 				028C0FF6261AF76C00FF8BC9 /* libxml2.tbd in Frameworks */,
+				D6DF7DE426981C390032CE40 /* Metal.framework in Frameworks */,
 				028C0FF1261AF75D00FF8BC9 /* libc++.tbd in Frameworks */,
 				028C0FEF261AF75500FF8BC9 /* QuartzCore.framework in Frameworks */,
 				028C0FED261AF74F00FF8BC9 /* CoreLocation.framework in Frameworks */,
 				028C0FEB261AF74900FF8BC9 /* SystemConfiguration.framework in Frameworks */,
-				028C0FE9261AF73D00FF8BC9 /* OpenGLES.framework in Frameworks */,
 				028C0FE7261AF70C00FF8BC9 /* DaumMap.framework in Frameworks */,
 				2C324DBF2B3734B0D57C505E /* Pods_SwiftStudy.framework in Frameworks */,
 			);
@@ -352,6 +355,7 @@
 			children = (
 				027D1D842696C087006A2123 /* FCLuffyView.swift */,
 				02E2EA782696D3BA00FEBAC5 /* FCViewController.swift */,
+				D6DF7DEA26A6CE670032CE40 /* FCLuffyTestView.swift */,
 			);
 			path = FastCampus;
 			sourceTree = "<group>";
@@ -622,6 +626,7 @@
 		0D9D7C10B86EBCBD4B73DC1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6DF7DE326981C390032CE40 /* Metal.framework */,
 				028C0FFA261AF77200FF8BC9 /* libsqlite3.tbd */,
 				028C0FF5261AF76C00FF8BC9 /* libxml2.tbd */,
 				028C0FF0261AF75D00FF8BC9 /* libc++.tbd */,
@@ -1117,6 +1122,7 @@
 				D604CCE324A89EDE006927DE /* SwiftUIViewModel.swift in Sources */,
 				028AFBA924ADA62900661743 /* GraphCapsule.swift in Sources */,
 				BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */,
+				D6DF7DEB26A6CE670032CE40 /* FCLuffyTestView.swift in Sources */,
 				02A31E5624B573BB00D32B41 /* RxChameleonViewController.swift in Sources */,
 				D6A6D49524D6921900E39419 /* RxMoyaGithubViewController.swift in Sources */,
 				028AFB7224AB363700661743 /* UserData.swift in Sources */,
@@ -1318,7 +1324,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F651846779BC6987319F3F36 /* Pods-SwiftStudy.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -1347,7 +1352,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 90ACBE8F56558788A071F57E /* Pods-SwiftStudy.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;

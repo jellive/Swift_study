@@ -13,7 +13,7 @@ import RxCocoa
 
 class FCViewController: UIViewController {
     
-    let menuArr = ["Luffy"]
+    let menuArr = ["Luffy", "Luffy-test"]
     let bag = DisposeBag()
     
     @IBOutlet var tableView: UITableView!
@@ -30,6 +30,9 @@ class FCViewController: UIViewController {
             switch $0.row {
             case 0:
                 let vc = UIHostingController(rootView: FCLuffyView())
+                self.present(vc, animated: true){}
+            case 1:
+                let vc = UIHostingController(rootView: FCLuffyTestView())
                 self.present(vc, animated: true){}
             default:
                 return
