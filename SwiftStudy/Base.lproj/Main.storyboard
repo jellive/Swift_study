@@ -969,6 +969,111 @@
             </objects>
             <point key="canvasLocation" x="3808.8000000000002" y="-2015.4422788605698"/>
         </scene>
+        <!--Kit View Controller-->
+        <scene sceneID="a0m-0F-Gm2">
+            <objects>
+                <viewController storyboardIdentifier="uikit_main" id="buZ-OK-DXZ" customClass="UIKitViewController" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hld-I1-TBf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cu1-7C-i7c">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZaY-Bi-RQI">
+                                    <size key="itemSize" width="144" height="45"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ui_main_collection_view_cell" id="qa4-mZ-UBk">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="144" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9f-Kc-5Dr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="144" height="45"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemGreenColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="c9f-Kc-5Dr" firstAttribute="centerY" secondItem="qa4-mZ-UBk" secondAttribute="centerY" id="As7-9W-ck9"/>
+                                            <constraint firstItem="c9f-Kc-5Dr" firstAttribute="centerX" secondItem="qa4-mZ-UBk" secondAttribute="centerX" id="XBw-hg-YVf"/>
+                                            <constraint firstItem="c9f-Kc-5Dr" firstAttribute="height" secondItem="qa4-mZ-UBk" secondAttribute="height" id="Ynh-yM-he2"/>
+                                            <constraint firstItem="c9f-Kc-5Dr" firstAttribute="width" secondItem="qa4-mZ-UBk" secondAttribute="width" id="oGv-Zn-gh1"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="buZ-OK-DXZ" id="Jum-8k-YyK"/>
+                                    <outlet property="delegate" destination="buZ-OK-DXZ" id="Dkr-Sb-AY4"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Gk-Sl-te2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cu1-7C-i7c" firstAttribute="width" secondItem="Hld-I1-TBf" secondAttribute="width" id="FxZ-Br-f62"/>
+                            <constraint firstItem="Cu1-7C-i7c" firstAttribute="centerY" secondItem="9Gk-Sl-te2" secondAttribute="centerY" id="T77-za-uk9"/>
+                            <constraint firstItem="Cu1-7C-i7c" firstAttribute="centerX" secondItem="9Gk-Sl-te2" secondAttribute="centerX" id="TVb-gd-7q1"/>
+                            <constraint firstItem="Cu1-7C-i7c" firstAttribute="height" secondItem="Hld-I1-TBf" secondAttribute="height" id="oAK-J4-bhD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Cu1-7C-i7c" id="lQP-pk-Uyt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5D-4b-hhl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4615" y="-540"/>
+        </scene>
+        <!--Popup Round View Controller-->
+        <scene sceneID="5b8-IJ-Wka">
+            <objects>
+                <viewController storyboardIdentifier="ui_popup_round" id="gHH-N1-GPH" customClass="UIPopupRoundViewController" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sVW-Yh-L8m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wB-mm-VZR">
+                                <rect key="frame" x="94" y="167" width="187.5" height="333.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여기는 팝업이여" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iK4-f8-Kv2">
+                                        <rect key="frame" x="39.5" y="156" width="108" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="iK4-f8-Kv2" firstAttribute="centerY" secondItem="3wB-mm-VZR" secondAttribute="centerY" id="ZZZ-9V-bKx"/>
+                                    <constraint firstItem="iK4-f8-Kv2" firstAttribute="centerX" secondItem="3wB-mm-VZR" secondAttribute="centerX" id="q5I-Rb-Xzx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5yb-Bm-yEl"/>
+                        <color key="backgroundColor" white="0.67000000000000004" alpha="0.50605440455556705" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3wB-mm-VZR" firstAttribute="centerX" secondItem="5yb-Bm-yEl" secondAttribute="centerX" id="60Y-tW-ZlJ"/>
+                            <constraint firstItem="3wB-mm-VZR" firstAttribute="height" secondItem="sVW-Yh-L8m" secondAttribute="height" multiplier="0.5" id="EYw-NI-qkl"/>
+                            <constraint firstItem="3wB-mm-VZR" firstAttribute="centerY" secondItem="5yb-Bm-yEl" secondAttribute="centerY" id="TyA-r2-Eqr"/>
+                            <constraint firstItem="3wB-mm-VZR" firstAttribute="width" secondItem="sVW-Yh-L8m" secondAttribute="width" multiplier="0.5" id="oFr-9p-bTV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoView" destination="3wB-mm-VZR" id="GK8-86-1mN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bi7-7y-6ZF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5281" y="-540"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

@@ -42,7 +42,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                                  "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire",
 //                                 "Realm-tutorial",
 //"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera"]
-"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera", "KingFisher", "DaumMap", "ReactorKit-counter", "FastCampus")
+"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera", "KingFisher", "DaumMap", "ReactorKit-counter", "FastCampus", "UIKit")
 //        let menuArr = Observable.of(menuArray)
         
         
@@ -162,6 +162,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let vc = self.storyboard?.instantiateViewController(identifier: "fc_main") as! FCViewController
             present(vc, animated: true){}
             
+        case 20:
+            let vc = self.storyboard?.instantiateViewController(identifier: "uikit_main") as! UIKitViewController
+            present(vc, animated: true){}
         default:
             return;
         }
