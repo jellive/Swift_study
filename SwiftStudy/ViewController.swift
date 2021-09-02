@@ -91,6 +91,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             self.present(vc, animated: true, completion: nil)
         case 3:
             let vc : DrawingViewController = self.storyboard?.instantiateViewController(withIdentifier: "drawing") as! DrawingViewController
+            vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true, completion: nil)
         case 4:
             let vc : CategoryViewController = self.storyboard?.instantiateViewController(withIdentifier: "category") as! CategoryViewController
