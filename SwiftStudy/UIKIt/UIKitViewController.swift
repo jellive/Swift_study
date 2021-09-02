@@ -38,7 +38,7 @@ class UIKitViewController: UIViewController, UICollectionViewDelegate, UICollect
         case 0:
             let vc = self.storyboard?.instantiateViewController(identifier: "ui_popup_round") as! UIPopupRoundViewController
             vc.modalPresentationStyle = .overCurrentContext
-            present(vc, animated: true, completion: nil)
+            present(vc, animated: false, completion: nil)
         default:
             return
         }

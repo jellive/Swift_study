@@ -9,7 +9,7 @@
 import UIKit
 
 class UIPopupRoundViewController: UIViewController {
-    @IBOutlet var infoView: UIView!
+    @IBOutlet weak var infoView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("popup!")
@@ -20,10 +20,11 @@ class UIPopupRoundViewController: UIViewController {
         containerView.layer.shadowRadius = 10
         containerView.layer.shadowOpacity = 1
 
-        containerView.layer.backgroundColor = .init(red: 1, green: 0, blue: 0, alpha: 1)
+        containerView.layer.backgroundColor = CGColor.init(red: 1, green: 1, blue: 1, alpha: 1)
 
         containerView.addSubview(infoView)
-
+        containerView.layer.cornerRadius = 25
+        containerView.clipsToBounds = true
 
 
         infoView.layer.cornerRadius = 25

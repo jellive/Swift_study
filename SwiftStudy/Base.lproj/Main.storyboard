@@ -1040,31 +1040,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wB-mm-VZR">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3wB-mm-VZR">
                                 <rect key="frame" x="94" y="167" width="187.5" height="333.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여기는 팝업이여" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iK4-f8-Kv2">
-                                        <rect key="frame" x="39.5" y="156" width="108" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="여기는 팝업이여" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iK4-f8-Kv2">
+                                        <rect key="frame" x="40" y="156" width="108" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="iK4-f8-Kv2" firstAttribute="centerY" secondItem="3wB-mm-VZR" secondAttribute="centerY" id="ZZZ-9V-bKx"/>
-                                    <constraint firstItem="iK4-f8-Kv2" firstAttribute="centerX" secondItem="3wB-mm-VZR" secondAttribute="centerX" id="q5I-Rb-Xzx"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5yb-Bm-yEl"/>
                         <color key="backgroundColor" white="0.67000000000000004" alpha="0.50605440455556705" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="3wB-mm-VZR" firstAttribute="centerX" secondItem="5yb-Bm-yEl" secondAttribute="centerX" id="60Y-tW-ZlJ"/>
-                            <constraint firstItem="3wB-mm-VZR" firstAttribute="height" secondItem="sVW-Yh-L8m" secondAttribute="height" multiplier="0.5" id="EYw-NI-qkl"/>
-                            <constraint firstItem="3wB-mm-VZR" firstAttribute="centerY" secondItem="5yb-Bm-yEl" secondAttribute="centerY" id="TyA-r2-Eqr"/>
-                            <constraint firstItem="3wB-mm-VZR" firstAttribute="width" secondItem="sVW-Yh-L8m" secondAttribute="width" multiplier="0.5" id="oFr-9p-bTV"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="infoView" destination="3wB-mm-VZR" id="GK8-86-1mN"/>
