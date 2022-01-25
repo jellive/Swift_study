@@ -96,6 +96,7 @@
 		90A4E674279FC28A00C6C541 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 90A4E673279FC28A00C6C541 /* Moya */; };
 		90A4E676279FC28A00C6C541 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 90A4E675279FC28A00C6C541 /* ReactiveMoya */; };
 		90A4E678279FC28A00C6C541 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 90A4E677279FC28A00C6C541 /* RxMoya */; };
+		90A4E67B279FC59D00C6C541 /* ShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4E67A279FC59D00C6C541 /* ShapeViewController.swift */; };
 		A66909E448C6BC8C5D0D27E0 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13F4E81992F556BC6BC568D /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
@@ -251,6 +252,7 @@
 		901FF3B426E06340004E96EA /* UIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
 		901FF3B626E0634C004E96EA /* UIPopupRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPopupRoundViewController.swift; sourceTree = "<group>"; };
 		902D2D88279FAD510074B51E /* RxRealmDataSources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxRealmDataSources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90A4E67A279FC59D00C6C541 /* ShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeViewController.swift; sourceTree = "<group>"; };
 		B45A826CF13BDBAFF22B20C7 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmNumber.swift; path = Realm/RealmNumber.swift; sourceTree = "<group>"; };
 		BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = Drawing/DrawingViewController.swift; sourceTree = "<group>"; };
@@ -702,6 +704,14 @@
 			path = UIPopupRound;
 			sourceTree = "<group>";
 		};
+		90A4E679279FC58D00C6C541 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				90A4E67A279FC59D00C6C541 /* ShapeViewController.swift */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
 		B6EEC42565C84E54685299FA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -814,6 +824,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				90A4E679279FC58D00C6C541 /* Shape */,
 				901FF3B226E06320004E96EA /* UIKIt */,
 				027D1D832696C041006A2123 /* FastCampus */,
 				02525B75264E149400B34983 /* ReactorKit */,
@@ -1160,6 +1171,7 @@
 				02FF187424C167DA005636E7 /* SwiftUISpacerView.swift in Sources */,
 				D666F16524FB525600357FF2 /* CameraViewController.swift in Sources */,
 				028C1004261AFC2C00FF8BC9 /* DaumMapViewController.swift in Sources */,
+				90A4E67B279FC59D00C6C541 /* ShapeViewController.swift in Sources */,
 				02FF187B24C16F84005636E7 /* OO_Stopwatch.swift in Sources */,
 				028AFB4B24AB070200661743 /* MapView.swift in Sources */,
 				02D6F32B24D7D844001BA1E9 /* RxAlamoFireGithubViewController.swift in Sources */,

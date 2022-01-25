@@ -103,16 +103,16 @@ class RxMoyaGithubViewController: UIViewController {
     // MARK: - RxMoya
     func userInfo(name: String) {
         let provider = MoyaProvider<provider>()
-        provider.rx.request(.userInfo(name: name))
-            .map(RxMoyaGithubUser.self)
-        .asObservable()
-            .subscribe(onNext: {user in
-                print(user.login)
-                print(user.avatarUrl)
-                print(user.reposUrl)
-            }, onError: {error in
-                print(error)
-            }).disposed(by: bag)
+//        provider.rx.request(.userInfo(name: name))
+//            .map(RxMoyaGithubUser.self)
+//        .asObservable()
+//            .subscribe(onNext: {user in
+//                print(user.login)
+//                print(user.avatarUrl)
+//                print(user.reposUrl)
+//            }, onError: {error in
+//                print(error)
+//            }).disposed(by: bag)
     }
     
     func bindEvent() {
