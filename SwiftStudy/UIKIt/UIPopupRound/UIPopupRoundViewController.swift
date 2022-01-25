@@ -10,6 +10,7 @@ import UIKit
 
 class UIPopupRoundViewController: UIViewController {
     @IBOutlet weak var infoView: UIView!
+    @IBOutlet var guideLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("popup!")
@@ -22,10 +23,10 @@ class UIPopupRoundViewController: UIViewController {
 
         containerView.layer.backgroundColor = CGColor.init(red: 1, green: 1, blue: 1, alpha: 1)
 
+        
         containerView.addSubview(infoView)
         containerView.layer.cornerRadius = 25
         containerView.clipsToBounds = true
-
 
         infoView.layer.cornerRadius = 25
         infoView.clipsToBounds = true

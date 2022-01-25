@@ -1058,6 +1058,7 @@
                         <color key="backgroundColor" white="0.67000000000000004" alpha="0.50605440455556705" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
+                        <outlet property="guideLabel" destination="iK4-f8-Kv2" id="Jvd-WZ-7Q7"/>
                         <outlet property="infoView" destination="3wB-mm-VZR" id="GK8-86-1mN"/>
                     </connections>
                 </viewController>
