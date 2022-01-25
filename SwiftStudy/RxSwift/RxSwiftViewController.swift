@@ -39,9 +39,9 @@ class RxSwiftViewController: UIViewController {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxgithub") as! RxGithubViewController
                 self.present(vc, animated: true){}
             case 3:
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxissue") as! IssueListViewController
-                self.present(vc, animated: true){}
-            case 4:
+//                let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxissue") as! IssueListViewController
+//                self.present(vc, animated: true){}
+//            case 4:
                 let vc = self.storyboard?.instantiateViewController(identifier: "rxsketchbook") as! RxSwiftSketchbookViewController
                 self.present(vc, animated: true) {}
             default:

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -81,9 +81,22 @@
 		02FF187824C16DD7005636E7 /* SwiftUIAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187724C16DD7005636E7 /* SwiftUIAnimationView.swift */; };
 		02FF187B24C16F84005636E7 /* OO_Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187A24C16F84005636E7 /* OO_Stopwatch.swift */; };
 		02FF187D24C170C0005636E7 /* SwiftUIObservableObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */; };
-		2C324DBF2B3734B0D57C505E /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28847CFAAFC56BDA9312A9A8 /* Pods_SwiftStudy.framework */; };
 		901FF3B526E06340004E96EA /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901FF3B426E06340004E96EA /* UIKitViewController.swift */; };
 		901FF3B726E0634C004E96EA /* UIPopupRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901FF3B626E0634C004E96EA /* UIPopupRoundViewController.swift */; };
+		902D2D61279F86680074B51E /* RxOptional in Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D60279F86680074B51E /* RxOptional */; };
+		902D2D64279F86B80074B51E /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D63279F86B80074B51E /* ReactorKit */; };
+		902D2D67279F86E40074B51E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D66279F86E40074B51E /* SnapKit */; };
+		902D2D6A279F87080074B51E /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D69279F87080074B51E /* Hero */; };
+		902D2D6D279F873A0074B51E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D6C279F873A0074B51E /* Lottie */; };
+		902D2D76279F88260074B51E /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D75279F88260074B51E /* RxAlamofire */; };
+		902D2D79279F89500074B51E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D78279F89500074B51E /* Kingfisher */; };
+		902D2D7D279F95840074B51E /* RxRealm in Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D7C279F95840074B51E /* RxRealm */; };
+		90786FB0279FB43900D1FEF6 /* Hero in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D69279F87080074B51E /* Hero */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		90A4E672279FC28A00C6C541 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 90A4E671279FC28A00C6C541 /* CombineMoya */; };
+		90A4E674279FC28A00C6C541 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 90A4E673279FC28A00C6C541 /* Moya */; };
+		90A4E676279FC28A00C6C541 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 90A4E675279FC28A00C6C541 /* ReactiveMoya */; };
+		90A4E678279FC28A00C6C541 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 90A4E677279FC28A00C6C541 /* RxMoya */; };
+		A66909E448C6BC8C5D0D27E0 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13F4E81992F556BC6BC568D /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
 		BB5A800D1E96065100000670 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A800C1E96065100000670 /* RealmViewController.swift */; };
@@ -142,6 +155,20 @@
 			remoteInfo = SwiftStudy;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90786FB1279FB43900D1FEF6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				90786FB0279FB43900D1FEF6 /* Hero in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		020DCC4F24BEC5160007A0C8 /* Moya_MyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moya_MyService.swift; sourceTree = "<group>"; };
@@ -221,10 +248,10 @@
 		02FF187724C16DD7005636E7 /* SwiftUIAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationView.swift; sourceTree = "<group>"; };
 		02FF187A24C16F84005636E7 /* OO_Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OO_Stopwatch.swift; sourceTree = "<group>"; };
 		02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIObservableObjectView.swift; sourceTree = "<group>"; };
-		28847CFAAFC56BDA9312A9A8 /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		901FF3B426E06340004E96EA /* UIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
 		901FF3B626E0634C004E96EA /* UIPopupRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPopupRoundViewController.swift; sourceTree = "<group>"; };
-		90ACBE8F56558788A071F57E /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
+		902D2D88279FAD510074B51E /* RxRealmDataSources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxRealmDataSources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45A826CF13BDBAFF22B20C7 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmNumber.swift; path = Realm/RealmNumber.swift; sourceTree = "<group>"; };
 		BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = Drawing/DrawingViewController.swift; sourceTree = "<group>"; };
 		BB5A800C1E96065100000670 /* RealmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmViewController.swift; path = Realm/RealmViewController.swift; sourceTree = "<group>"; };
@@ -233,6 +260,7 @@
 		BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IBDesignableViewController.swift; path = IBDesignable/IBDesignableViewController.swift; sourceTree = "<group>"; };
 		BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRectView.swift; sourceTree = "<group>"; };
 		BBEAA0C71EFCAFEB00D3E06F /* SwiftStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftStudy-Bridging-Header.h"; sourceTree = "<group>"; };
+		C176967CC97D1C9DF75BE25F /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		D6021C1F24D56CCA00D23DB9 /* Playground */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Playground; sourceTree = "<group>"; };
 		D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewModel.swift; sourceTree = "<group>"; };
 		D616938924B1D670009F2EB1 /* LocalPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushViewController.swift; sourceTree = "<group>"; };
@@ -273,7 +301,7 @@
 		D6E07EB724B1B5DA009B6FBA /* charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers.jpg; sourceTree = "<group>"; };
 		D6E07EB824B1B5DA009B6FBA /* silversalmoncreek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silversalmoncreek.jpg; sourceTree = "<group>"; };
 		D6E07EB924B1B5DA009B6FBA /* umbagog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbagog.jpg; sourceTree = "<group>"; };
-		F651846779BC6987319F3F36 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
+		F13F4E81992F556BC6BC568D /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,14 +310,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				028C0FFB261AF77200FF8BC9 /* libsqlite3.tbd in Frameworks */,
+				902D2D6D279F873A0074B51E /* Lottie in Frameworks */,
+				902D2D7D279F95840074B51E /* RxRealm in Frameworks */,
 				028C0FF6261AF76C00FF8BC9 /* libxml2.tbd in Frameworks */,
+				90A4E674279FC28A00C6C541 /* Moya in Frameworks */,
 				D6DF7DE426981C390032CE40 /* Metal.framework in Frameworks */,
 				028C0FF1261AF75D00FF8BC9 /* libc++.tbd in Frameworks */,
+				902D2D79279F89500074B51E /* Kingfisher in Frameworks */,
 				028C0FEF261AF75500FF8BC9 /* QuartzCore.framework in Frameworks */,
+				902D2D76279F88260074B51E /* RxAlamofire in Frameworks */,
 				028C0FED261AF74F00FF8BC9 /* CoreLocation.framework in Frameworks */,
 				028C0FEB261AF74900FF8BC9 /* SystemConfiguration.framework in Frameworks */,
+				90A4E678279FC28A00C6C541 /* RxMoya in Frameworks */,
+				902D2D6A279F87080074B51E /* Hero in Frameworks */,
+				902D2D67279F86E40074B51E /* SnapKit in Frameworks */,
 				028C0FE7261AF70C00FF8BC9 /* DaumMap.framework in Frameworks */,
-				2C324DBF2B3734B0D57C505E /* Pods_SwiftStudy.framework in Frameworks */,
+				902D2D64279F86B80074B51E /* ReactorKit in Frameworks */,
+				902D2D61279F86680074B51E /* RxOptional in Frameworks */,
+				90A4E672279FC28A00C6C541 /* CombineMoya in Frameworks */,
+				A66909E448C6BC8C5D0D27E0 /* Pods_SwiftStudy.framework in Frameworks */,
+				90A4E676279FC28A00C6C541 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +670,7 @@
 		0D9D7C10B86EBCBD4B73DC1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				902D2D88279FAD510074B51E /* RxRealmDataSources.framework */,
 				D6DF7DE326981C390032CE40 /* Metal.framework */,
 				028C0FFA261AF77200FF8BC9 /* libsqlite3.tbd */,
 				028C0FF5261AF76C00FF8BC9 /* libxml2.tbd */,
@@ -639,7 +680,7 @@
 				028C0FEA261AF74900FF8BC9 /* SystemConfiguration.framework */,
 				028C0FE8261AF73D00FF8BC9 /* OpenGLES.framework */,
 				D6AEE15C25271BEE00C3E840 /* RxRealm.framework */,
-				28847CFAAFC56BDA9312A9A8 /* Pods_SwiftStudy.framework */,
+				F13F4E81992F556BC6BC568D /* Pods_SwiftStudy.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -664,8 +705,8 @@
 		B6EEC42565C84E54685299FA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F651846779BC6987319F3F36 /* Pods-SwiftStudy.debug.xcconfig */,
-				90ACBE8F56558788A071F57E /* Pods-SwiftStudy.release.xcconfig */,
+				B45A826CF13BDBAFF22B20C7 /* Pods-SwiftStudy.debug.xcconfig */,
+				C176967CC97D1C9DF75BE25F /* Pods-SwiftStudy.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -831,19 +872,34 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6C62F731E797D5E007D497A /* Build configuration list for PBXNativeTarget "SwiftStudy" */;
 			buildPhases = (
-				23A3719D2812F7EF33A2CE9D /* [CP] Check Pods Manifest.lock */,
+				5C272D71015BC6FFE00331B1 /* [CP] Check Pods Manifest.lock */,
 				D6C62F471E797D5E007D497A /* Sources */,
 				D6C62F481E797D5E007D497A /* Frameworks */,
 				D6C62F491E797D5E007D497A /* Resources */,
 				02FF187524C16C6F005636E7 /* SwiftLint */,
 				026C146D251C6EA1005CDCDC /* Fix cocoapods 8.0 bug. */,
-				6C63FC6615672A9EE39E4521 /* [CP] Embed Pods Frameworks */,
+				90786FB1279FB43900D1FEF6 /* Embed Frameworks */,
+				7394BF4424BA9C37ECC6512E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SwiftStudy;
+			packageProductDependencies = (
+				902D2D60279F86680074B51E /* RxOptional */,
+				902D2D63279F86B80074B51E /* ReactorKit */,
+				902D2D66279F86E40074B51E /* SnapKit */,
+				902D2D69279F87080074B51E /* Hero */,
+				902D2D6C279F873A0074B51E /* Lottie */,
+				902D2D75279F88260074B51E /* RxAlamofire */,
+				902D2D78279F89500074B51E /* Kingfisher */,
+				902D2D7C279F95840074B51E /* RxRealm */,
+				90A4E671279FC28A00C6C541 /* CombineMoya */,
+				90A4E673279FC28A00C6C541 /* Moya */,
+				90A4E675279FC28A00C6C541 /* ReactiveMoya */,
+				90A4E677279FC28A00C6C541 /* RxMoya */,
+			);
 			productName = SwiftStudy;
 			productReference = D6C62F4B1E797D5E007D497A /* SwiftStudy.app */;
 			productType = "com.apple.product-type.application";
@@ -924,6 +980,17 @@
 				Base,
 			);
 			mainGroup = D6C62F421E797D5E007D497A;
+			packageReferences = (
+				902D2D5F279F86680074B51E /* XCRemoteSwiftPackageReference "RxOptional" */,
+				902D2D62279F86B70074B51E /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				902D2D65279F86E40074B51E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				902D2D68279F87080074B51E /* XCRemoteSwiftPackageReference "Hero" */,
+				902D2D6B279F873A0074B51E /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				902D2D74279F88260074B51E /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+				902D2D77279F89500074B51E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				902D2D7B279F95840074B51E /* XCRemoteSwiftPackageReference "RxRealm" */,
+				90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = D6C62F4C1E797D5E007D497A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1018,7 +1085,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# \"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
-		23A3719D2812F7EF33A2CE9D /* [CP] Check Pods Manifest.lock */ = {
+		5C272D71015BC6FFE00331B1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1040,58 +1107,20 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6C63FC6615672A9EE39E4521 /* [CP] Embed Pods Frameworks */ = {
+		7394BF4424BA9C37ECC6512E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
-				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya-ModelMapper/Moya_ModelMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRealmDataSources/RxRealmDataSources.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/WeakMapTable/WeakMapTable.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ModelMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealmDataSources.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeakMapTable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1337,7 +1366,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
@@ -1346,7 +1376,7 @@
 		};
 		D6C62F741E797D5E007D497A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F651846779BC6987319F3F36 /* Pods-SwiftStudy.debug.xcconfig */;
+			baseConfigurationReference = B45A826CF13BDBAFF22B20C7 /* Pods-SwiftStudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1356,25 +1386,31 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R3TQXEXN8;
 				ENABLE_BITCODE = YES;
+				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftStudy",
 				);
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.jell.swiftstudy.SwiftStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftStudy/SwiftStudy-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		D6C62F751E797D5E007D497A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90ACBE8F56558788A071F57E /* Pods-SwiftStudy.release.xcconfig */;
+			baseConfigurationReference = C176967CC97D1C9DF75BE25F /* Pods-SwiftStudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1388,14 +1424,19 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftStudy",
 				);
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.jell.swiftstudy.SwiftStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftStudy/SwiftStudy-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1407,7 +1448,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 7R3TQXEXN8;
 				INFOPLIST_FILE = SwiftStudyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.jell.swiftstudy.SwiftStudyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1422,7 +1467,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 7R3TQXEXN8;
 				INFOPLIST_FILE = SwiftStudyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.jell.swiftstudy.SwiftStudyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1436,7 +1485,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7R3TQXEXN8;
 				INFOPLIST_FILE = SwiftStudyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.jell.swiftstudy.SwiftStudyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1450,7 +1503,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7R3TQXEXN8;
 				INFOPLIST_FILE = SwiftStudyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.jell.swiftstudy.SwiftStudyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1498,6 +1555,144 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		902D2D5F279F86680074B51E /* XCRemoteSwiftPackageReference "RxOptional" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxOptional";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		902D2D62279F86B70074B51E /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		902D2D65279F86E40074B51E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		902D2D68279F87080074B51E /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.1;
+			};
+		};
+		902D2D6B279F873A0074B51E /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+		902D2D74279F88260074B51E /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+		902D2D77279F89500074B51E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		902D2D7B279F95840074B51E /* XCRemoteSwiftPackageReference "RxRealm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxRealm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.4;
+			};
+		};
+		90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		902D2D60279F86680074B51E /* RxOptional */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 902D2D5F279F86680074B51E /* XCRemoteSwiftPackageReference "RxOptional" */;
+			productName = RxOptional;
+		};
+		902D2D63279F86B80074B51E /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 902D2D62279F86B70074B51E /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+		902D2D66279F86E40074B51E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 902D2D65279F86E40074B51E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		902D2D69279F87080074B51E /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 902D2D68279F87080074B51E /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+		902D2D6C279F873A0074B51E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 902D2D6B279F873A0074B51E /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		902D2D75279F88260074B51E /* RxAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 902D2D74279F88260074B51E /* XCRemoteSwiftPackageReference "RxAlamofire" */;
+			productName = RxAlamofire;
+		};
+		902D2D78279F89500074B51E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 902D2D77279F89500074B51E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		902D2D7C279F95840074B51E /* RxRealm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 902D2D7B279F95840074B51E /* XCRemoteSwiftPackageReference "RxRealm" */;
+			productName = RxRealm;
+		};
+		90A4E671279FC28A00C6C541 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		90A4E673279FC28A00C6C541 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		90A4E675279FC28A00C6C541 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		90A4E677279FC28A00C6C541 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D6C62F431E797D5E007D497A /* Project object */;
 }

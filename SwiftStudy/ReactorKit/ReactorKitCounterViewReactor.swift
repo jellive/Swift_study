@@ -34,14 +34,14 @@ final class ReactorKitCounterViewReactor: Reactor {
             return Observable.concat([
                 Observable.just(Mutation.setLoading(true)),
                 Observable.just(Mutation.increateValue)
-                    .delay(1, scheduler: MainScheduler.instance),
+                    .delay(.seconds(1), scheduler: MainScheduler.instance),
                 Observable.just(Mutation.setLoading(false))
             ])
         case .decrease:
             return Observable.concat([
                 Observable.just(Mutation.setLoading(true)),
                 Observable.just(Mutation.decreaseValue)
-                    .delay(1, scheduler: MainScheduler.instance),
+                    .delay(.seconds(1), scheduler: MainScheduler.instance),
                 Observable.just(Mutation.setLoading(false))
             ])
         }

@@ -12,7 +12,7 @@ import RealmSwift
 import RxRealm
 import RxSwift
 import RxCocoa
-import RxRealmDataSources
+//import RxRealmDataSources
 
 class Dog: Object {
     @objc dynamic var name = ""
@@ -25,7 +25,7 @@ class Dog: Object {
         self.age = age ?? 0
     }
     
-    required init() {
+    required override init() {
         super.init()
         self.name = ""
         self.age = 0
@@ -88,10 +88,13 @@ class RealmTutorialViewController: UIViewController {
 //        tableView.rx.setDataSource(self).disposed(by: bag)
 //        tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        let dataSource = RxTableViewRealmDataSource<Dog>(cellIdentifier: "Cell", cellType: UITableViewCell.self) {
-            cell, indexPath, dog in
-            cell.textLabel?.text = "\(dog.name)"
-        }
+        tableView.rx.setDataSource(self).disposed(by: bag)
+        
+        // 2022.01.25: RxRealmDataSource
+//        let dataSource = RxTableViewRealmDataSource<Dog>(cellIdentifier: "Cell", cellType: UITableViewCell.self) {
+//            cell, indexPath, dog in
+//            cell.textLabel?.text = "\(dog.name)"
+//        }
         
         Realm.Configuration.defaultConfiguration = config
         let realm = try! Realm()
@@ -120,7 +123,8 @@ class RealmTutorialViewController: UIViewController {
 //            }).disposed(by: bag)
         
         let result = Observable.changeset(from: realm.objects(Dog.self).sorted(byKeyPath: "time", ascending: false)).share()
-        result.bind(to: tableView.rx.realmChanges(dataSource)).disposed(by: bag)
+        // 2022.01.25: RxRealmDataSource
+//        result.bind(to: tableView.rx.realmChanges(dataSource)).disposed(by: bag)
         addBtn.rx.tap
             .map{ [Dog(name: "dogname1", age: 4), Dog(name: "dogname2", age: 5)] }
             .bind(to: Realm.rx.add(onError: {

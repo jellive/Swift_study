@@ -1,0 +1,151 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "f82c23a8a7ef8dc1a49a8bfc6a96883e79121864",
+          "version": "5.5.0"
+        }
+      },
+      {
+        "package": "Hero",
+        "repositoryURL": "https://github.com/HeroTransitions/Hero.git",
+        "state": {
+          "branch": null,
+          "revision": "efa709686035831b23b7bf58f652b0c4b892aa1d",
+          "version": "1.6.1"
+        }
+      },
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
+        "state": {
+          "branch": null,
+          "revision": "0c02c46cfdc0656ce74fd0963a75e5000a0b7f23",
+          "version": "7.1.2"
+        }
+      },
+      {
+        "package": "Lottie",
+        "repositoryURL": "https://github.com/airbnb/lottie-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "4a6058cbbdfe4f74aeae92c8bd51ad3b0de2a1ee",
+          "version": "3.3.0"
+        }
+      },
+      {
+        "package": "Moya",
+        "repositoryURL": "https://github.com/Moya/Moya.git",
+        "state": {
+          "branch": null,
+          "revision": "9b906860e3c3c09032879465c471e6375829593f",
+          "version": "15.0.0"
+        }
+      },
+      {
+        "package": "OHHTTPStubs",
+        "repositoryURL": "https://github.com/AliSoftware/OHHTTPStubs.git",
+        "state": {
+          "branch": null,
+          "revision": "12f19662426d0434d6c330c6974d53e2eb10ecd9",
+          "version": "9.1.0"
+        }
+      },
+      {
+        "package": "ReactiveSwift",
+        "repositoryURL": "https://github.com/ReactiveCocoa/ReactiveSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "c43bae3dac73fdd3cb906bd5a1914686ca71ed3c",
+          "version": "6.7.0"
+        }
+      },
+      {
+        "package": "ReactorKit",
+        "repositoryURL": "https://github.com/ReactorKit/ReactorKit.git",
+        "state": {
+          "branch": null,
+          "revision": "8fa33f09c6f6621a2aa536d739956d53b84dd139",
+          "version": "3.2.0"
+        }
+      },
+      {
+        "package": "Realm",
+        "repositoryURL": "https://github.com/realm/realm-cocoa.git",
+        "state": {
+          "branch": null,
+          "revision": "39177714b95bb5b1b29fffe28f1c7da77eef8e8b",
+          "version": "10.21.1"
+        }
+      },
+      {
+        "package": "RealmDatabase",
+        "repositoryURL": "https://github.com/realm/realm-core",
+        "state": {
+          "branch": null,
+          "revision": "f1976f0d96d9b06fbe0afbd60090b1c3966b1e23",
+          "version": "11.8.0"
+        }
+      },
+      {
+        "package": "RxAlamofire",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/RxAlamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "9535b58695b91fb67f56d58d6fd0c76462d7743a",
+          "version": "6.1.2"
+        }
+      },
+      {
+        "package": "RxOptional",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/RxOptional",
+        "state": {
+          "branch": null,
+          "revision": "f116ec9c727a76e92fabc1724bb7f57e4772402f",
+          "version": "5.0.4"
+        }
+      },
+      {
+        "package": "RxRealm",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/RxRealm.git",
+        "state": {
+          "branch": null,
+          "revision": "63d00c6349b31d4e26fd5b5a5e428400b6b91356",
+          "version": "5.0.4"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "b4307ba0b6425c0ba4178e138799946c3da594f8",
+          "version": "6.5.0"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "WeakMapTable",
+        "repositoryURL": "https://github.com/ReactorKit/WeakMapTable.git",
+        "state": {
+          "branch": null,
+          "revision": "cb05d64cef2bbf51e85c53adee937df46540a74e",
+          "version": "1.2.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

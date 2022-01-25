@@ -6,19 +6,19 @@
 //  Copyright © 2020 Jell PD. All rights reserved.
 //
 
-import Mapper
+//import Mapper
 
-struct Issue_Issue: Mappable {
-    
-    let identifier: Int
-    let number: Int
-    let title: String
-    let body: String
-    
-    init(map: Mapper) throws {
-        try identifier = map.from("id")
-        try number = map.from("number")
-        try title = map.from("title")
-        try body = map.from("body")
-    }
-}
+//struct Issue_Issue: Mappable {
+//    
+//    let identifier: Int
+//    let number: Int
+//    let title: String
+//    let body: String
+//    
+//    init(map: Mapper) throws {
+//        try identifier = map.from("id")
+//        try number = map.from("number")
+//        try title = map.from("title")
+//        try body = map.from("body")
+//    }
+//}

@@ -22,7 +22,7 @@ class RxGithubViewModel {
         return self.searchText.asObservable() // asObservable: Relay에서는 subscribe를 asObservable로 쓴다.
             // .completed나 .error를 받으면 종료된다.
 //            .debounce(DispatchTimeInterval.milliseconds(30), scheduler: MainScheduler.instance) // throttle과의 차이는 지정한 시간 내에 마지막 하나의 이벤트만 전달한다.
-            .throttle(0.3, scheduler: MainScheduler.instance) // throttle -> 타이머를 지정해두고 이벤트가 처음 방출되면 타이머 동안 어떤 이벤트도 방출되지 않는다. ex) 연속 클릭 방지, Combine은 debounce가 된다.
+            .throttle(.milliseconds(300), scheduler: MainScheduler.instance) // throttle -> 타이머를 지정해두고 이벤트가 처음 방출되면 타이머 동안 어떤 이벤트도 방출되지 않는다. ex) 연속 클릭 방지, Combine은 debounce가 된다.
             // throttle은 latest라는 옵션이 있는데, 이는 재개될 떄 마지막으로 불린 observable을 출력할 지 여부를 뜻한다. scheduler 앞에 붙임.
             .distinctUntilChanged() // 이전 값과 비교해서 다른 값일 때에만 값을 흘려보낸다.
             .flatMapLatest(RxGithubViewModel.repositoriesBy) // flatMap은 Observable에서 발행한 아이템을 다른 Observable로 만들며, 만들어진 Observable에서 아이템을 발행한다. flatMap은 새로운 Observable을 관찰해도 그 전에 관찰했던 Observable들을 계속 관찰하고, flatMapLatest는 flatMap의 latest observable만 관찰한다. 마찬가지로 flatMapFirst는 새로운 Observable들로의 변환이 완료되기 전에는 새로 발행된 Observable은 무시하게 된다.
