@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -285,10 +285,10 @@
                             <constraint firstAttribute="leadingMargin" secondItem="ADK-K2-nzY" secondAttribute="leading" id="3la-tP-VaA"/>
                             <constraint firstItem="Gcd-37-4Jm" firstAttribute="centerX" secondItem="Na2-8Q-5Ab" secondAttribute="centerX" id="5Im-pI-hLR"/>
                             <constraint firstItem="Na2-8Q-5Ab" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ADK-K2-nzY" secondAttribute="trailing" symbolic="YES" id="9EL-RT-XX0"/>
-                            <constraint firstItem="Gcd-37-4Jm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-100" id="JfN-2M-cIt"/>
                             <constraint firstItem="Gcd-37-4Jm" firstAttribute="width" secondItem="Na2-8Q-5Ab" secondAttribute="width" constant="-40" id="Yoc-iG-JQk"/>
                             <constraint firstItem="Gcd-37-4Jm" firstAttribute="centerY" secondItem="Na2-8Q-5Ab" secondAttribute="centerY" id="chF-fL-UhF"/>
                             <constraint firstItem="ADK-K2-nzY" firstAttribute="top" secondItem="Na2-8Q-5Ab" secondAttribute="top" constant="8" id="eGg-sf-Ade"/>
+                            <constraint firstItem="Gcd-37-4Jm" firstAttribute="top" secondItem="ADK-K2-nzY" secondAttribute="bottom" constant="21" id="ssP-ce-TAP"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
