@@ -6,6 +6,7 @@
 //  Copyright © 2017년 Jell PD. All rights reserved.
 //
 
+import Foundation
 import RealmSwift
 
 class RealmNumber: Object {

@@ -8,6 +8,7 @@
 
 import RxSwift
 import RxCocoa
+import Foundation
 
 class RxGithubViewModel {
     let searchText = BehaviorRelay<String>(value: "") // PublishRelay와 비슷하지만, 초기값을 갖는다는 차이가 있다. 얘는 안 죽음.

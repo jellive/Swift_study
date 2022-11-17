@@ -17,7 +17,7 @@ target 'SwiftStudy' do
 #    pod 'Moya/RxSwift'
     #pod 'ReactorKit'
     #pod 'SnapKit'
-    #pod 'Hero'
+    pod 'Hero'
     #pod 'lottie-ios'
     pod 'SwiftLint'
     pod 'R.swift'

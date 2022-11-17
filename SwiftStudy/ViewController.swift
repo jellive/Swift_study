@@ -42,7 +42,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                                  "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire",
 //                                 "Realm-tutorial",
 //"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera"]
-"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera", "KingFisher", "DaumMap", "ReactorKit-counter", "FastCampus", "UIKit",
+"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera", "KingFisher", "ReactorKit-counter", "FastCampus", "UIKit",
         "Shape")
 //        let menuArr = Observable.of(menuArray)
         
@@ -152,21 +152,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let vc = self.storyboard?.instantiateViewController(identifier: "kingfisher") as! KingFisherViewController
             present(vc, animated: true){}
         case 17:
-            let vc = self.storyboard?.instantiateViewController(identifier: "daummap") as! DaumMapViewController
-            present(vc, animated: true){}
-        case 18:
             let vc = self.storyboard?.instantiateViewController(identifier: "reactorkitcounter") as! ReactorKitCounterViewController
             let reactor = ReactorKitCounterViewReactor()
             vc.reactor = reactor
             present(vc, animated: true){}
-        case 19:
+        case 18:
             let vc = self.storyboard?.instantiateViewController(identifier: "fc_main") as! FCViewController
             present(vc, animated: true){}
             
-        case 20:
+        case 19:
             let vc = self.storyboard?.instantiateViewController(identifier: "uikit_main") as! UIKitViewController
             present(vc, animated: true){}
-        case 21:
+        case 20:
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "shape") as! ShapeViewContrller
             present(vc, animated: true)
         default:
