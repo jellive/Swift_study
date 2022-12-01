@@ -79,7 +79,11 @@
 		02FF187824C16DD7005636E7 /* SwiftUIAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187724C16DD7005636E7 /* SwiftUIAnimationView.swift */; };
 		02FF187B24C16F84005636E7 /* OO_Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187A24C16F84005636E7 /* OO_Stopwatch.swift */; };
 		02FF187D24C170C0005636E7 /* SwiftUIObservableObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */; };
+		4065B5AA29388DD600843A66 /* ReadTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4065B5A929388DD600843A66 /* ReadTextViewController.swift */; };
+		4065B5AC29388DFE00843A66 /* 00000000_cam.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4065B5AB29388DFE00843A66 /* 00000000_cam.txt */; };
 		40F9E289290A6BF400BD4C09 /* AsyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9E288290A6BF400BD4C09 /* AsyncView.swift */; };
+		40FA85B32925C7B80019B089 /* ReactorKitNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FA85B22925C7B80019B089 /* ReactorKitNetworkViewController.swift */; };
+		40FA85B52925C8660019B089 /* ReactorKitNetworkViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FA85B42925C8660019B089 /* ReactorKitNetworkViewReactor.swift */; };
 		901FF3B526E06340004E96EA /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901FF3B426E06340004E96EA /* UIKitViewController.swift */; };
 		901FF3B726E0634C004E96EA /* UIPopupRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901FF3B626E0634C004E96EA /* UIPopupRoundViewController.swift */; };
 		902D2D61279F86680074B51E /* RxOptional in Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D60279F86680074B51E /* RxOptional */; };
@@ -243,7 +247,11 @@
 		02FF187724C16DD7005636E7 /* SwiftUIAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationView.swift; sourceTree = "<group>"; };
 		02FF187A24C16F84005636E7 /* OO_Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OO_Stopwatch.swift; sourceTree = "<group>"; };
 		02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIObservableObjectView.swift; sourceTree = "<group>"; };
+		4065B5A929388DD600843A66 /* ReadTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTextViewController.swift; sourceTree = "<group>"; };
+		4065B5AB29388DFE00843A66 /* 00000000_cam.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 00000000_cam.txt; sourceTree = "<group>"; };
 		40F9E288290A6BF400BD4C09 /* AsyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncView.swift; sourceTree = "<group>"; };
+		40FA85B22925C7B80019B089 /* ReactorKitNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKitNetworkViewController.swift; sourceTree = "<group>"; };
+		40FA85B42925C8660019B089 /* ReactorKitNetworkViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKitNetworkViewReactor.swift; sourceTree = "<group>"; };
 		901FF3B426E06340004E96EA /* UIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
 		901FF3B626E0634C004E96EA /* UIPopupRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPopupRoundViewController.swift; sourceTree = "<group>"; };
 		902D2D88279FAD510074B51E /* RxRealmDataSources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxRealmDataSources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -377,6 +385,8 @@
 			children = (
 				02525B76264E15C300B34983 /* ReactorKitCounterViewReactor.swift */,
 				02525B78264E1DA800B34983 /* ReactorKitCounterViewController.swift */,
+				40FA85B22925C7B80019B089 /* ReactorKitNetworkViewController.swift */,
+				40FA85B42925C8660019B089 /* ReactorKitNetworkViewReactor.swift */,
 			);
 			path = ReactorKit;
 			sourceTree = "<group>";
@@ -672,6 +682,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4065B5A82938898500843A66 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				4065B5A929388DD600843A66 /* ReadTextViewController.swift */,
+				4065B5AB29388DFE00843A66 /* 00000000_cam.txt */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
 		40F9E287290A6BCD00BD4C09 /* Async */ = {
 			isa = PBXGroup;
 			children = (
@@ -817,6 +836,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				4065B5A82938898500843A66 /* Text */,
 				40F9E287290A6BCD00BD4C09 /* Async */,
 				90A4E679279FC58D00C6C541 /* Shape */,
 				901FF3B226E06320004E96EA /* UIKIt */,
@@ -984,13 +1004,13 @@
 			mainGroup = D6C62F421E797D5E007D497A;
 			packageReferences = (
 				902D2D5F279F86680074B51E /* XCRemoteSwiftPackageReference "RxOptional" */,
-				902D2D62279F86B70074B51E /* XCRemoteSwiftPackageReference "ReactorKit.git" */,
-				902D2D65279F86E40074B51E /* XCRemoteSwiftPackageReference "SnapKit.git" */,
-				902D2D6B279F873A0074B51E /* XCRemoteSwiftPackageReference "lottie-ios.git" */,
-				902D2D74279F88260074B51E /* XCRemoteSwiftPackageReference "RxAlamofire.git" */,
-				902D2D77279F89500074B51E /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
-				902D2D7B279F95840074B51E /* XCRemoteSwiftPackageReference "RxRealm.git" */,
-				90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya.git" */,
+				902D2D62279F86B70074B51E /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				902D2D65279F86E40074B51E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				902D2D6B279F873A0074B51E /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				902D2D74279F88260074B51E /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+				902D2D77279F89500074B51E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				902D2D7B279F95840074B51E /* XCRemoteSwiftPackageReference "RxRealm" */,
+				90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = D6C62F4C1E797D5E007D497A /* Products */;
 			projectDirPath = "";
@@ -1020,6 +1040,7 @@
 				D6E07EC524B1B5DA009B6FBA /* stmarylake.jpg in Resources */,
 				D6E07EBA24B1B5DA009B6FBA /* stmarylake_feature.jpg in Resources */,
 				D6E07EBF24B1B5DA009B6FBA /* hikeData.json in Resources */,
+				4065B5AC29388DFE00843A66 /* 00000000_cam.txt in Resources */,
 				D6C62F561E797D5E007D497A /* Assets.xcassets in Resources */,
 				D6E07EC624B1B5DA009B6FBA /* twinlake.jpg in Resources */,
 				D6E07EBE24B1B5DA009B6FBA /* rainbowlake.jpg in Resources */,
@@ -1163,6 +1184,7 @@
 				02FF187424C167DA005636E7 /* SwiftUISpacerView.swift in Sources */,
 				D666F16524FB525600357FF2 /* CameraViewController.swift in Sources */,
 				90A4E67B279FC59D00C6C541 /* ShapeViewController.swift in Sources */,
+				40FA85B52925C8660019B089 /* ReactorKitNetworkViewReactor.swift in Sources */,
 				02FF187B24C16F84005636E7 /* OO_Stopwatch.swift in Sources */,
 				028AFB4B24AB070200661743 /* MapView.swift in Sources */,
 				02D6F32B24D7D844001BA1E9 /* RxAlamoFireGithubViewController.swift in Sources */,
@@ -1198,6 +1220,7 @@
 				02A31E6124B5BF8700D32B41 /* Issue_Issue.swift in Sources */,
 				028AFB9224AC682600661743 /* Badge.swift in Sources */,
 				901FF3B726E0634C004E96EA /* UIPopupRoundViewController.swift in Sources */,
+				40FA85B32925C7B80019B089 /* ReactorKitNetworkViewController.swift in Sources */,
 				028AFBAC24ADB18700661743 /* Home.swift in Sources */,
 				02A31E5324B4649C00D32B41 /* RxCityViewController.swift in Sources */,
 				028AFB9624AD675200661743 /* BadgeBackground.swift in Sources */,
@@ -1206,6 +1229,7 @@
 				028AFB9424AC68D100661743 /* HexagonParameters.swift in Sources */,
 				028AFBC924AEBE2700661743 /* PageViewController.swift in Sources */,
 				020DCC5024BEC5160007A0C8 /* Moya_MyService.swift in Sources */,
+				4065B5AA29388DD600843A66 /* ReadTextViewController.swift in Sources */,
 				028AFB7024AB14E000661743 /* LandmarkList.swift in Sources */,
 				028AFBA724ADA60B00661743 /* HikeDetail.swift in Sources */,
 				028AFBA324ADA47700661743 /* HikeGraph.swift in Sources */,
@@ -1568,7 +1592,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		902D2D62279F86B70074B51E /* XCRemoteSwiftPackageReference "ReactorKit.git" */ = {
+		902D2D62279F86B70074B51E /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactorKit/ReactorKit.git";
 			requirement = {
@@ -1576,7 +1600,7 @@
 				minimumVersion = 3.0.0;
 			};
 		};
-		902D2D65279F86E40074B51E /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
+		902D2D65279F86E40074B51E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -1584,7 +1608,7 @@
 				minimumVersion = 5.0.1;
 			};
 		};
-		902D2D6B279F873A0074B51E /* XCRemoteSwiftPackageReference "lottie-ios.git" */ = {
+		902D2D6B279F873A0074B51E /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
@@ -1592,7 +1616,7 @@
 				minimumVersion = 3.2.1;
 			};
 		};
-		902D2D74279F88260074B51E /* XCRemoteSwiftPackageReference "RxAlamofire.git" */ = {
+		902D2D74279F88260074B51E /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire.git";
 			requirement = {
@@ -1600,7 +1624,7 @@
 				minimumVersion = 6.1.0;
 			};
 		};
-		902D2D77279F89500074B51E /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
+		902D2D77279F89500074B51E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -1608,7 +1632,7 @@
 				minimumVersion = 7.0.0;
 			};
 		};
-		902D2D7B279F95840074B51E /* XCRemoteSwiftPackageReference "RxRealm.git" */ = {
+		902D2D7B279F95840074B51E /* XCRemoteSwiftPackageReference "RxRealm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RxSwiftCommunity/RxRealm.git";
 			requirement = {
@@ -1616,7 +1640,7 @@
 				minimumVersion = 5.0.4;
 			};
 		};
-		90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya.git" */ = {
+		90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
 			requirement = {
@@ -1634,52 +1658,52 @@
 		};
 		902D2D63279F86B80074B51E /* ReactorKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 902D2D62279F86B70074B51E /* XCRemoteSwiftPackageReference "ReactorKit.git" */;
+			package = 902D2D62279F86B70074B51E /* XCRemoteSwiftPackageReference "ReactorKit" */;
 			productName = ReactorKit;
 		};
 		902D2D66279F86E40074B51E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 902D2D65279F86E40074B51E /* XCRemoteSwiftPackageReference "SnapKit.git" */;
+			package = 902D2D65279F86E40074B51E /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 		902D2D6C279F873A0074B51E /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 902D2D6B279F873A0074B51E /* XCRemoteSwiftPackageReference "lottie-ios.git" */;
+			package = 902D2D6B279F873A0074B51E /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
 		902D2D75279F88260074B51E /* RxAlamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 902D2D74279F88260074B51E /* XCRemoteSwiftPackageReference "RxAlamofire.git" */;
+			package = 902D2D74279F88260074B51E /* XCRemoteSwiftPackageReference "RxAlamofire" */;
 			productName = RxAlamofire;
 		};
 		902D2D78279F89500074B51E /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 902D2D77279F89500074B51E /* XCRemoteSwiftPackageReference "Kingfisher.git" */;
+			package = 902D2D77279F89500074B51E /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
 		902D2D7C279F95840074B51E /* RxRealm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 902D2D7B279F95840074B51E /* XCRemoteSwiftPackageReference "RxRealm.git" */;
+			package = 902D2D7B279F95840074B51E /* XCRemoteSwiftPackageReference "RxRealm" */;
 			productName = RxRealm;
 		};
 		90A4E671279FC28A00C6C541 /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya.git" */;
+			package = 90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = CombineMoya;
 		};
 		90A4E673279FC28A00C6C541 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya.git" */;
+			package = 90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
 		};
 		90A4E675279FC28A00C6C541 /* ReactiveMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya.git" */;
+			package = 90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = ReactiveMoya;
 		};
 		90A4E677279FC28A00C6C541 /* RxMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya.git" */;
+			package = 90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
 		};
 /* End XCSwiftPackageProductDependency section */
