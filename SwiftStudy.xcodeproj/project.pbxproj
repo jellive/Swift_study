@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -79,8 +79,10 @@
 		02FF187824C16DD7005636E7 /* SwiftUIAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187724C16DD7005636E7 /* SwiftUIAnimationView.swift */; };
 		02FF187B24C16F84005636E7 /* OO_Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187A24C16F84005636E7 /* OO_Stopwatch.swift */; };
 		02FF187D24C170C0005636E7 /* SwiftUIObservableObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */; };
+		19474CF785A0CAF4EADEE52C /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB8C24A8A18A5E0CB52F58B /* Pods_SwiftStudy.framework */; };
 		4065B5AA29388DD600843A66 /* ReadTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4065B5A929388DD600843A66 /* ReadTextViewController.swift */; };
 		4065B5AC29388DFE00843A66 /* 00000000_cam.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4065B5AB29388DFE00843A66 /* 00000000_cam.txt */; };
+		40BCF0862B03292A00C48D32 /* CompositionalLayoutFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BCF0852B03292A00C48D32 /* CompositionalLayoutFirstViewController.swift */; };
 		40F9E289290A6BF400BD4C09 /* AsyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9E288290A6BF400BD4C09 /* AsyncView.swift */; };
 		40FA85B32925C7B80019B089 /* ReactorKitNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FA85B22925C7B80019B089 /* ReactorKitNetworkViewController.swift */; };
 		40FA85B52925C8660019B089 /* ReactorKitNetworkViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FA85B42925C8660019B089 /* ReactorKitNetworkViewReactor.swift */; };
@@ -92,13 +94,11 @@
 		902D2D6D279F873A0074B51E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D6C279F873A0074B51E /* Lottie */; };
 		902D2D76279F88260074B51E /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D75279F88260074B51E /* RxAlamofire */; };
 		902D2D79279F89500074B51E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D78279F89500074B51E /* Kingfisher */; };
-		902D2D7D279F95840074B51E /* RxRealm in Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D7C279F95840074B51E /* RxRealm */; };
 		90A4E672279FC28A00C6C541 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 90A4E671279FC28A00C6C541 /* CombineMoya */; };
 		90A4E674279FC28A00C6C541 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 90A4E673279FC28A00C6C541 /* Moya */; };
 		90A4E676279FC28A00C6C541 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 90A4E675279FC28A00C6C541 /* ReactiveMoya */; };
 		90A4E678279FC28A00C6C541 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 90A4E677279FC28A00C6C541 /* RxMoya */; };
 		90A4E67B279FC59D00C6C541 /* ShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4E67A279FC59D00C6C541 /* ShapeViewController.swift */; };
-		A66909E448C6BC8C5D0D27E0 /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13F4E81992F556BC6BC568D /* Pods_SwiftStudy.framework */; };
 		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
 		BB5A800D1E96065100000670 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A800C1E96065100000670 /* RealmViewController.swift */; };
@@ -249,6 +249,7 @@
 		02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIObservableObjectView.swift; sourceTree = "<group>"; };
 		4065B5A929388DD600843A66 /* ReadTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTextViewController.swift; sourceTree = "<group>"; };
 		4065B5AB29388DFE00843A66 /* 00000000_cam.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 00000000_cam.txt; sourceTree = "<group>"; };
+		40BCF0852B03292A00C48D32 /* CompositionalLayoutFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutFirstViewController.swift; sourceTree = "<group>"; };
 		40F9E288290A6BF400BD4C09 /* AsyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncView.swift; sourceTree = "<group>"; };
 		40FA85B22925C7B80019B089 /* ReactorKitNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKitNetworkViewController.swift; sourceTree = "<group>"; };
 		40FA85B42925C8660019B089 /* ReactorKitNetworkViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKitNetworkViewReactor.swift; sourceTree = "<group>"; };
@@ -306,7 +307,7 @@
 		D6E07EB724B1B5DA009B6FBA /* charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers.jpg; sourceTree = "<group>"; };
 		D6E07EB824B1B5DA009B6FBA /* silversalmoncreek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silversalmoncreek.jpg; sourceTree = "<group>"; };
 		D6E07EB924B1B5DA009B6FBA /* umbagog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbagog.jpg; sourceTree = "<group>"; };
-		F13F4E81992F556BC6BC568D /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB8C24A8A18A5E0CB52F58B /* Pods_SwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,7 +317,6 @@
 			files = (
 				028C0FFB261AF77200FF8BC9 /* libsqlite3.tbd in Frameworks */,
 				902D2D6D279F873A0074B51E /* Lottie in Frameworks */,
-				902D2D7D279F95840074B51E /* RxRealm in Frameworks */,
 				028C0FF6261AF76C00FF8BC9 /* libxml2.tbd in Frameworks */,
 				90A4E674279FC28A00C6C541 /* Moya in Frameworks */,
 				D6DF7DE426981C390032CE40 /* Metal.framework in Frameworks */,
@@ -331,8 +331,8 @@
 				902D2D64279F86B80074B51E /* ReactorKit in Frameworks */,
 				902D2D61279F86680074B51E /* RxOptional in Frameworks */,
 				90A4E672279FC28A00C6C541 /* CombineMoya in Frameworks */,
-				A66909E448C6BC8C5D0D27E0 /* Pods_SwiftStudy.framework in Frameworks */,
 				90A4E676279FC28A00C6C541 /* ReactiveMoya in Frameworks */,
+				19474CF785A0CAF4EADEE52C /* Pods_SwiftStudy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,7 +677,7 @@
 				028C0FEA261AF74900FF8BC9 /* SystemConfiguration.framework */,
 				028C0FE8261AF73D00FF8BC9 /* OpenGLES.framework */,
 				D6AEE15C25271BEE00C3E840 /* RxRealm.framework */,
-				F13F4E81992F556BC6BC568D /* Pods_SwiftStudy.framework */,
+				EAB8C24A8A18A5E0CB52F58B /* Pods_SwiftStudy.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -689,6 +689,14 @@
 				4065B5AB29388DFE00843A66 /* 00000000_cam.txt */,
 			);
 			path = Text;
+			sourceTree = "<group>";
+		};
+		40BCF0842B0319A600C48D32 /* CompositionalLayout */ = {
+			isa = PBXGroup;
+			children = (
+				40BCF0852B03292A00C48D32 /* CompositionalLayoutFirstViewController.swift */,
+			);
+			path = CompositionalLayout;
 			sourceTree = "<group>";
 		};
 		40F9E287290A6BCD00BD4C09 /* Async */ = {
@@ -836,6 +844,7 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				40BCF0842B0319A600C48D32 /* CompositionalLayout */,
 				4065B5A82938898500843A66 /* Text */,
 				40F9E287290A6BCD00BD4C09 /* Async */,
 				90A4E679279FC58D00C6C541 /* Shape */,
@@ -902,7 +911,7 @@
 				02FF187524C16C6F005636E7 /* SwiftLint */,
 				026C146D251C6EA1005CDCDC /* Fix cocoapods 8.0 bug. */,
 				90786FB1279FB43900D1FEF6 /* Embed Frameworks */,
-				7394BF4424BA9C37ECC6512E /* [CP] Embed Pods Frameworks */,
+				D264CEA3F00CB5A62E6E09F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -916,7 +925,6 @@
 				902D2D6C279F873A0074B51E /* Lottie */,
 				902D2D75279F88260074B51E /* RxAlamofire */,
 				902D2D78279F89500074B51E /* Kingfisher */,
-				902D2D7C279F95840074B51E /* RxRealm */,
 				90A4E671279FC28A00C6C541 /* CombineMoya */,
 				90A4E673279FC28A00C6C541 /* Moya */,
 				90A4E675279FC28A00C6C541 /* ReactiveMoya */,
@@ -1009,7 +1017,6 @@
 				902D2D6B279F873A0074B51E /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				902D2D74279F88260074B51E /* XCRemoteSwiftPackageReference "RxAlamofire" */,
 				902D2D77279F89500074B51E /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				902D2D7B279F95840074B51E /* XCRemoteSwiftPackageReference "RxRealm" */,
 				90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = D6C62F4C1E797D5E007D497A /* Products */;
@@ -1129,22 +1136,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7394BF4424BA9C37ECC6512E /* [CP] Embed Pods Frameworks */ = {
+		D264CEA3F00CB5A62E6E09F5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
-				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/KakaoSDKAuth/KakaoSDKAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/KakaoSDKCommon/KakaoSDKCommon.framework",
+				"${BUILT_PRODUCTS_DIR}/KakaoSDKUser/KakaoSDKUser.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift/RswiftResources.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/WeakMapTable/WeakMapTable.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KakaoSDKAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KakaoSDKCommon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KakaoSDKUser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RswiftResources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeakMapTable.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1161,6 +1192,7 @@
 				028AFB9A24AD85B000661743 /* RotatedBadgeSymbol.swift in Sources */,
 				028AFBB924ADD19A00661743 /* ProfileEditor.swift in Sources */,
 				028AFBCD24AEC43D00661743 /* FeatureCard.swift in Sources */,
+				40BCF0862B03292A00C48D32 /* CompositionalLayoutFirstViewController.swift in Sources */,
 				02FF187124C14E67005636E7 /* SwiftUIJSONParseView.swift in Sources */,
 				026FDF4824C9874300F584F4 /* RealmTutorialViewController.swift in Sources */,
 				02FF186724C13C80005636E7 /* RxAlamofireView.swift in Sources */,
@@ -1420,7 +1452,7 @@
 				);
 				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1453,7 +1485,7 @@
 				);
 				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1632,14 +1664,6 @@
 				minimumVersion = 7.0.0;
 			};
 		};
-		902D2D7B279F95840074B51E /* XCRemoteSwiftPackageReference "RxRealm" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RxSwiftCommunity/RxRealm.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.4;
-			};
-		};
 		90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -1680,11 +1704,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 902D2D77279F89500074B51E /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		902D2D7C279F95840074B51E /* RxRealm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 902D2D7B279F95840074B51E /* XCRemoteSwiftPackageReference "RxRealm" */;
-			productName = RxRealm;
 		};
 		90A4E671279FC28A00C6C541 /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;

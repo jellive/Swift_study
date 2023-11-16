@@ -21,11 +21,12 @@ final class ReactorKitNetworkViewController: UIViewController, StoryboardView {
 
     func bind(reactor: ReactorKitNetworkReactor) {
         getBtn.rx.tap
+            .debug()
             .map { ReactorKitNetworkReactor.Action.get }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
-        reactor.state.map {$0.resource}
+        reactor.state.map { $0.resource }
             .distinctUntilChanged(==)
             .map { "\($0)" }
             .bind(to: listlabel.rx.text)

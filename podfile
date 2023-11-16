@@ -1,6 +1,6 @@
 source 'https://github.com/Cocoapods/Specs.git'
 use_frameworks!
-platform :ios, '13.0'
+platform :ios, '16.0'
 
 target 'SwiftStudy' do
   
@@ -26,13 +26,22 @@ target 'SwiftStudy' do
     #pod 'RxRealm'
 #    pod 'RxRealmDataSources'
     #pod 'Kingfisher'
-    #pod 'ReactorKit'
+    pod 'ReactorKit'
+    pod 'LibTorch'
     
-    
-    
-    post_install do |installer|
-      installer.pods_project.build_configurations.each do |config|
-        config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
-      end
-    end
+    pod 'KakaoSDKCommon'
+    pod 'KakaoSDKAuth'
+    pod 'KakaoSDKUser'
+
+    pod 'RxRealm'    
+
+   post_install do |installer|
+    installer.generated_projects.each do |project|
+          project.targets.each do |target|
+              target.build_configurations.each do |config|
+                  config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '16.0'
+               end
+          end
+   end
+end
 end

@@ -31,8 +31,10 @@ final class ReactorKitNetworkReactor: Reactor {
     let initialState: State = State()
     
     func mutate(action: Action) async -> Observable<Mutation> {
+        print("here")
         switch action {
         case .get:
+            return Observable.concat([Observable.just(Mutation.getValue(.init(id: 1, name: "2", year: 3, color: "222222", pantoneValue: "6")))])
             let resource = try! await provider.rx
                 .request(.listResource)
                 .map(RxMoyaResource.self).value

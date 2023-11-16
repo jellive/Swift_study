@@ -1,34 +1,99 @@
 PODS:
+  - Alamofire (5.8.0)
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
   - Hero (1.6.2)
-  - R.swift (6.1.0):
-    - R.swift.Library (~> 5.3.0)
-  - R.swift.Library (5.3.0)
-  - SwiftLint (0.49.1)
+  - KakaoSDKAuth (2.18.0):
+    - KakaoSDKCommon (= 2.18.0)
+  - KakaoSDKCommon (2.18.0):
+    - KakaoSDKCommon/Common (= 2.18.0)
+    - KakaoSDKCommon/Network (= 2.18.0)
+  - KakaoSDKCommon/Common (2.18.0)
+  - KakaoSDKCommon/Network (2.18.0):
+    - Alamofire (~> 5.1)
+    - KakaoSDKCommon/Common (= 2.18.0)
+  - KakaoSDKUser (2.18.0):
+    - KakaoSDKAuth (= 2.18.0)
+  - LibTorch (2.1.0):
+    - LibTorch/Core (= 2.1.0)
+  - LibTorch/Core (2.1.0):
+    - LibTorch/Torch
+  - LibTorch/Torch (2.1.0)
+  - R.swift (7.3.2)
+  - ReactorKit (3.2.0):
+    - RxSwift (~> 6.0)
+    - WeakMapTable (~> 1.1)
+  - Realm (10.43.1):
+    - Realm/Headers (= 10.43.1)
+  - Realm/Headers (10.43.1)
+  - RealmSwift (10.43.1):
+    - Realm (= 10.43.1)
+  - RxCocoa (6.6.0):
+    - RxRelay (= 6.6.0)
+    - RxSwift (= 6.6.0)
+  - RxRealm (5.0.4):
+    - Realm (~> 10.21)
+    - RealmSwift (~> 10.21)
+    - RxCocoa (~> 6.1)
+    - RxSwift (~> 6.1)
+  - RxRelay (6.6.0):
+    - RxSwift (= 6.6.0)
+  - RxSwift (6.6.0)
+  - SwiftLint (0.53.0)
+  - WeakMapTable (1.2.0)
 
 DEPENDENCIES:
   - ChameleonFramework
   - Hero
+  - KakaoSDKAuth
+  - KakaoSDKCommon
+  - KakaoSDKUser
+  - LibTorch
   - R.swift
+  - ReactorKit
+  - RxRealm
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/Cocoapods/Specs.git:
+    - Alamofire
     - ChameleonFramework
     - Hero
+    - KakaoSDKAuth
+    - KakaoSDKCommon
+    - KakaoSDKUser
+    - LibTorch
     - R.swift
-    - R.swift.Library
+    - ReactorKit
+    - Realm
+    - RealmSwift
+    - RxCocoa
+    - RxRealm
+    - RxRelay
+    - RxSwift
     - SwiftLint
+    - WeakMapTable
 
 SPEC CHECKSUMS:
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Hero: c69009dbc9e2f0472e081adc644dba05fcedae72
-  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
-  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
-  SwiftLint: 32ee33ded0636d0905ef6911b2b67bbaeeedafa5
+  KakaoSDKAuth: 17becef98c04ce53d2e81081c3d0903f7cda2b0d
+  KakaoSDKCommon: 41d97223aece4275d142c03d8a4e47a91d8122f1
+  KakaoSDKUser: 1cd1f31d8be7de1460320737674a7022ab25c257
+  LibTorch: cad2028d9a4daedf1a43f1ea269bc9a3741ce7b0
+  R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
+  ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
+  Realm: d97b438de77459e443bd2c8ad5ca0f95107aee4b
+  RealmSwift: 6be3f27a7fd3f5cc8f99f4b187cc4e7150299e32
+  RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
+  RxRealm: 666c8785327fe2fff972a3093b35dc7055c1ca38
+  RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  SwiftLint: 5ce4d6a8ff83f1b5fd5ad5dbf30965d35af65e44
+  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: 3bdc1366913ff354387a1fe5a0ecd757d5e7ec56
+PODFILE CHECKSUM: ce302bd4c71eeda56b3772f320a7daf8001c95a8
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.13.0

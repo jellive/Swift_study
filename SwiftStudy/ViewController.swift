@@ -43,7 +43,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //                                 "Realm-tutorial",
 //"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera"]
 "RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera", "KingFisher", "ReactorKit-counter", "FastCampus", "UIKit",
-        "Shape", "ReadText", "ReactorKit-Network")
+        "Shape", "ReadText", "ReactorKit-Network", "Compositional Layout")
 //        let menuArr = Observable.of(menuArray)
         
         
@@ -171,6 +171,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             present(vc, animated: true)
         case 22:
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "reactorkitnetwork") as! ReactorKitNetworkViewController
+            present(vc, animated: true)
+        case 23:
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "compositional_first") as! CompositionalLayoutFirstViewController
             present(vc, animated: true)
         default:
             return;
