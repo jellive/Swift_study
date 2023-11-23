@@ -31,7 +31,8 @@ class CompositionalLayoutFirstViewController: UIViewController {
     }()
     
     private lazy var collectionView: UICollectionView = {
-        let view = UICollectionView(frame: .zero, collectionViewLayout: self.compositionalLayout)
+//        let view = UICollectionView(frame: .zero, collectionViewLayout: self.compositionalLayout) // 기초적인 compositionalLayout
+        let view = UICollectionView(frame: .zero, collectionViewLayout: getLayout())
         view.isScrollEnabled = true
         view.showsHorizontalScrollIndicator = false
         view.showsVerticalScrollIndicator = true
@@ -43,6 +44,60 @@ class CompositionalLayoutFirstViewController: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
+    func getLayout() -> UICollectionViewCompositionalLayout { // 굳이 만드는 법
+        UICollectionViewCompositionalLayout { (section, env) -> NSCollectionLayoutSection? in
+            switch section {
+            case 0:
+                let itemFractionalWidthFraction = 1.0 / 3.0 // horizontal 3개의 셀
+                let groupFractionalHeightFraction = 1.0 / 4.0 // vertical 4개의 셀
+                let itemInset: CGFloat = 2.5
+                
+                // Item
+                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(itemFractionalWidthFraction), heightDimension: .fractionalHeight(1))
+                let item = NSCollectionLayoutItem(layoutSize: itemSize)
+                item.contentInsets = NSDirectionalEdgeInsets(top: itemInset, leading: itemInset, bottom: itemInset, trailing: itemInset)
+                
+                // Group
+                let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(groupFractionalHeightFraction))
+                let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+
+                // Section
+                let section = NSCollectionLayoutSection(group: group)
+                section.contentInsets = NSDirectionalEdgeInsets(top: itemInset, leading: itemInset, bottom: itemInset, trailing: itemInset)
+                return section
+            default:
+                let itemFractionalWidthFraction = 1.0 / 5.0 // horizontal 3개의 셀
+                let groupFractionalHeightFraction = 1.0 / 4.0 // vertical 4개의 셀
+                let itemInset: CGFloat = 2.5
+                
+                // Item
+                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(itemFractionalWidthFraction), heightDimension: .fractionalHeight(1))
+                let item = NSCollectionLayoutItem(layoutSize: itemSize)
+                item.contentInsets = NSDirectionalEdgeInsets(top: itemInset, leading: itemInset, bottom: itemInset, trailing: itemInset)
+                
+                // Group
+                let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(groupFractionalHeightFraction))
+                let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+
+                // Section
+                let section = NSCollectionLayoutSection(group: group)
+                section.contentInsets = NSDirectionalEdgeInsets(top: itemInset, leading: itemInset, bottom: itemInset, trailing: itemInset)
+                return section
+            }
+        }
+    }
+    
+//    func getLayout() -> UICollectionViewLayout {
+//        return UICollectionViewCompositionalLayout { sectionIndex, env -> NSCollectionLayoutSection? in
+//            switch self.dataSource[sectionIndex] {
+//            case .main:
+//                return listSection()
+//            case .sub:
+//                return gridSection()
+//            }
+//        }
+//    }
     
     private let dataSource: [CLFSection] = [
         .first((1...30).map(String.init).map(CLFSection.CLFFirstItem.init(value:))),
