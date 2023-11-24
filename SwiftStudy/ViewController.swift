@@ -43,7 +43,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //                                 "Realm-tutorial",
 //"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera"]
 "RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera", "KingFisher", "ReactorKit-counter", "FastCampus", "UIKit",
-        "Shape", "ReadText", "ReactorKit-Network", "Compositional Layout")
+        "Shape", "ReadText", "ReactorKit-Network", "Compositional Layout", "CLHeaderFooter")
 //        let menuArr = Observable.of(menuArray)
         
         
@@ -174,6 +174,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             present(vc, animated: true)
         case 23:
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "compositional_first") as! CompositionalLayoutFirstViewController
+            present(vc, animated: true)
+        case 24:
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "compositional_headerfooter") as! CompositionalLayoutSupplementaryViewHeaderFooterViewController
             present(vc, animated: true)
         default:
             return;

@@ -83,6 +83,7 @@
 		4065B5AA29388DD600843A66 /* ReadTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4065B5A929388DD600843A66 /* ReadTextViewController.swift */; };
 		4065B5AC29388DFE00843A66 /* 00000000_cam.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4065B5AB29388DFE00843A66 /* 00000000_cam.txt */; };
 		40BCF0862B03292A00C48D32 /* CompositionalLayoutFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BCF0852B03292A00C48D32 /* CompositionalLayoutFirstViewController.swift */; };
+		40DC72192B102BA6007137CF /* CompositionalLayoutSupplementaryViewHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DC72182B102BA6007137CF /* CompositionalLayoutSupplementaryViewHeaderFooterViewController.swift */; };
 		40F9E289290A6BF400BD4C09 /* AsyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9E288290A6BF400BD4C09 /* AsyncView.swift */; };
 		40FA85B32925C7B80019B089 /* ReactorKitNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FA85B22925C7B80019B089 /* ReactorKitNetworkViewController.swift */; };
 		40FA85B52925C8660019B089 /* ReactorKitNetworkViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FA85B42925C8660019B089 /* ReactorKitNetworkViewReactor.swift */; };
@@ -250,6 +251,7 @@
 		4065B5A929388DD600843A66 /* ReadTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTextViewController.swift; sourceTree = "<group>"; };
 		4065B5AB29388DFE00843A66 /* 00000000_cam.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 00000000_cam.txt; sourceTree = "<group>"; };
 		40BCF0852B03292A00C48D32 /* CompositionalLayoutFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutFirstViewController.swift; sourceTree = "<group>"; };
+		40DC72182B102BA6007137CF /* CompositionalLayoutSupplementaryViewHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutSupplementaryViewHeaderFooterViewController.swift; sourceTree = "<group>"; };
 		40F9E288290A6BF400BD4C09 /* AsyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncView.swift; sourceTree = "<group>"; };
 		40FA85B22925C7B80019B089 /* ReactorKitNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKitNetworkViewController.swift; sourceTree = "<group>"; };
 		40FA85B42925C8660019B089 /* ReactorKitNetworkViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKitNetworkViewReactor.swift; sourceTree = "<group>"; };
@@ -695,6 +697,7 @@
 			isa = PBXGroup;
 			children = (
 				40BCF0852B03292A00C48D32 /* CompositionalLayoutFirstViewController.swift */,
+				40DC72182B102BA6007137CF /* CompositionalLayoutSupplementaryViewHeaderFooterViewController.swift */,
 			);
 			path = CompositionalLayout;
 			sourceTree = "<group>";
@@ -1252,6 +1255,7 @@
 				02A31E6124B5BF8700D32B41 /* Issue_Issue.swift in Sources */,
 				028AFB9224AC682600661743 /* Badge.swift in Sources */,
 				901FF3B726E0634C004E96EA /* UIPopupRoundViewController.swift in Sources */,
+				40DC72192B102BA6007137CF /* CompositionalLayoutSupplementaryViewHeaderFooterViewController.swift in Sources */,
 				40FA85B32925C7B80019B089 /* ReactorKitNetworkViewController.swift in Sources */,
 				028AFBAC24ADB18700661743 /* Home.swift in Sources */,
 				02A31E5324B4649C00D32B41 /* RxCityViewController.swift in Sources */,

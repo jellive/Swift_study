@@ -845,6 +845,21 @@
             </objects>
             <point key="canvasLocation" x="5583" y="-2015"/>
         </scene>
+        <!--Compositional Layout Supplementary View Header Footer View Controller-->
+        <scene sceneID="ne4-tq-Cgo">
+            <objects>
+                <viewController storyboardIdentifier="compositional_headerfooter" id="hu6-OY-cqd" customClass="CompositionalLayoutSupplementaryViewHeaderFooterViewController" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5yk-zc-cIg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6fp-dL-p8D"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhI-9c-9kG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6371" y="-2021"/>
+        </scene>
         <!--Local Push View Controller-->
         <scene sceneID="XNx-gG-8ZJ">
             <objects>
