@@ -15,11 +15,6 @@ PODS:
     - KakaoSDKCommon/Common (= 2.18.0)
   - KakaoSDKUser (2.18.0):
     - KakaoSDKAuth (= 2.18.0)
-  - LibTorch (2.1.0):
-    - LibTorch/Core (= 2.1.0)
-  - LibTorch/Core (2.1.0):
-    - LibTorch/Torch
-  - LibTorch/Torch (2.1.0)
   - R.swift (7.3.2)
   - ReactorKit (3.2.0):
     - RxSwift (~> 6.0)
@@ -49,7 +44,6 @@ DEPENDENCIES:
   - KakaoSDKAuth
   - KakaoSDKCommon
   - KakaoSDKUser
-  - LibTorch
   - R.swift
   - ReactorKit
   - RxRealm
@@ -63,7 +57,6 @@ SPEC REPOS:
     - KakaoSDKAuth
     - KakaoSDKCommon
     - KakaoSDKUser
-    - LibTorch
     - R.swift
     - ReactorKit
     - Realm
@@ -82,7 +75,6 @@ SPEC CHECKSUMS:
   KakaoSDKAuth: 17becef98c04ce53d2e81081c3d0903f7cda2b0d
   KakaoSDKCommon: 41d97223aece4275d142c03d8a4e47a91d8122f1
   KakaoSDKUser: 1cd1f31d8be7de1460320737674a7022ab25c257
-  LibTorch: cad2028d9a4daedf1a43f1ea269bc9a3741ce7b0
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
   ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
   Realm: d97b438de77459e443bd2c8ad5ca0f95107aee4b
@@ -94,6 +86,6 @@ SPEC CHECKSUMS:
   SwiftLint: 5ce4d6a8ff83f1b5fd5ad5dbf30965d35af65e44
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: ce302bd4c71eeda56b3772f320a7daf8001c95a8
+PODFILE CHECKSUM: 11567e726c555cdf5dd2f67fe23bf8f8504a8ba8
 
 COCOAPODS: 1.13.0

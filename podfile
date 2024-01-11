@@ -27,7 +27,7 @@ target 'SwiftStudy' do
 #    pod 'RxRealmDataSources'
     #pod 'Kingfisher'
     pod 'ReactorKit'
-    pod 'LibTorch'
+#    pod 'LibTorch'
     
     pod 'KakaoSDKCommon'
     pod 'KakaoSDKAuth'

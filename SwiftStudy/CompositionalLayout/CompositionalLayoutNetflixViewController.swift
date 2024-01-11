@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class CompositionalLayoutNetflixViewController: UICollectionViewController {
     
@@ -88,5 +89,31 @@ extension CompositionalLayoutNetflixViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let sectionName = contents[indexPath.section].sectionName
         print("item: \(sectionName) section, \(indexPath.row + 1)'th content")
+    }
+}
+
+// SwiftUI preview with UIKIt
+@available(iOS 13.0.0, *)
+struct CompositionLayoutNetflixViewController_preview: PreviewProvider {
+    
+    static var previews: some View {
+        Container()
+    }
+    
+//    #Preview {
+//        Container()
+//    }
+    
+    struct Container: UIViewControllerRepresentable {
+        
+        func makeUIViewController(context: Context) -> UIViewController {
+            let layout = UICollectionViewLayout()
+            let netflixVC = CompositionalLayoutNetflixViewController(collectionViewLayout: layout)
+            return UINavigationController(rootViewController: netflixVC)
+        }
+        
+        func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
+        
+        typealias UIViewControllerType = UIViewController
     }
 }
