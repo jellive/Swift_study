@@ -43,7 +43,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //                                 "Realm-tutorial",
 //"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera"]
 "RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera", "KingFisher", "ReactorKit-counter", "FastCampus", "UIKit",
-        "Shape", "ReadText", "ReactorKit-Network", "Compositional Layout", "CLHeaderFooter")
+        "Shape", "ReadText", "ReactorKit-Network", "Compositional Layout", "CLHeaderFooter", "Compositional Netflix")
 //        let menuArr = Observable.of(menuArray)
         
         
@@ -177,6 +177,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             present(vc, animated: true)
         case 24:
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "compositional_headerfooter") as! CompositionalLayoutSupplementaryViewHeaderFooterViewController
+            present(vc, animated: true)
+        case 25:
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "compositional_netflix") as! CompositionalLayoutNetflixViewController
+            vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true)
         default:
             return;

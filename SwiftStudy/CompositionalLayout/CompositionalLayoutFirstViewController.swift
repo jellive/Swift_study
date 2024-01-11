@@ -2,7 +2,7 @@
 //  CompositionalLayoutFirstViewController.swift
 //  SwiftStudy
 //
-//  Created by HGYoo-visualsyn on 11/14/23.
+//  Created by HGYoo on 11/14/23.
 //  Copyright © 2023 Jell PD. All rights reserved.
 //
 
