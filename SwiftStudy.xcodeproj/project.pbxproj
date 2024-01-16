@@ -81,6 +81,7 @@
 		02FF187D24C170C0005636E7 /* SwiftUIObservableObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */; };
 		19474CF785A0CAF4EADEE52C /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB8C24A8A18A5E0CB52F58B /* Pods_SwiftStudy.framework */; };
 		40141E1A2B561C0100D9161D /* ContentsCollectionViewRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40141E192B561C0100D9161D /* ContentsCollectionViewRankCell.swift */; };
+		40141E1C2B564B6E00D9161D /* ContentCollectionViewMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40141E1B2B564B6E00D9161D /* ContentCollectionViewMainCell.swift */; };
 		4065B5AA29388DD600843A66 /* ReadTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4065B5A929388DD600843A66 /* ReadTextViewController.swift */; };
 		4065B5AC29388DFE00843A66 /* 00000000_cam.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4065B5AB29388DFE00843A66 /* 00000000_cam.txt */; };
 		40A170962B4D29F800929136 /* CompositionalLayoutNetflixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A170952B4D29F800929136 /* CompositionalLayoutNetflixViewController.swift */; };
@@ -255,6 +256,7 @@
 		02FF187A24C16F84005636E7 /* OO_Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OO_Stopwatch.swift; sourceTree = "<group>"; };
 		02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIObservableObjectView.swift; sourceTree = "<group>"; };
 		40141E192B561C0100D9161D /* ContentsCollectionViewRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsCollectionViewRankCell.swift; sourceTree = "<group>"; };
+		40141E1B2B564B6E00D9161D /* ContentCollectionViewMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewMainCell.swift; sourceTree = "<group>"; };
 		4065B5A929388DD600843A66 /* ReadTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTextViewController.swift; sourceTree = "<group>"; };
 		4065B5AB29388DFE00843A66 /* 00000000_cam.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 00000000_cam.txt; sourceTree = "<group>"; };
 		40A170952B4D29F800929136 /* CompositionalLayoutNetflixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutNetflixViewController.swift; sourceTree = "<group>"; };
@@ -716,6 +718,7 @@
 				40A1709B2B4D3E6900929136 /* ContentCollectionViewCell.swift */,
 				40A1709D2B4D3FC900929136 /* ContentCollectionViewHeader.swift */,
 				40141E192B561C0100D9161D /* ContentsCollectionViewRankCell.swift */,
+				40141E1B2B564B6E00D9161D /* ContentCollectionViewMainCell.swift */,
 			);
 			path = CompositionalLayout;
 			sourceTree = "<group>";
@@ -1256,6 +1259,7 @@
 				02A31E5624B573BB00D32B41 /* RxChameleonViewController.swift in Sources */,
 				D6A6D49524D6921900E39419 /* RxMoyaGithubViewController.swift in Sources */,
 				028AFB7224AB363700661743 /* UserData.swift in Sources */,
+				40141E1C2B564B6E00D9161D /* ContentCollectionViewMainCell.swift in Sources */,
 				02E2EA792696D3BA00FEBAC5 /* FCViewController.swift in Sources */,
 				027D1D852696C087006A2123 /* FCLuffyView.swift in Sources */,
 				02FF186924C13F21005636E7 /* RxAlamofireViewModel.swift in Sources */,
