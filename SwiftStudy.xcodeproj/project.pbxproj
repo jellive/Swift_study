@@ -80,6 +80,7 @@
 		02FF187B24C16F84005636E7 /* OO_Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187A24C16F84005636E7 /* OO_Stopwatch.swift */; };
 		02FF187D24C170C0005636E7 /* SwiftUIObservableObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */; };
 		19474CF785A0CAF4EADEE52C /* Pods_SwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB8C24A8A18A5E0CB52F58B /* Pods_SwiftStudy.framework */; };
+		40141E1A2B561C0100D9161D /* ContentsCollectionViewRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40141E192B561C0100D9161D /* ContentsCollectionViewRankCell.swift */; };
 		4065B5AA29388DD600843A66 /* ReadTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4065B5A929388DD600843A66 /* ReadTextViewController.swift */; };
 		4065B5AC29388DFE00843A66 /* 00000000_cam.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4065B5AB29388DFE00843A66 /* 00000000_cam.txt */; };
 		40A170962B4D29F800929136 /* CompositionalLayoutNetflixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A170952B4D29F800929136 /* CompositionalLayoutNetflixViewController.swift */; };
@@ -253,6 +254,7 @@
 		02FF187724C16DD7005636E7 /* SwiftUIAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationView.swift; sourceTree = "<group>"; };
 		02FF187A24C16F84005636E7 /* OO_Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OO_Stopwatch.swift; sourceTree = "<group>"; };
 		02FF187C24C170C0005636E7 /* SwiftUIObservableObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIObservableObjectView.swift; sourceTree = "<group>"; };
+		40141E192B561C0100D9161D /* ContentsCollectionViewRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsCollectionViewRankCell.swift; sourceTree = "<group>"; };
 		4065B5A929388DD600843A66 /* ReadTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTextViewController.swift; sourceTree = "<group>"; };
 		4065B5AB29388DFE00843A66 /* 00000000_cam.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 00000000_cam.txt; sourceTree = "<group>"; };
 		40A170952B4D29F800929136 /* CompositionalLayoutNetflixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutNetflixViewController.swift; sourceTree = "<group>"; };
@@ -713,6 +715,7 @@
 				40A170992B4D302200929136 /* CompositionalNetflixContent.swift */,
 				40A1709B2B4D3E6900929136 /* ContentCollectionViewCell.swift */,
 				40A1709D2B4D3FC900929136 /* ContentCollectionViewHeader.swift */,
+				40141E192B561C0100D9161D /* ContentsCollectionViewRankCell.swift */,
 			);
 			path = CompositionalLayout;
 			sourceTree = "<group>";
@@ -1290,6 +1293,7 @@
 				028AFBA324ADA47700661743 /* HikeGraph.swift in Sources */,
 				D6A6D49724DD10EE00E39419 /* RealmMenuViewController.swift in Sources */,
 				40A170962B4D29F800929136 /* CompositionalLayoutNetflixViewController.swift in Sources */,
+				40141E1A2B561C0100D9161D /* ContentsCollectionViewRankCell.swift in Sources */,
 				028AFB4424AAE6B600661743 /* SwiftUITutorialView.swift in Sources */,
 				40F9E289290A6BF400BD4C09 /* AsyncView.swift in Sources */,
 				02A31E5D24B5AD8900D32B41 /* Issue_Github.swift in Sources */,
