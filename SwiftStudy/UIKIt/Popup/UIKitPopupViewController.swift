@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UIKitViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class UIKitPopupViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     
     @IBOutlet var collectionView: UICollectionView!

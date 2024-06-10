@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -278,12 +278,19 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="mg3-dS-umG"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkK-lW-ERm">
+                                <rect key="frame" x="879" y="21" width="101" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SwiftUI -&gt;"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Na2-8Q-5Ab"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="ADK-K2-nzY" secondAttribute="leading" id="3la-tP-VaA"/>
                             <constraint firstItem="Gcd-37-4Jm" firstAttribute="centerX" secondItem="Na2-8Q-5Ab" secondAttribute="centerX" id="5Im-pI-hLR"/>
                             <constraint firstItem="Na2-8Q-5Ab" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ADK-K2-nzY" secondAttribute="trailing" symbolic="YES" id="9EL-RT-XX0"/>
+                            <constraint firstItem="bkK-lW-ERm" firstAttribute="centerY" secondItem="ADK-K2-nzY" secondAttribute="centerY" id="BSC-me-8dI"/>
+                            <constraint firstItem="Na2-8Q-5Ab" firstAttribute="trailing" secondItem="bkK-lW-ERm" secondAttribute="trailing" constant="20" id="SyP-dK-s8G"/>
                             <constraint firstItem="Gcd-37-4Jm" firstAttribute="width" secondItem="Na2-8Q-5Ab" secondAttribute="width" constant="-40" id="Yoc-iG-JQk"/>
                             <constraint firstItem="Gcd-37-4Jm" firstAttribute="centerY" secondItem="Na2-8Q-5Ab" secondAttribute="centerY" id="chF-fL-UhF"/>
                             <constraint firstItem="ADK-K2-nzY" firstAttribute="top" secondItem="Na2-8Q-5Ab" secondAttribute="top" constant="8" id="eGg-sf-Ade"/>
@@ -1188,10 +1195,10 @@
             </objects>
             <point key="canvasLocation" x="3808.8000000000002" y="-2015.4422788605698"/>
         </scene>
-        <!--Kit View Controller-->
+        <!--Kit Popup View Controller-->
         <scene sceneID="a0m-0F-Gm2">
             <objects>
-                <viewController storyboardIdentifier="uikit_main" id="buZ-OK-DXZ" customClass="UIKitViewController" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="uikit_popup" id="buZ-OK-DXZ" customClass="UIKitPopupViewController" customModule="SwiftStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hld-I1-TBf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1291,7 +1298,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

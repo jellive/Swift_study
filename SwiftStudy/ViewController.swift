@@ -161,7 +161,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             present(vc, animated: true){}
             
         case 19:
-            let vc = self.storyboard?.instantiateViewController(identifier: "uikit_main") as! UIKitViewController
+            let vc = self.storyboard?.instantiateViewController(identifier: "uikit_popup") as! UIKitPopupViewController
             present(vc, animated: true){}
         case 20:
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "shape") as! ShapeViewContrller

@@ -94,7 +94,7 @@
 		40F9E289290A6BF400BD4C09 /* AsyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9E288290A6BF400BD4C09 /* AsyncView.swift */; };
 		40FA85B32925C7B80019B089 /* ReactorKitNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FA85B22925C7B80019B089 /* ReactorKitNetworkViewController.swift */; };
 		40FA85B52925C8660019B089 /* ReactorKitNetworkViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FA85B42925C8660019B089 /* ReactorKitNetworkViewReactor.swift */; };
-		901FF3B526E06340004E96EA /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901FF3B426E06340004E96EA /* UIKitViewController.swift */; };
+		901FF3B526E06340004E96EA /* UIKitPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901FF3B426E06340004E96EA /* UIKitPopupViewController.swift */; };
 		901FF3B726E0634C004E96EA /* UIPopupRoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901FF3B626E0634C004E96EA /* UIPopupRoundViewController.swift */; };
 		902D2D61279F86680074B51E /* RxOptional in Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D60279F86680074B51E /* RxOptional */; };
 		902D2D64279F86B80074B51E /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 902D2D63279F86B80074B51E /* ReactorKit */; };
@@ -107,9 +107,7 @@
 		90A4E676279FC28A00C6C541 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 90A4E675279FC28A00C6C541 /* ReactiveMoya */; };
 		90A4E678279FC28A00C6C541 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 90A4E677279FC28A00C6C541 /* RxMoya */; };
 		90A4E67B279FC59D00C6C541 /* ShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4E67A279FC59D00C6C541 /* ShapeViewController.swift */; };
-		BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */; };
 		BB3CB2001F0B9ACF0072178C /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */; };
-		BB5A800D1E96065100000670 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A800C1E96065100000670 /* RealmViewController.swift */; };
 		BB9F4CE91F0DDCC400650829 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F4CE81F0DDCC400650829 /* CategoryViewController.swift */; };
 		BB9F4CEB1F0DDD4200650829 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F4CEA1F0DDD4200650829 /* UIView.swift */; };
 		BBD637F01EB0AB60002CF131 /* IBDesignableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */; };
@@ -269,14 +267,12 @@
 		40F9E288290A6BF400BD4C09 /* AsyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncView.swift; sourceTree = "<group>"; };
 		40FA85B22925C7B80019B089 /* ReactorKitNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKitNetworkViewController.swift; sourceTree = "<group>"; };
 		40FA85B42925C8660019B089 /* ReactorKitNetworkViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKitNetworkViewReactor.swift; sourceTree = "<group>"; };
-		901FF3B426E06340004E96EA /* UIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
+		901FF3B426E06340004E96EA /* UIKitPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitPopupViewController.swift; sourceTree = "<group>"; };
 		901FF3B626E0634C004E96EA /* UIPopupRoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPopupRoundViewController.swift; sourceTree = "<group>"; };
 		902D2D88279FAD510074B51E /* RxRealmDataSources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxRealmDataSources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A4E67A279FC59D00C6C541 /* ShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeViewController.swift; sourceTree = "<group>"; };
 		B45A826CF13BDBAFF22B20C7 /* Pods-SwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.debug.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
-		BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmNumber.swift; path = Realm/RealmNumber.swift; sourceTree = "<group>"; };
 		BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingViewController.swift; path = Drawing/DrawingViewController.swift; sourceTree = "<group>"; };
-		BB5A800C1E96065100000670 /* RealmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmViewController.swift; path = Realm/RealmViewController.swift; sourceTree = "<group>"; };
 		BB9F4CE81F0DDCC400650829 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryViewController.swift; path = Category/CategoryViewController.swift; sourceTree = "<group>"; };
 		BB9F4CEA1F0DDD4200650829 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Category/UIView.swift; sourceTree = "<group>"; };
 		BBD637EF1EB0AB60002CF131 /* IBDesignableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IBDesignableViewController.swift; path = IBDesignable/IBDesignableViewController.swift; sourceTree = "<group>"; };
@@ -707,6 +703,15 @@
 			path = Text;
 			sourceTree = "<group>";
 		};
+		40A61F612C16E3D2004E1FE3 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				901FF3B326E06328004E96EA /* UIPopupRound */,
+				901FF3B426E06340004E96EA /* UIKitPopupViewController.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
 		40BCF0842B0319A600C48D32 /* CompositionalLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -734,8 +739,28 @@
 		901FF3B226E06320004E96EA /* UIKIt */ = {
 			isa = PBXGroup;
 			children = (
-				901FF3B326E06328004E96EA /* UIPopupRound */,
-				901FF3B426E06340004E96EA /* UIKitViewController.swift */,
+				40BCF0842B0319A600C48D32 /* CompositionalLayout */,
+				4065B5A82938898500843A66 /* Text */,
+				40F9E287290A6BCD00BD4C09 /* Async */,
+				90A4E679279FC58D00C6C541 /* Shape */,
+				027D1D832696C041006A2123 /* FastCampus */,
+				02525B75264E149400B34983 /* ReactorKit */,
+				028C0F252615BB6E00FF8BC9 /* KingFIsher */,
+				D666F16324FB523800357FF2 /* Camera */,
+				BB9F4CE71F0DDCA100650829 /* Category */,
+				028AFBC024AEBA2700661743 /* Combine */,
+				BB3CB1FE1F0B9AB70072178C /* Drawing */,
+				D6663DBA1E7EB73300531889 /* Gugudan */,
+				BBD637EE1EB0AB39002CF131 /* IBDesignable */,
+				D616938824B1D652009F2EB1 /* Local-push */,
+				020DCC4E24BEC1350007A0C8 /* Moya-base */,
+				02D6F33024DAAA5F001BA1E9 /* Realm-menu */,
+				028AFB4524AAF8AD00661743 /* Resources */,
+				02FF186524C13C64005636E7 /* RxAlamofire */,
+				02D6F32924D7D7DD001BA1E9 /* RxAlamoFire-github */,
+				D6A6D49324D691F200E39419 /* RxMoya-Github */,
+				02D6F33124DAAB0D001BA1E9 /* RxSwift */,
+				40A61F612C16E3D2004E1FE3 /* Popup */,
 			);
 			path = UIKIt;
 			sourceTree = "<group>";
@@ -771,13 +796,12 @@
 				BB3CB1FF1F0B9ACF0072178C /* DrawingViewController.swift */,
 			);
 			name = Drawing;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		BB5A800E1E96065600000670 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
-				BB5A800C1E96065100000670 /* RealmViewController.swift */,
-				BB2C3A5F1F136E2100DBF206 /* RealmNumber.swift */,
 			);
 			name = Realm;
 			path = ..;
@@ -790,6 +814,7 @@
 				BB9F4CEA1F0DDD4200650829 /* UIView.swift */,
 			);
 			name = Category;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		BBD637EE1EB0AB39002CF131 /* IBDesignable */ = {
@@ -799,6 +824,7 @@
 				BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */,
 			);
 			name = IBDesignable;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D604CCE124A86D82006927DE /* SwiftUI-combine */ = {
@@ -825,6 +851,7 @@
 				D6663DBB1E7EB74900531889 /* GugudanViewController.swift */,
 			);
 			name = Gugudan;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D666F16324FB523800357FF2 /* Camera */ = {
@@ -868,36 +895,15 @@
 		D6C62F4D1E797D5E007D497A /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
-				40BCF0842B0319A600C48D32 /* CompositionalLayout */,
-				4065B5A82938898500843A66 /* Text */,
-				40F9E287290A6BCD00BD4C09 /* Async */,
-				90A4E679279FC58D00C6C541 /* Shape */,
+				D6021C1F24D56CCA00D23DB9 /* Playground */,
 				901FF3B226E06320004E96EA /* UIKIt */,
-				027D1D832696C041006A2123 /* FastCampus */,
-				02525B75264E149400B34983 /* ReactorKit */,
-				028C0F252615BB6E00FF8BC9 /* KingFIsher */,
-				D666F16324FB523800357FF2 /* Camera */,
+				02D6F33224DAAB23001BA1E9 /* SwiftUI */,
 				D6C62F4E1E797D5E007D497A /* AppDelegate.swift */,
 				D6C62F551E797D5E007D497A /* Assets.xcassets */,
-				BB9F4CE71F0DDCA100650829 /* Category */,
-				028AFBC024AEBA2700661743 /* Combine */,
-				BB3CB1FE1F0B9AB70072178C /* Drawing */,
-				D6663DBA1E7EB73300531889 /* Gugudan */,
-				BBD637EE1EB0AB39002CF131 /* IBDesignable */,
+				BBEAA0C71EFCAFEB00D3E06F /* SwiftStudy-Bridging-Header.h */,
 				D6C62F5A1E797D5E007D497A /* Info.plist */,
 				D6C62F571E797D5E007D497A /* LaunchScreen.storyboard */,
-				D616938824B1D652009F2EB1 /* Local-push */,
 				D6C62F521E797D5E007D497A /* Main.storyboard */,
-				020DCC4E24BEC1350007A0C8 /* Moya-base */,
-				D6021C1F24D56CCA00D23DB9 /* Playground */,
-				02D6F33024DAAA5F001BA1E9 /* Realm-menu */,
-				028AFB4524AAF8AD00661743 /* Resources */,
-				02FF186524C13C64005636E7 /* RxAlamofire */,
-				02D6F32924D7D7DD001BA1E9 /* RxAlamoFire-github */,
-				D6A6D49324D691F200E39419 /* RxMoya-Github */,
-				02D6F33124DAAB0D001BA1E9 /* RxSwift */,
-				BBEAA0C71EFCAFEB00D3E06F /* SwiftStudy-Bridging-Header.h */,
-				02D6F33224DAAB23001BA1E9 /* SwiftUI */,
 				D6C62F501E797D5E007D497A /* ViewController.swift */,
 			);
 			path = SwiftStudy;
@@ -1225,7 +1231,6 @@
 				028AFBE124AF1BA400661743 /* RxGithubViewController.swift in Sources */,
 				02A31E5824B59F4300D32B41 /* CircleViewModel.swift in Sources */,
 				021E5621249B584500AB89F3 /* SecondSwiftUIView.swift in Sources */,
-				BB5A800D1E96065100000670 /* RealmViewController.swift in Sources */,
 				02A31E6324B5C21C00D32B41 /* Issue_IssueTrackerModel.swift in Sources */,
 				021E561B249B3A2100AB89F3 /* SwiftUIView.swift in Sources */,
 				028AFB4D24AB0C6800661743 /* Landmark.swift in Sources */,
@@ -1254,7 +1259,6 @@
 				028AFBDF24AF1B3200661743 /* RxGithubViewModel.swift in Sources */,
 				D604CCE324A89EDE006927DE /* SwiftUIViewModel.swift in Sources */,
 				028AFBA924ADA62900661743 /* GraphCapsule.swift in Sources */,
-				BB2C3A601F136E2100DBF206 /* RealmNumber.swift in Sources */,
 				D6DF7DEB26A6CE670032CE40 /* FCLuffyTestView.swift in Sources */,
 				02A31E5624B573BB00D32B41 /* RxChameleonViewController.swift in Sources */,
 				D6A6D49524D6921900E39419 /* RxMoyaGithubViewController.swift in Sources */,
@@ -1264,7 +1268,7 @@
 				027D1D852696C087006A2123 /* FCLuffyView.swift in Sources */,
 				02FF186924C13F21005636E7 /* RxAlamofireViewModel.swift in Sources */,
 				028C0F272615BB8000FF8BC9 /* KingFisherViewController.swift in Sources */,
-				901FF3B526E06340004E96EA /* UIKitViewController.swift in Sources */,
+				901FF3B526E06340004E96EA /* UIKitPopupViewController.swift in Sources */,
 				40A1709A2B4D302200929136 /* CompositionalNetflixContent.swift in Sources */,
 				02A31E5B24B5AC6000D32B41 /* IssueListViewController.swift in Sources */,
 				028AFBCB24AEBF2D00661743 /* PageView.swift in Sources */,
