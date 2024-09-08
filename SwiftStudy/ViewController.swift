@@ -17,47 +17,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var mainCollectionView: UICollectionView!
     
     var menuArray : NSArray = []
-
-//    var menuArray: Array<String>!
     
     let bag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("hihihi");
-//        UIDevice.rx.orientation
-//            .subscribe(onNext: { current in
-//                switch current {
-//                case .landscape:
-//                    print("landscape")
-//                case .portrait:
-//                    print("portrait")
-//                }
-//            })
- 
         menuArray = NSArray.init(objects: "구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push",
-//        menuArray = ["구구단", "realm", "IBDesignable", "Drawing", "Category", "SwiftUI", "Landmark list", "Local Push",
-//                                 "Rx-Github", "Rx-City", "Rx-chameleon", "Rx-issue",
                                  "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-RxAlamofire",
-//                                 "Realm-tutorial",
-//"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera"]
-"RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera", "KingFisher", "ReactorKit-counter", "FastCampus", "UIKit",
-        "Shape", "ReadText", "ReactorKit-Network", "Compositional Layout", "CLHeaderFooter", "Compositional Netflix")
-//        let menuArr = Observable.of(menuArray)
-        
-        
-//        menuArr
-//            .bind(to: mainCollectionView.rx.items(cellIdentifier: "main_collection_view_cell")) { (cell, row, element) in
-//            let indexPath = IndexPath(row: row, section: 0)
-//            let label = cell.viewWithTag(2) as! UILabel
-//            label.text = "\(element) @ \(row)"
-//            return cell
-//        }.disposed(by: bag)
-//        menuArr.bind(to: mainCollectionView.rx.items(cellIdentifier: "main_collection_view_cell", cellType: UICollectionViewCell.self)) { (row, element, cell) in
-//            let label = cell.viewWithTag(2) as! UILabel
-//            label.text = "\(element) @ \(row)"
-//        }.disposed(by: bag)
+                                 "RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera", "KingFisher", "ReactorKit-counter", "FastCampus", "UIKit",
+                                 "Shape", "ReadText", "ReactorKit-Network", "Compositional Layout", "CLHeaderFooter", "Compositional Netflix")
     }
     
     override func didReceiveMemoryWarning() {
@@ -70,11 +39,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
+        
         let mainCollectionViewCell : UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "main_collection_view_cell", for: indexPath)
         let label : UILabel = mainCollectionViewCell.viewWithTag(2) as! UILabel;
         label.text = (menuArray.object(at: indexPath.row) as! String);
-
+        
         return mainCollectionViewCell;
     }
     
@@ -106,19 +75,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         case 7:
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "localpush") as! LocalPushViewController
             self.present(vc, animated: true, completion: nil)
-//        case 8:
-//            let vc = self.storyboard?
-//                .instantiateViewController(withIdentifier: "rxgithub") as! RxGithubViewController
-//            self.present(vc, animated: true, completion: nil)
-//        case 9:
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxcity") as! RxCityViewController
-//            self.present(vc, animated: true, completion: nil)
-//        case 10:
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxchameleon") as! RXChameleonViewController
-//            self.present(vc, animated: true, completion: nil)
-//        case 11:
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "rxissue") as! IssueListViewController
-//            self.present(vc, animated: true, completion: nil)
         case 8:
             let vc = UIHostingController(rootView: SwiftUILocalPushView())
             self.present(vc, animated: true ){}
@@ -131,9 +87,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         case 11:
             let vc = UIHostingController(rootView: RxAlamofireView())
             present(vc, animated: true){}
-//        case 16:
-//            let vc = self.storyboard?.instantiateViewController(identifier: "realm_tutorial") as! RealmTutorialViewController
-//            present(vc, animated: true){}
         case 12:
             let vc = self.storyboard?.instantiateViewController(identifier: "rxmoya_github") as! RxMoyaGithubViewController
             present(vc, animated: true){}
