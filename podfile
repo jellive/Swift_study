@@ -20,7 +20,7 @@ target 'SwiftStudy' do
     pod 'Hero'
     #pod 'lottie-ios'
     pod 'SwiftLint'
-    pod 'R.swift'
+#    pod 'R.swift'
     #pod 'Alamofire'
     #pod 'RxAlamofire'
     #pod 'RxRealm'
