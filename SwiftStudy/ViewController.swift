@@ -86,7 +86,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                                  
                                  "RxMoya-Github", "RxAlamofire-Github", "RxSwift", "Camera", "KingFisher", "ReactorKit-counter", "FastCampus", "UIKit",
                                  "Shape", "ReadText", "ReactorKit-Network", "Compositional Layout", "CLHeaderFooter", "Compositional Netflix")
-        swiftUIArray = ["SwiftUI", "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject"
+        swiftUIArray = ["SwiftUI", "SwiftUI-localpush", "SwiftUI-JSONParse", "SwiftUI-ObservableObject", "SwiftUI-KeyPathView"
                         //                        , "SwiftUI-RxAlamofire"
         ]
         
@@ -212,6 +212,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             case 3:
                 let vc = UIHostingController(rootView: SwiftUIObservableObjectView())
                 present(vc, animated: true){}
+            case 4:
+                let vc = UIHostingController(rootView: SwiftUIKeyPathView())
+                present(vc, animated: true)
             default:
                 return;
             }

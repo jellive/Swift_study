@@ -114,6 +114,7 @@
 		BBD637F21EB0ACA4002CF131 /* CustomRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD637F11EB0ACA4002CF131 /* CustomRectView.swift */; };
 		D6021C2024D56CCA00D23DB9 /* Playground in Resources */ = {isa = PBXBuildFile; fileRef = D6021C1F24D56CCA00D23DB9 /* Playground */; };
 		D604CCE324A89EDE006927DE /* SwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */; };
+		D606DECA2C8EC71E00DD4513 /* SwiftUIKeyPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D606DEC92C8EC71E00DD4513 /* SwiftUIKeyPathView.swift */; };
 		D616938A24B1D670009F2EB1 /* LocalPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616938924B1D670009F2EB1 /* LocalPushViewController.swift */; };
 		D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6663DBB1E7EB74900531889 /* GugudanViewController.swift */; };
 		D666F16524FB525600357FF2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666F16424FB525600357FF2 /* CameraViewController.swift */; };
@@ -281,6 +282,7 @@
 		C176967CC97D1C9DF75BE25F /* Pods-SwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftStudy.release.xcconfig"; path = "Target Support Files/Pods-SwiftStudy/Pods-SwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		D6021C1F24D56CCA00D23DB9 /* Playground */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Playground; sourceTree = "<group>"; };
 		D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewModel.swift; sourceTree = "<group>"; };
+		D606DEC92C8EC71E00DD4513 /* SwiftUIKeyPathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIKeyPathView.swift; sourceTree = "<group>"; };
 		D616938924B1D670009F2EB1 /* LocalPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushViewController.swift; sourceTree = "<group>"; };
 		D6663DBB1E7EB74900531889 /* GugudanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GugudanViewController.swift; path = Gugudan/GugudanViewController.swift; sourceTree = "<group>"; };
 		D666F16424FB525600357FF2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -609,6 +611,7 @@
 		02D6F33224DAAB23001BA1E9 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D606DEC82C8EC70A00DD4513 /* SwiftUI-keyPath */,
 				028AFB9B24ADA3DB00661743 /* SwiftUI-animate */,
 				02FF187624C16DBB005636E7 /* SwiftUI-Animation */,
 				D604CCE124A86D82006927DE /* SwiftUI-combine */,
@@ -836,6 +839,14 @@
 			name = "SwiftUI-combine";
 			path = "SwiftStudy/SwiftUI-combine";
 			sourceTree = SOURCE_ROOT;
+		};
+		D606DEC82C8EC70A00DD4513 /* SwiftUI-keyPath */ = {
+			isa = PBXGroup;
+			children = (
+				D606DEC92C8EC71E00DD4513 /* SwiftUIKeyPathView.swift */,
+			);
+			path = "SwiftUI-keyPath";
+			sourceTree = "<group>";
 		};
 		D616938824B1D652009F2EB1 /* Local-push */ = {
 			isa = PBXGroup;
@@ -1231,6 +1242,7 @@
 				021E5621249B584500AB89F3 /* SecondSwiftUIView.swift in Sources */,
 				02A31E6324B5C21C00D32B41 /* Issue_IssueTrackerModel.swift in Sources */,
 				021E561B249B3A2100AB89F3 /* SwiftUIView.swift in Sources */,
+				D606DECA2C8EC71E00DD4513 /* SwiftUIKeyPathView.swift in Sources */,
 				028AFB4D24AB0C6800661743 /* Landmark.swift in Sources */,
 				028AFBA524ADA54100661743 /* Hike.swift in Sources */,
 				BBD637F01EB0AB60002CF131 /* IBDesignableViewController.swift in Sources */,
