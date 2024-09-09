@@ -115,6 +115,8 @@
 		D6021C2024D56CCA00D23DB9 /* Playground in Resources */ = {isa = PBXBuildFile; fileRef = D6021C1F24D56CCA00D23DB9 /* Playground */; };
 		D604CCE324A89EDE006927DE /* SwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */; };
 		D606DECA2C8EC71E00DD4513 /* SwiftUIKeyPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D606DEC92C8EC71E00DD4513 /* SwiftUIKeyPathView.swift */; };
+		D606DED92C8EE25C00DD4513 /* SwiftUICombineVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = D606DED82C8EE25C00DD4513 /* SwiftUICombineVIew.swift */; };
+		D606DEDB2C8EE26B00DD4513 /* SwiftUICombineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D606DEDA2C8EE26B00DD4513 /* SwiftUICombineViewModel.swift */; };
 		D616938A24B1D670009F2EB1 /* LocalPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616938924B1D670009F2EB1 /* LocalPushViewController.swift */; };
 		D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6663DBB1E7EB74900531889 /* GugudanViewController.swift */; };
 		D666F16524FB525600357FF2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666F16424FB525600357FF2 /* CameraViewController.swift */; };
@@ -189,8 +191,6 @@
 		0260AE0C24F6257C00125671 /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
 		026FDF4724C9874300F584F4 /* RealmTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTutorialViewController.swift; sourceTree = "<group>"; };
 		027D1D842696C087006A2123 /* FCLuffyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCLuffyView.swift; sourceTree = "<group>"; };
-		028AFB3A24AAC5B300661743 /* SwiftUICombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUICombineView.swift; path = "../../../../../../Users/yoohg/Downloads/CombineWeatherApp/CombineWeatherApp-Starter/SwiftUICombineView.swift"; sourceTree = "<group>"; };
-		028AFB3C24AACC3900661743 /* SwiftUICombineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUICombineViewModel.swift; path = "../../../../../../Users/yoohg/Downloads/CombineWeatherApp/CombineWeatherApp-Starter/SwiftUICombineViewModel.swift"; sourceTree = "<group>"; };
 		028AFB4324AAE6B600661743 /* SwiftUITutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialView.swift; sourceTree = "<group>"; };
 		028AFB4824AAF8D700661743 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		028AFB4A24AB070200661743 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -283,6 +283,8 @@
 		D6021C1F24D56CCA00D23DB9 /* Playground */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Playground; sourceTree = "<group>"; };
 		D604CCE224A89EDE006927DE /* SwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewModel.swift; sourceTree = "<group>"; };
 		D606DEC92C8EC71E00DD4513 /* SwiftUIKeyPathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIKeyPathView.swift; sourceTree = "<group>"; };
+		D606DED82C8EE25C00DD4513 /* SwiftUICombineVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICombineVIew.swift; sourceTree = "<group>"; };
+		D606DEDA2C8EE26B00DD4513 /* SwiftUICombineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICombineViewModel.swift; sourceTree = "<group>"; };
 		D616938924B1D670009F2EB1 /* LocalPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushViewController.swift; sourceTree = "<group>"; };
 		D6663DBB1E7EB74900531889 /* GugudanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GugudanViewController.swift; path = Gugudan/GugudanViewController.swift; sourceTree = "<group>"; };
 		D666F16424FB525600357FF2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -611,10 +613,10 @@
 		02D6F33224DAAB23001BA1E9 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D606DED72C8EE24F00DD4513 /* SwiftUI-Combine */,
 				D606DEC82C8EC70A00DD4513 /* SwiftUI-keyPath */,
 				028AFB9B24ADA3DB00661743 /* SwiftUI-animate */,
 				02FF187624C16DBB005636E7 /* SwiftUI-Animation */,
-				D604CCE124A86D82006927DE /* SwiftUI-combine */,
 				028AFBAA24ADB16800661743 /* SwiftUI-complexInterface */,
 				02FF186F24C14E52005636E7 /* SwiftUI-JSONparse */,
 				02FF186A24C1426E005636E7 /* SwiftUI-LocalPush */,
@@ -830,22 +832,21 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		D604CCE124A86D82006927DE /* SwiftUI-combine */ = {
-			isa = PBXGroup;
-			children = (
-				028AFB3A24AAC5B300661743 /* SwiftUICombineView.swift */,
-				028AFB3C24AACC3900661743 /* SwiftUICombineViewModel.swift */,
-			);
-			name = "SwiftUI-combine";
-			path = "SwiftStudy/SwiftUI-combine";
-			sourceTree = SOURCE_ROOT;
-		};
 		D606DEC82C8EC70A00DD4513 /* SwiftUI-keyPath */ = {
 			isa = PBXGroup;
 			children = (
 				D606DEC92C8EC71E00DD4513 /* SwiftUIKeyPathView.swift */,
 			);
 			path = "SwiftUI-keyPath";
+			sourceTree = "<group>";
+		};
+		D606DED72C8EE24F00DD4513 /* SwiftUI-Combine */ = {
+			isa = PBXGroup;
+			children = (
+				D606DED82C8EE25C00DD4513 /* SwiftUICombineVIew.swift */,
+				D606DEDA2C8EE26B00DD4513 /* SwiftUICombineViewModel.swift */,
+			);
+			path = "SwiftUI-Combine";
 			sourceTree = "<group>";
 		};
 		D616938824B1D652009F2EB1 /* Local-push */ = {
@@ -1283,6 +1284,7 @@
 				02A31E5B24B5AC6000D32B41 /* IssueListViewController.swift in Sources */,
 				028AFBCB24AEBF2D00661743 /* PageView.swift in Sources */,
 				028AFBC424AEBA2700661743 /* CombineView.swift in Sources */,
+				D606DED92C8EE25C00DD4513 /* SwiftUICombineVIew.swift in Sources */,
 				02A31E5F24B5BF2200D32B41 /* Issue_Repository.swift in Sources */,
 				02525B77264E15C300B34983 /* ReactorKitCounterViewReactor.swift in Sources */,
 				028AFBD724AF0B9B00661743 /* CombineTextView.swift in Sources */,
@@ -1317,6 +1319,7 @@
 				02A31E5D24B5AD8900D32B41 /* Issue_Github.swift in Sources */,
 				028AFBB324ADCC2100661743 /* Profile.swift in Sources */,
 				028AFBAE24ADB5F500661743 /* CategoryRow.swift in Sources */,
+				D606DEDB2C8EE26B00DD4513 /* SwiftUICombineViewModel.swift in Sources */,
 				BBD637F21EB0ACA4002CF131 /* CustomRectView.swift in Sources */,
 				0226464D25087F6B00316B35 /* RxSwiftSketchbookViewController.swift in Sources */,
 				0260AE0D24F6257D00125671 /* RxSwiftViewController.swift in Sources */,
