@@ -33,6 +33,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     private func createSection(for sectionIndex: Int) -> NSCollectionLayoutSection {
         switch sectionIndex {
+        case 0: return createTwoColumnSection(weightConstant: sectionIndex)
         default: return createSingleColumnSection()
         }
     }
@@ -261,7 +262,7 @@ class CollectionViewCell: UICollectionViewCell {
         NSLayoutConstraint.activate(
             [
                 titleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-                titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+                titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
                 titleLabel.widthAnchor.constraint(lessThanOrEqualTo: contentView.widthAnchor),
                 titleLabel.heightAnchor.constraint(lessThanOrEqualTo: contentView.heightAnchor)
                 
