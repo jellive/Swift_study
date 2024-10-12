@@ -118,6 +118,8 @@
 		D606DED92C8EE25C00DD4513 /* SwiftUICombineVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = D606DED82C8EE25C00DD4513 /* SwiftUICombineVIew.swift */; };
 		D606DEDB2C8EE26B00DD4513 /* SwiftUICombineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D606DEDA2C8EE26B00DD4513 /* SwiftUICombineViewModel.swift */; };
 		D616938A24B1D670009F2EB1 /* LocalPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616938924B1D670009F2EB1 /* LocalPushViewController.swift */; };
+		D6334E172CBAD3A9007B1558 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E162CBAD39F007B1558 /* CounterFeature.swift */; };
+		D6334E1A2CBAD5D0007B1558 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = D6334E192CBAD5D0007B1558 /* ComposableArchitecture */; };
 		D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6663DBB1E7EB74900531889 /* GugudanViewController.swift */; };
 		D666F16524FB525600357FF2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666F16424FB525600357FF2 /* CameraViewController.swift */; };
 		D6A6D49524D6921900E39419 /* RxMoyaGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */; };
@@ -286,6 +288,7 @@
 		D606DED82C8EE25C00DD4513 /* SwiftUICombineVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICombineVIew.swift; sourceTree = "<group>"; };
 		D606DEDA2C8EE26B00DD4513 /* SwiftUICombineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICombineViewModel.swift; sourceTree = "<group>"; };
 		D616938924B1D670009F2EB1 /* LocalPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushViewController.swift; sourceTree = "<group>"; };
+		D6334E162CBAD39F007B1558 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		D6663DBB1E7EB74900531889 /* GugudanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GugudanViewController.swift; path = Gugudan/GugudanViewController.swift; sourceTree = "<group>"; };
 		D666F16424FB525600357FF2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMoyaGithubViewController.swift; sourceTree = "<group>"; };
@@ -337,6 +340,7 @@
 				90A4E674279FC28A00C6C541 /* Moya in Frameworks */,
 				D6DF7DE426981C390032CE40 /* Metal.framework in Frameworks */,
 				028C0FF1261AF75D00FF8BC9 /* libc++.tbd in Frameworks */,
+				D6334E1A2CBAD5D0007B1558 /* ComposableArchitecture in Frameworks */,
 				902D2D79279F89500074B51E /* Kingfisher in Frameworks */,
 				028C0FEF261AF75500FF8BC9 /* QuartzCore.framework in Frameworks */,
 				902D2D76279F88260074B51E /* RxAlamofire in Frameworks */,
@@ -613,6 +617,7 @@
 		02D6F33224DAAB23001BA1E9 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D6334E152CBAD382007B1558 /* SwiftUI-TCA */,
 				D606DED72C8EE24F00DD4513 /* SwiftUI-Combine */,
 				D606DEC82C8EC70A00DD4513 /* SwiftUI-keyPath */,
 				028AFB9B24ADA3DB00661743 /* SwiftUI-animate */,
@@ -857,6 +862,14 @@
 			path = "Local-push";
 			sourceTree = "<group>";
 		};
+		D6334E152CBAD382007B1558 /* SwiftUI-TCA */ = {
+			isa = PBXGroup;
+			children = (
+				D6334E162CBAD39F007B1558 /* CounterFeature.swift */,
+			);
+			path = "SwiftUI-TCA";
+			sourceTree = "<group>";
+		};
 		D6663DBA1E7EB73300531889 /* Gugudan */ = {
 			isa = PBXGroup;
 			children = (
@@ -971,6 +984,7 @@
 				90A4E673279FC28A00C6C541 /* Moya */,
 				90A4E675279FC28A00C6C541 /* ReactiveMoya */,
 				90A4E677279FC28A00C6C541 /* RxMoya */,
+				D6334E192CBAD5D0007B1558 /* ComposableArchitecture */,
 			);
 			productName = SwiftStudy;
 			productReference = D6C62F4B1E797D5E007D497A /* SwiftStudy.app */;
@@ -1060,6 +1074,7 @@
 				902D2D74279F88260074B51E /* XCRemoteSwiftPackageReference "RxAlamofire" */,
 				902D2D77279F89500074B51E /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */,
+				D6334E182CBAD54B007B1558 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = D6C62F4C1E797D5E007D497A /* Products */;
 			projectDirPath = "";
@@ -1305,6 +1320,7 @@
 				02FF187D24C170C0005636E7 /* SwiftUIObservableObjectView.swift in Sources */,
 				028AFBB724ADCEBA00661743 /* HikeBadge.swift in Sources */,
 				028AFB9424AC68D100661743 /* HexagonParameters.swift in Sources */,
+				D6334E172CBAD3A9007B1558 /* CounterFeature.swift in Sources */,
 				028AFBC924AEBE2700661743 /* PageViewController.swift in Sources */,
 				020DCC5024BEC5160007A0C8 /* Moya_MyService.swift in Sources */,
 				4065B5AA29388DD600843A66 /* ReadTextViewController.swift in Sources */,
@@ -1501,7 +1517,7 @@
 				);
 				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1534,7 +1550,7 @@
 				);
 				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = SwiftStudy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1721,6 +1737,14 @@
 				minimumVersion = 15.0.0;
 			};
 		};
+		D6334E182CBAD54B007B1558 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1773,6 +1797,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 90A4E670279FC28A00C6C541 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		D6334E192CBAD5D0007B1558 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6334E182CBAD54B007B1558 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

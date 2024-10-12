@@ -1,5 +1,5 @@
 import SwiftUI
-import ComposableArchitecture
+//import ComposableArchitecture
 import SwiftData
 
 public struct MainView: View {
@@ -36,26 +36,26 @@ public struct MainView: View {
     }
     func access() {
         if name.isEmpty {
-            alertItem = AlertItem(title: "제목이 없음")
-            alertIsShowing = true
+            //            alertItem = AlertItem(title: "제목이 없음")
+            //            alertIsShowing = true
+            //        }
+            //        
+            //        print("desc: \(String(describing: viewModel.getUserDefaults(name)))")
+            //
+            //        if let desc = viewModel.getUserDefaults(name) {
+            //            description = desc
+            //        } else {
+            //            if description.isEmpty {
+            //                alertItem = AlertItem(title: "저장하려는데 desc가 없음!")
+            //                alertIsShowing = true
+            //                return
+            //            }
+            //            viewModel.setUserDefaults(name: description, key: name)
+            //
+            //            alertItem = AlertItem(title: "저장됨!")
+            //            alertIsShowing = true
+            //        }
         }
-        
-        print("desc: \(String(describing: viewModel.getUserDefaults(name)))")
-        
-        if let desc = viewModel.getUserDefaults(name) {
-            description = desc
-        } else {
-            if description.isEmpty {
-                alertItem = AlertItem(title: "저장하려는데 desc가 없음!")
-                alertIsShowing = true
-                return
-            }
-            viewModel.setUserDefaults(name: description, key: name)
-            
-            alertItem = AlertItem(title: "저장됨!")
-            alertIsShowing = true
-        }
-        
     }
     
 }

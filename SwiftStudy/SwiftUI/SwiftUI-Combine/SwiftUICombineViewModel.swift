@@ -20,14 +20,14 @@ final class MainViewModel: ObservableObject {
     }
     
     
-    func setUserDefaults(name value: String, key: String) {
-        UserDefaults.shared.set(value, forKey: key)
-        UserDefaults.shared.synchronize()
-    }
-    
-    func getUserDefaults(_ key: String) -> String? {
-        return UserDefaults.shared.string(forKey: key)
-    }
+//    func setUserDefaults(name value: String, key: String) {
+//        UserDefaults.shared.set(value, forKey: key)
+//        UserDefaults.shared.synchronize()
+//    }
+//    
+//    func getUserDefaults(_ key: String) -> String? {
+//        return UserDefaults.shared.string(forKey: key)
+//    }
 }
 struct AlertItem: Identifiable {
     var id = UUID()
