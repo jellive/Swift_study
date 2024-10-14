@@ -34,5 +34,6 @@ struct CounterFeatureView: View {
 #Preview {
     CounterFeatureView(store: Store(initialState: CounterFeature.State()) {
         CounterFeature()
+            ._printChanges()
     })
 }
