@@ -124,6 +124,10 @@
 		D6334E1E2CBDFD2C007B1558 /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E1D2CBDFD25007B1558 /* CounterFeatureTests.swift */; };
 		D6334E202CBDFEBB007B1558 /* TCAAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E1F2CBDFE9F007B1558 /* TCAAppView.swift */; };
 		D6334E222CBDFFA7007B1558 /* TCAAppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E212CBDFFA2007B1558 /* TCAAppFeature.swift */; };
+		D6334E252CBE12B9007B1558 /* ContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E242CBE12B9007B1558 /* ContactsFeature.swift */; };
+		D6334E272CBE1329007B1558 /* ContactsFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E262CBE1329007B1558 /* ContactsFeatureView.swift */; };
+		D6334E292CBE14DE007B1558 /* AddContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E282CBE14D5007B1558 /* AddContactsFeature.swift */; };
+		D6334E2B2CBE1554007B1558 /* AddContactsFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E2A2CBE1554007B1558 /* AddContactsFeatureView.swift */; };
 		D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6663DBB1E7EB74900531889 /* GugudanViewController.swift */; };
 		D666F16524FB525600357FF2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666F16424FB525600357FF2 /* CameraViewController.swift */; };
 		D6A6D49524D6921900E39419 /* RxMoyaGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */; };
@@ -297,6 +301,10 @@
 		D6334E1D2CBDFD25007B1558 /* CounterFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTests.swift; sourceTree = "<group>"; };
 		D6334E1F2CBDFE9F007B1558 /* TCAAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAAppView.swift; sourceTree = "<group>"; };
 		D6334E212CBDFFA2007B1558 /* TCAAppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAAppFeature.swift; sourceTree = "<group>"; };
+		D6334E242CBE12B9007B1558 /* ContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeature.swift; sourceTree = "<group>"; };
+		D6334E262CBE1329007B1558 /* ContactsFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeatureView.swift; sourceTree = "<group>"; };
+		D6334E282CBE14D5007B1558 /* AddContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactsFeature.swift; sourceTree = "<group>"; };
+		D6334E2A2CBE1554007B1558 /* AddContactsFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactsFeatureView.swift; sourceTree = "<group>"; };
 		D6663DBB1E7EB74900531889 /* GugudanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GugudanViewController.swift; path = Gugudan/GugudanViewController.swift; sourceTree = "<group>"; };
 		D666F16424FB525600357FF2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMoyaGithubViewController.swift; sourceTree = "<group>"; };
@@ -625,6 +633,7 @@
 		02D6F33224DAAB23001BA1E9 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D6334E232CBE026A007B1558 /* SwiftUI-TCA-Presentation */,
 				D6334E152CBAD382007B1558 /* SwiftUI-TCA */,
 				D606DED72C8EE24F00DD4513 /* SwiftUI-Combine */,
 				D606DEC82C8EC70A00DD4513 /* SwiftUI-keyPath */,
@@ -880,6 +889,17 @@
 				D6334E162CBAD39F007B1558 /* CounterFeature.swift */,
 			);
 			path = "SwiftUI-TCA";
+			sourceTree = "<group>";
+		};
+		D6334E232CBE026A007B1558 /* SwiftUI-TCA-Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D6334E282CBE14D5007B1558 /* AddContactsFeature.swift */,
+				D6334E242CBE12B9007B1558 /* ContactsFeature.swift */,
+				D6334E262CBE1329007B1558 /* ContactsFeatureView.swift */,
+				D6334E2A2CBE1554007B1558 /* AddContactsFeatureView.swift */,
+			);
+			path = "SwiftUI-TCA-Presentation";
 			sourceTree = "<group>";
 		};
 		D6663DBA1E7EB73300531889 /* Gugudan */ = {
@@ -1280,8 +1300,10 @@
 				028AFB6E24AB123500661743 /* LandmarkRow.swift in Sources */,
 				028AFBDD24AF1B0300661743 /* Repository.swift in Sources */,
 				BB9F4CE91F0DDCC400650829 /* CategoryViewController.swift in Sources */,
+				D6334E252CBE12B9007B1558 /* ContactsFeature.swift in Sources */,
 				028AFB6A24AB0DF200661743 /* LandmarkDetail.swift in Sources */,
 				02FF187424C167DA005636E7 /* SwiftUISpacerView.swift in Sources */,
+				D6334E272CBE1329007B1558 /* ContactsFeatureView.swift in Sources */,
 				D666F16524FB525600357FF2 /* CameraViewController.swift in Sources */,
 				90A4E67B279FC59D00C6C541 /* ShapeViewController.swift in Sources */,
 				40FA85B52925C8660019B089 /* ReactorKitNetworkViewReactor.swift in Sources */,
@@ -1329,6 +1351,7 @@
 				028AFB9224AC682600661743 /* Badge.swift in Sources */,
 				901FF3B726E0634C004E96EA /* UIPopupRoundViewController.swift in Sources */,
 				40DC72192B102BA6007137CF /* CompositionalLayoutSupplementaryViewHeaderFooterViewController.swift in Sources */,
+				D6334E292CBE14DE007B1558 /* AddContactsFeature.swift in Sources */,
 				40FA85B32925C7B80019B089 /* ReactorKitNetworkViewController.swift in Sources */,
 				028AFBAC24ADB18700661743 /* Home.swift in Sources */,
 				02A31E5324B4649C00D32B41 /* RxCityViewController.swift in Sources */,
@@ -1358,6 +1381,7 @@
 				D616938A24B1D670009F2EB1 /* LocalPushViewController.swift in Sources */,
 				02FF187824C16DD7005636E7 /* SwiftUIAnimationView.swift in Sources */,
 				02525B79264E1DA800B34983 /* ReactorKitCounterViewController.swift in Sources */,
+				D6334E2B2CBE1554007B1558 /* AddContactsFeatureView.swift in Sources */,
 				028AFBB524ADCCD500661743 /* ProfileSummary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
