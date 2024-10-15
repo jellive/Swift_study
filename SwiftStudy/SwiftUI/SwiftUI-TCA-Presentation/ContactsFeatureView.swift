@@ -10,7 +10,7 @@ import SwiftUI
 import ComposableArchitecture
 
 struct ContactsFeatureView: View {
-    let store: StoreOf<TCAContactFeature>
+    @Bindable var store: StoreOf<TCAContactFeature>
     var body: some View {
         NavigationStack {
             List {
@@ -29,6 +29,13 @@ struct ContactsFeatureView: View {
 
                 }
             }
+        }
+        .sheet(
+          item: $store.scope(state: \.addContact, action: \.addContact)
+        ) { addContactStore in
+          NavigationStack {
+              AddContactsFeatureView(store: addContactStore)
+          }
         }
     }
 }
