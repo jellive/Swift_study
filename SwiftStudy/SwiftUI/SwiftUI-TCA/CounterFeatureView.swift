@@ -24,6 +24,12 @@ struct CounterFeatureView: View {
                 Button("Number fact") { store.send(.numberFactButtonTapped)}
             }
             
+            Section {
+                Button(store.isTimerRunning ? "Stop timer:\(String(describing: store.isTimerRunning))": "Start timer:\(String(describing: store.isTimerRunning))") {
+                    store.send(.toggleTimerButtonTapped)
+                }
+            }
+            
             if let fact = store.numberFact {
                 Text(fact)
             }

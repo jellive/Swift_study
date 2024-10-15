@@ -121,6 +121,9 @@
 		D6334E172CBAD3A9007B1558 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E162CBAD39F007B1558 /* CounterFeature.swift */; };
 		D6334E1A2CBAD5D0007B1558 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = D6334E192CBAD5D0007B1558 /* ComposableArchitecture */; };
 		D6334E1C2CBADF29007B1558 /* CounterFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E1B2CBADF20007B1558 /* CounterFeatureView.swift */; };
+		D6334E1E2CBDFD2C007B1558 /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E1D2CBDFD25007B1558 /* CounterFeatureTests.swift */; };
+		D6334E202CBDFEBB007B1558 /* TCAAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E1F2CBDFE9F007B1558 /* TCAAppView.swift */; };
+		D6334E222CBDFFA7007B1558 /* TCAAppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E212CBDFFA2007B1558 /* TCAAppFeature.swift */; };
 		D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6663DBB1E7EB74900531889 /* GugudanViewController.swift */; };
 		D666F16524FB525600357FF2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666F16424FB525600357FF2 /* CameraViewController.swift */; };
 		D6A6D49524D6921900E39419 /* RxMoyaGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */; };
@@ -291,6 +294,9 @@
 		D616938924B1D670009F2EB1 /* LocalPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushViewController.swift; sourceTree = "<group>"; };
 		D6334E162CBAD39F007B1558 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		D6334E1B2CBADF20007B1558 /* CounterFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureView.swift; sourceTree = "<group>"; };
+		D6334E1D2CBDFD25007B1558 /* CounterFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTests.swift; sourceTree = "<group>"; };
+		D6334E1F2CBDFE9F007B1558 /* TCAAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAAppView.swift; sourceTree = "<group>"; };
+		D6334E212CBDFFA2007B1558 /* TCAAppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAAppFeature.swift; sourceTree = "<group>"; };
 		D6663DBB1E7EB74900531889 /* GugudanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GugudanViewController.swift; path = Gugudan/GugudanViewController.swift; sourceTree = "<group>"; };
 		D666F16424FB525600357FF2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMoyaGithubViewController.swift; sourceTree = "<group>"; };
@@ -867,6 +873,9 @@
 		D6334E152CBAD382007B1558 /* SwiftUI-TCA */ = {
 			isa = PBXGroup;
 			children = (
+				D6334E212CBDFFA2007B1558 /* TCAAppFeature.swift */,
+				D6334E1F2CBDFE9F007B1558 /* TCAAppView.swift */,
+				D6334E1D2CBDFD25007B1558 /* CounterFeatureTests.swift */,
 				D6334E1B2CBADF20007B1558 /* CounterFeatureView.swift */,
 				D6334E162CBAD39F007B1558 /* CounterFeature.swift */,
 			);
@@ -1307,10 +1316,13 @@
 				02A31E5F24B5BF2200D32B41 /* Issue_Repository.swift in Sources */,
 				02525B77264E15C300B34983 /* ReactorKitCounterViewReactor.swift in Sources */,
 				028AFBD724AF0B9B00661743 /* CombineTextView.swift in Sources */,
+				D6334E1E2CBDFD2C007B1558 /* CounterFeatureTests.swift in Sources */,
 				028AFBD524AED51900661743 /* PageControl.swift in Sources */,
 				028AFB4924AAF8D700661743 /* CircleImage.swift in Sources */,
 				028AFB9824AD67B000661743 /* BadgeSymbol.swift in Sources */,
+				D6334E202CBDFEBB007B1558 /* TCAAppView.swift in Sources */,
 				028AFBB124ADCBD000661743 /* ProfileHost.swift in Sources */,
+				D6334E222CBDFFA7007B1558 /* TCAAppFeature.swift in Sources */,
 				40A1709E2B4D3FC900929136 /* ContentCollectionViewHeader.swift in Sources */,
 				02A31E6124B5BF8700D32B41 /* Issue_Issue.swift in Sources */,
 				40A1709C2B4D3E6900929136 /* ContentCollectionViewCell.swift in Sources */,
