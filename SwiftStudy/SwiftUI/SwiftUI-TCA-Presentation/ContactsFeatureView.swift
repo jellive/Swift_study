@@ -12,19 +12,21 @@ import ComposableArchitecture
 struct ContactsFeatureView: View {
     @Bindable var store: StoreOf<TCAContactFeature>
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $store.scope(state: \.path, action: \.path)) {
             List {
                 ForEach(store.contacts) { contact in
-                    HStack {
-                      Text(contact.name)
-                      Spacer()
-                      Button {
-                        store.send(.deleteButtonTapped(id: contact.id))
-                      } label: {
-                        Image(systemName: "trash")
-                          .foregroundColor(.red)
-                      }
-                    }
+                    NavigationLink(state: TCAContactDetailFeature.State(contact: contact)) {
+                        HStack {
+                            Text(contact.name)
+                            Spacer()
+                            Button {
+                                store.send(.deleteButtonTapped(id: contact.id))
+                            } label: {
+                                Image(systemName: "trash")
+                                    .foregroundColor(.red)
+                            }
+                        }
+                    }.buttonStyle(.borderless)
                 }
             }
             .navigationTitle("Contacts")
@@ -38,6 +40,8 @@ struct ContactsFeatureView: View {
 
                 }
             }
+        } destination: { store in
+            ContactDetailView(store: store)
         }
         .sheet(
             item: $store.scope(state: \.destination?.addContact, action: \.destination.addContact)

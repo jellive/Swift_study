@@ -22,6 +22,7 @@ struct TCAContactFeature {
         //        @Presents var alert: AlertState<Action.Alert>?
         var contacts: IdentifiedArrayOf<TCAContact> = []
         @Presents var destination: Destination.State?
+        var path = StackState<TCAContactDetailFeature.State>()
     }
     
     enum Action {
@@ -30,6 +31,7 @@ struct TCAContactFeature {
         //        case alert(PresentationAction<Alert>)
         case destination(PresentationAction<Destination.Action>)
         case deleteButtonTapped(id: TCAContact.ID)
+        case path(StackAction<TCAContactDetailFeature.State, TCAContactDetailFeature.Action>)
         enum Alert: Equatable {
             case confirmDeletion(id: TCAContact.ID)
         }
@@ -77,6 +79,15 @@ struct TCAContactFeature {
                     }
                 })
                 return .none
+                
+            case let .path(.element(id: id, action: .delegate(.confirmDeletion))):
+              guard let detailState = state.path[id: id]
+              else { return .none }
+              state.contacts.remove(id: detailState.contact.id)
+              return .none
+                
+            case .path:
+                return .none
             }
             
         }
@@ -85,6 +96,9 @@ struct TCAContactFeature {
 //            AddContactsFeature()
 //        }
 //        .ifLet(\.$alert, action: \.alert)
+        .forEach(\.path, action: \.path) {
+            TCAContactDetailFeature()
+        }
     }
 }
 

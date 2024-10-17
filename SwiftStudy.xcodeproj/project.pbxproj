@@ -128,6 +128,8 @@
 		D6334E272CBE1329007B1558 /* ContactsFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E262CBE1329007B1558 /* ContactsFeatureView.swift */; };
 		D6334E292CBE14DE007B1558 /* AddContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E282CBE14D5007B1558 /* AddContactsFeature.swift */; };
 		D6334E2B2CBE1554007B1558 /* AddContactsFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E2A2CBE1554007B1558 /* AddContactsFeatureView.swift */; };
+		D6334E2D2CC0B8AC007B1558 /* ContactsDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E2C2CC0B8A5007B1558 /* ContactsDetailFeature.swift */; };
+		D6334E2F2CC0B902007B1558 /* ContactsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6334E2E2CC0B8FD007B1558 /* ContactsDetailView.swift */; };
 		D6663DBC1E7EB74900531889 /* GugudanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6663DBB1E7EB74900531889 /* GugudanViewController.swift */; };
 		D666F16524FB525600357FF2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D666F16424FB525600357FF2 /* CameraViewController.swift */; };
 		D6A6D49524D6921900E39419 /* RxMoyaGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */; };
@@ -305,6 +307,8 @@
 		D6334E262CBE1329007B1558 /* ContactsFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeatureView.swift; sourceTree = "<group>"; };
 		D6334E282CBE14D5007B1558 /* AddContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactsFeature.swift; sourceTree = "<group>"; };
 		D6334E2A2CBE1554007B1558 /* AddContactsFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactsFeatureView.swift; sourceTree = "<group>"; };
+		D6334E2C2CC0B8A5007B1558 /* ContactsDetailFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailFeature.swift; sourceTree = "<group>"; };
+		D6334E2E2CC0B8FD007B1558 /* ContactsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDetailView.swift; sourceTree = "<group>"; };
 		D6663DBB1E7EB74900531889 /* GugudanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GugudanViewController.swift; path = Gugudan/GugudanViewController.swift; sourceTree = "<group>"; };
 		D666F16424FB525600357FF2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D6A6D49424D6921900E39419 /* RxMoyaGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMoyaGithubViewController.swift; sourceTree = "<group>"; };
@@ -894,6 +898,8 @@
 		D6334E232CBE026A007B1558 /* SwiftUI-TCA-Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D6334E2E2CC0B8FD007B1558 /* ContactsDetailView.swift */,
+				D6334E2C2CC0B8A5007B1558 /* ContactsDetailFeature.swift */,
 				D6334E282CBE14D5007B1558 /* AddContactsFeature.swift */,
 				D6334E242CBE12B9007B1558 /* ContactsFeature.swift */,
 				D6334E262CBE1329007B1558 /* ContactsFeatureView.swift */,
@@ -1317,6 +1323,7 @@
 				BB9F4CEB1F0DDD4200650829 /* UIView.swift in Sources */,
 				028AFBA124ADA42300661743 /* HikeView.swift in Sources */,
 				02FF186C24C14298005636E7 /* SwiftUILocalPushView.swift in Sources */,
+				D6334E2D2CC0B8AC007B1558 /* ContactsDetailFeature.swift in Sources */,
 				028AFBDF24AF1B3200661743 /* RxGithubViewModel.swift in Sources */,
 				D604CCE324A89EDE006927DE /* SwiftUIViewModel.swift in Sources */,
 				028AFBA924ADA62900661743 /* GraphCapsule.swift in Sources */,
@@ -1336,6 +1343,7 @@
 				028AFBC424AEBA2700661743 /* CombineView.swift in Sources */,
 				D606DED92C8EE25C00DD4513 /* SwiftUICombineVIew.swift in Sources */,
 				02A31E5F24B5BF2200D32B41 /* Issue_Repository.swift in Sources */,
+				D6334E2F2CC0B902007B1558 /* ContactsDetailView.swift in Sources */,
 				02525B77264E15C300B34983 /* ReactorKitCounterViewReactor.swift in Sources */,
 				028AFBD724AF0B9B00661743 /* CombineTextView.swift in Sources */,
 				D6334E1E2CBDFD2C007B1558 /* CounterFeatureTests.swift in Sources */,
